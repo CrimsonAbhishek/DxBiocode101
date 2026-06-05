@@ -35,7 +35,12 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" crossorigin="anonymous" />
+  <!-- Optimized Asynchronous Font Loading (removes render-blocking) -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" />
+  </noscript>
 
   <style>
     /* ===== RESET & BASE ===== */
@@ -1661,7 +1666,7 @@
 <nav id="main-nav">
   <div class="nav-inner">
     <a href="#top" class="logo">
-      <img src="logo.svg" alt="DX BIOCODE" class="logo-img" />
+      <img src="logo.svg" alt="DX BIOCODE" class="logo-img" width="180" height="80" />
     </a>
     <ul class="nav-links" id="desktop-nav">
       <li><a href="#features" class="active">Overview</a></li>
@@ -1726,7 +1731,7 @@
       </div>
     </div>
     <div class="hero-image-wrap">
-      <img src="hero.png" alt="DX 101 Immunofluorescence Quantitative Analyzer — handheld portable device" class="hero-img" fetchpriority="high" />
+      <img src="hero.png" alt="DX 101 Immunofluorescence Quantitative Analyzer — handheld portable device" class="hero-img" width="420" height="364" fetchpriority="high" />
     </div>
   </div>
   </div>
@@ -1809,7 +1814,7 @@
       </div>
     </div>
     <div class="features-device-visual fade-up fade-up-delay-2">
-      <img src="hero.png" alt="DX 101 device front view" class="device-main-img" loading="lazy" />
+      <img src="hero.png" alt="DX 101 device front view" class="device-main-img" width="380" height="285" loading="lazy" />
       <div class="feature-steps">
         <div class="feature-step">
           <div class="step-num">01</div>
@@ -1842,28 +1847,28 @@
     </div>
     <div class="app-grid">
       <div class="app-card fade-up fade-up-delay-1">
-        <img src="hospital_application.png" alt="Hospital ICU application scenario" loading="lazy" />
+        <img src="hospital_application.png" alt="Hospital ICU application scenario" width="300" height="400" loading="lazy" />
         <div class="app-card-overlay">
           <div class="app-card-title">🏥 Hospital &amp; ICU</div>
           <div class="app-card-desc">Rapid cardiac, coagulation, and inflammation markers for critical care units and emergency departments.</div>
         </div>
       </div>
       <div class="app-card fade-up fade-up-delay-2">
-        <img src="ambulance_application.png" alt="Ambulance point-of-care testing" loading="lazy" />
+        <img src="ambulance_application.png" alt="Ambulance point-of-care testing" width="300" height="400" loading="lazy" />
         <div class="app-card-overlay">
           <div class="app-card-title">🚑 Ambulance</div>
           <div class="app-card-desc">Lightweight and battery-powered — enables diagnostic testing during patient transport.</div>
         </div>
       </div>
       <div class="app-card fade-up fade-up-delay-3">
-        <img src="pharmacy_application.png" alt="Pharmacy point-of-care testing" loading="lazy" />
+        <img src="pharmacy_application.png" alt="Pharmacy point-of-care testing" width="300" height="400" loading="lazy" />
         <div class="app-card-overlay">
           <div class="app-card-title">💊 Pharmacy &amp; Clinic</div>
           <div class="app-card-desc">Thyroid, diabetes, vitamin, and fertility panels available at pharmacy level for faster patient outcomes.</div>
         </div>
       </div>
       <div class="app-card fade-up fade-up-delay-4">
-        <img src="remote_home_application.png" alt="Remote and home testing" loading="lazy" />
+        <img src="remote_home_application.png" alt="Remote and home testing" width="300" height="400" loading="lazy" />
         <div class="app-card-overlay">
           <div class="app-card-title">🏡 Remote &amp; Home Testing</div>
           <div class="app-card-desc">Small blood volume, simple operation — ideal for community health workers and home care settings.</div>
@@ -2138,7 +2143,7 @@
 
       </div>
       <div class="specs-device-wrap fade-up fade-up-delay-2">
-        <img src="hero.png" alt="DX 101 device technical view" class="specs-img" loading="lazy" />
+        <img src="hero.png" alt="DX 101 device technical view" class="specs-img" width="420" height="364" loading="lazy" />
         <div class="spec-highlights">
           <div class="spec-hl-card">
             <div class="spec-hl-val">5"</div>
@@ -2258,7 +2263,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="#top" class="logo">
-          <img src="logo.svg" alt="DX BIOCODE" class="logo-img footer-logo-img" />
+          <img src="logo.svg" alt="DX BIOCODE" class="logo-img footer-logo-img" width="144" height="64" />
         </a>
         <p class="footer-tagline">
           Pioneering India's first portable and handheld multi-parameter point-of-care immunofluorescence diagnostic platform.
