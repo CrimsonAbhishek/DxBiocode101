@@ -1476,12 +1476,13 @@
     .contact-section {
       position: relative;
       padding: 96px 24px;
-      background: linear-gradient(135deg, #0f172a 0%, #070714 100%);
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
       overflow: hidden;
       border-bottom: 1px solid var(--border);
+      transition: background 0.4s ease;
     }
-    [data-theme="light"] .contact-section {
-      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    [data-theme="dark"] .contact-section {
+      background: linear-gradient(135deg, #0f172a 0%, #070714 100%);
     }
     .contact-mesh {
       position: absolute;
