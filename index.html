@@ -1409,6 +1409,235 @@
       pointer-events: none;
       z-index: 0;
     }
+
+    /* --- Nav Brochure Button --- */
+    .nav-brochure {
+      border: 1px solid var(--border-subtle) !important;
+      color: var(--blue-primary) !important;
+      padding: 8px 16px !important;
+      border-radius: var(--radius-sm) !important;
+      font-weight: 600 !important;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .nav-brochure:hover {
+      background: var(--blue-pale) !important;
+      border-color: var(--blue-primary) !important;
+      color: var(--blue-primary) !important;
+      transform: translateY(-1px);
+    }
+    
+    /* --- Mobile Nav Brochure Button --- */
+    .mobile-nav-drawer .mob-brochure {
+      display: block;
+      padding: 14px 18px;
+      border-radius: var(--radius-md);
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+      background: var(--glass-bg);
+      color: var(--blue-primary) !important;
+      text-align: center;
+      border: 1px solid var(--border-subtle);
+      margin-top: 6px;
+    }
+    .mobile-nav-drawer .mob-brochure:hover {
+      background: var(--blue-pale);
+      border-color: var(--blue-primary);
+    }
+
+    /* --- Footer Brochure Button --- */
+    .btn-brochure-footer {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: white;
+      padding: 10px 20px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+    .btn-brochure-footer:hover {
+      background: var(--brand-gradient);
+      border-color: transparent;
+      box-shadow: 0 4px 15px rgba(155,47,200,0.4);
+      transform: translateY(-2px);
+      color: white !important;
+    }
+
+    /* ===== CONTACT SECTION & FORM ===== */
+    .contact-section {
+      position: relative;
+      padding: 96px 24px;
+      background: linear-gradient(135deg, #0f172a 0%, #070714 100%);
+      overflow: hidden;
+      border-bottom: 1px solid var(--border);
+    }
+    [data-theme="light"] .contact-section {
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    }
+    .contact-mesh {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(155,47,200,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(155,47,200,0.03) 1px, transparent 1px);
+      background-size: 50px 50px;
+      mask-image: radial-gradient(ellipse at center, black 40%, transparent 90%);
+    }
+    .contact-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    @media (max-width: 992px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+    }
+    .contact-title {
+      font-size: clamp(28px, 3.5vw, 42px);
+      font-weight: 800;
+      color: var(--text-dark);
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .contact-desc {
+      font-size: 16px;
+      color: var(--text-mid);
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .c-detail-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .c-detail-item .icon {
+      font-size: 20px;
+      color: var(--accent-mid);
+      width: 40px; height: 40px;
+      background: var(--brand-gradient-soft);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .c-detail-item h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+    .c-detail-item a, .c-detail-item span {
+      font-size: 15px;
+      color: var(--text-mid);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    .c-detail-item a:hover { color: var(--blue-primary); }
+    
+    /* Form styling */
+    .contact-form-wrap {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: var(--shadow-lg);
+    }
+    @media (max-width: 480px) {
+      .contact-form-wrap { padding: 24px; }
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .form-group label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+    .form-group input, .form-group textarea {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+      font-family: inherit;
+      font-size: 14.5px;
+      color: var(--text-dark);
+      transition: var(--transition);
+      outline: none;
+    }
+    [data-theme="light"] .form-group input, [data-theme="light"] .form-group textarea {
+      background: rgba(0, 0, 0, 0.02);
+    }
+    .form-group input:focus, .form-group textarea:focus {
+      border-color: var(--accent-mid);
+      box-shadow: 0 0 0 3px rgba(155, 47, 200, 0.15);
+      background: rgba(255, 255, 255, 0.08);
+    }
+    .form-group input.invalid, .form-group textarea.invalid {
+      border-color: var(--accent-pink);
+      background: rgba(233, 30, 140, 0.03);
+    }
+    .error-msg {
+      font-size: 11.5px;
+      color: var(--accent-pink);
+      display: none;
+    }
+    .form-group input.invalid + .error-msg, .form-group textarea.invalid + .error-msg {
+      display: block;
+    }
+    .form-status {
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      padding: 10px;
+      border-radius: var(--radius-sm);
+      display: none;
+    }
+    .form-status.success {
+      display: block;
+      background: rgba(16, 185, 129, 0.15);
+      color: #10b981;
+      border: 1px solid rgba(16, 185, 129, 0.2);
+    }
+    .form-status.error {
+      display: block;
+      background: rgba(239, 68, 68, 0.15);
+      color: #ef4444;
+      border: 1px solid rgba(239, 68, 68, 0.2);
+    }
   </style>
 </head>
 <body>
@@ -1438,6 +1667,7 @@
       <li><a href="#applications">Applications</a></li>
       <li><a href="#test-menu">Test Menu</a></li>
       <li><a href="#specs">Specifications</a></li>
+      <li><a href="Dx%20101%20-%20Analyzer.pdf" download="Dx 101 - Analyzer.pdf" class="nav-brochure">📥 Brochure</a></li>
       <li><a href="#contact" class="nav-cta">Contact Us</a></li>
     </ul>
     <div style="display:flex;align-items:center;gap:12px;">
@@ -1459,6 +1689,7 @@
     <a href="#applications" class="mob-link">Applications</a>
     <a href="#test-menu" class="mob-link">Test Menu</a>
     <a href="#specs" class="mob-link">Specifications</a>
+    <a href="Dx%20101%20-%20Analyzer.pdf" download="Dx 101 - Analyzer.pdf" class="mob-brochure">📥 Download Brochure</a>
     <a href="#contact" class="mob-cta">Contact Us</a>
   </div>
 </div>
@@ -1938,20 +2169,90 @@
   </div>
 </section>
 
-<!-- ===== CTA BANNER ===== -->
-<section class="cta-banner">
-  <div class="cta-inner">
-    <h2>Ready to Transform Your Diagnostic Capability?</h2>
-    <p>DX 101 brings lab-grade immunofluorescence quantitative testing to the point of care. Contact DX BIOCODE today for a demonstration or to request a quote.</p>
-    <div class="cta-actions">
-      <a href="mailto:info@dxbiocode.com" class="btn-white" rel="noopener noreferrer">✉️ Email Us</a>
-      <a href="tel:+918080885059" class="btn-outline-white" rel="noopener noreferrer">📞 +91 8080885059</a>
+<!-- ===== CONTACT SECTION ===== -->
+<section class="contact-section" id="contact">
+  <div class="contact-mesh"></div>
+  <div class="contact-inner">
+    <div class="contact-grid">
+      <!-- Left side: Info & CTA -->
+      <div class="contact-info fade-up">
+        <span class="section-eyebrow">Get in Touch</span>
+        <h2 class="contact-title">Ready to Transform Your Diagnostic Capability?</h2>
+        <p class="contact-desc">
+          Contact DX BIOCODE today to request a demonstration, get a quote, or learn more about the DX 101 Immunofluorescence Quantitative Analyzer.
+        </p>
+        
+        <div class="contact-details">
+          <div class="c-detail-item">
+            <span class="icon">✉️</span>
+            <div>
+              <h4>Email Us</h4>
+              <a href="mailto:info@dxbiocode.com">info@dxbiocode.com</a>
+            </div>
+          </div>
+          <div class="c-detail-item">
+            <span class="icon">📞</span>
+            <div>
+              <h4>Call Us</h4>
+              <a href="tel:+918080885059">+91 8080885059</a>
+            </div>
+          </div>
+          <div class="c-detail-item">
+            <span class="icon">📍</span>
+            <div>
+              <h4>Our Location</h4>
+              <span>27(38), First Floor, Madley Road, T. Nagar, Chennai, Tamil Nadu – 600017</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 32px; display: flex; gap: 10px; flex-wrap: wrap;">
+          <span class="ce-strip">✔ CE Approved</span>
+          <span class="ce-strip">✔ EU-IVD Compliant</span>
+        </div>
+      </div>
+
+      <!-- Right side: Contact Form -->
+      <div class="contact-form-wrap fade-up fade-up-delay-2">
+        <form class="contact-form" id="dx-contact-form" novalidate>
+          <div class="form-group">
+            <label for="form-name">Full Name</label>
+            <input type="text" id="form-name" placeholder="John Doe" required />
+            <span class="error-msg">Please enter your name</span>
+          </div>
+          <div class="form-group">
+            <label for="form-email">Email Address</label>
+            <input type="email" id="form-email" placeholder="john@example.com" required />
+            <span class="error-msg">Please enter a valid email</span>
+          </div>
+          <div class="form-group">
+            <label for="form-phone">Phone Number</label>
+            <input type="tel" id="form-phone" placeholder="+91 98765 43210" required />
+            <span class="error-msg">Please enter your phone number</span>
+          </div>
+          <div class="form-group">
+            <label for="form-org">Organization / Clinic</label>
+            <input type="text" id="form-org" placeholder="City Clinic" />
+          </div>
+          <div class="form-group">
+            <label for="form-msg">How can we help you?</label>
+            <textarea id="form-msg" rows="4" placeholder="I am interested in requesting a product demonstration..." required></textarea>
+            <span class="error-msg">Please enter your message</span>
+          </div>
+          
+          <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 10px;">
+            ✉️ Send Message
+          </button>
+          
+          <div class="form-status" id="form-status"></div>
+        </form>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ===== FOOTER ===== -->
-<footer id="contact">
+<footer id="footer">
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
@@ -1961,6 +2262,11 @@
         <p class="footer-tagline">
           Pioneering India's first portable and handheld multi-parameter point-of-care immunofluorescence diagnostic platform.
         </p>
+        <div style="margin-bottom: 24px;">
+          <a href="Dx%20101%20-%20Analyzer.pdf" download="Dx%20101%20-%20Analyzer.pdf" class="btn-brochure-footer">
+            📥 Download Product PDF
+          </a>
+        </div>
         <div class="footer-contact-item">
           <span class="icon">📍</span>
           <span>27(38), First Floor, Madley Road,<br/>T. Nagar, Chennai,<br/>Tamil Nadu, India – 600017</span>
@@ -2188,6 +2494,61 @@
   if (typeof console !== 'undefined') {
     console.log('%c⚠️ Warning!', 'color:red;font-size:24px;font-weight:bold;');
     console.log('%cDo not paste any code here — it can compromise site security.', 'color:#1a2340;font-size:14px;');
+  }
+
+  /* ====== CONTACT FORM VALIDATION ====== */
+  const contactForm = document.getElementById('dx-contact-form');
+  const formStatus = document.getElementById('form-status');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      let isValid = true;
+      const inputs = contactForm.querySelectorAll('[required]');
+      
+      inputs.forEach(input => {
+        if (!input.value.trim()) {
+          input.classList.add('invalid');
+          isValid = false;
+        } else if (input.type === 'email' && !/\S+@\S+\.\S+/.test(input.value)) {
+          input.classList.add('invalid');
+          isValid = false;
+        } else {
+          input.classList.remove('invalid');
+        }
+      });
+
+      // Clear previous status
+      formStatus.className = 'form-status';
+      formStatus.style.display = 'none';
+
+      if (isValid) {
+        // Mock submission success
+        const btn = contactForm.querySelector('button[type="submit"]');
+        const origText = btn.innerHTML;
+        btn.disabled = true;
+        btn.innerHTML = '⌛ Sending...';
+        
+        setTimeout(() => {
+          btn.disabled = false;
+          btn.innerHTML = origText;
+          formStatus.textContent = '🎉 Thank you! Your message has been sent successfully. We will get back to you shortly.';
+          formStatus.classList.add('success');
+          contactForm.reset();
+        }, 1200);
+      } else {
+        formStatus.textContent = '❌ Please correct the errors in the form before submitting.';
+        formStatus.classList.add('error');
+      }
+    });
+
+    // Realtime error removal
+    contactForm.querySelectorAll('input, textarea').forEach(input => {
+      input.addEventListener('input', function() {
+        if (this.value.trim()) {
+          this.classList.remove('invalid');
+        }
+      });
+    });
   }
 </script>
 </body>
