@@ -317,33 +317,33 @@
           <div class="form-row">
             <div class="form-group">
               <label for="t-name">Full Name *</label>
-              <input type="text" id="t-name" placeholder="Dr. Jane Doe" required />
+              <input type="text" id="t-name" name="name" placeholder="Dr. Jane Doe" required />
               <span class="error-msg">Name is required</span>
             </div>
             <div class="form-group">
               <label for="t-location">Location *</label>
-              <input type="text" id="t-location" placeholder="City, State" required />
+              <input type="text" id="t-location" name="location" placeholder="City, State" required />
               <span class="error-msg">Location is required</span>
             </div>
           </div>
           <div class="form-group">
             <label for="t-email">Email Address *</label>
-            <input type="email" id="t-email" placeholder="you@hospital.com" required />
+            <input type="email" id="t-email" name="email" placeholder="you@hospital.com" required />
             <span class="error-msg">Valid email required</span>
           </div>
           <div class="form-group">
             <label for="t-phone">Phone *</label>
-            <input type="tel" id="t-phone" placeholder="+91 98765 43210" required />
+            <input type="tel" id="t-phone" name="phone" placeholder="+91 98765 43210" required />
             <span class="error-msg">Phone number required</span>
           </div>
           <div class="form-group">
             <label for="t-org">Organization / Institution *</label>
-            <input type="text" id="t-org" placeholder="City Hospital" required />
+            <input type="text" id="t-org" name="organization" placeholder="City Hospital" required />
             <span class="error-msg">Organization required</span>
           </div>
           <div class="form-group">
             <label for="t-category">Training Category</label>
-            <select id="t-category">
+            <select id="t-category" name="training_category">
               <option value="">Select a category...</option>
               <option>Device Operation &amp; Setup</option>
               <option>Clinical Interpretation</option>
@@ -354,7 +354,7 @@
           </div>
           <div class="form-group">
             <label for="t-msg">Leave Your Message</label>
-            <textarea id="t-msg" rows="3" placeholder="Any specific training requirements or questions..."></textarea>
+            <textarea id="t-msg" name="message" rows="3" placeholder="Any specific training requirements or questions..."></textarea>
           </div>
           <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">📅 Submit Training Request</button>
           <div class="form-status" id="training-form-status"></div>
@@ -530,7 +530,7 @@
   else switchTab('overview');
 
   // Init forms
-  initContactForm('training-form', 'training-form-status');
+  initContactForm('training-form', 'training-form-status', '/api/training');
 </script>
 </body>
 </html>

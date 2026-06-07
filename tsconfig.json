@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "lib": ["ES2022"],
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@lib/*": ["api/_lib/*"],
+      "@emails/*": ["emails/*"]
+    }
+  },
+  "include": [
+    "api/**/*",
+    "emails/**/*",
+    "drizzle/**/*",
+    "drizzle.config.ts"
+  ],
+  "exclude": ["node_modules", ".vercel", "temp_runner"]
+}

@@ -490,7 +490,117 @@
     uploadArea.addEventListener('drop', e => { e.preventDefault(); uploadArea.classList.remove('drag-over'); if (e.dataTransfer.files.length) { fileInput.files = e.dataTransfer.files; fileNameEl.textContent = '✓ ' + e.dataTransfer.files[0].name; } });
   }
 
-  initContactForm('resume-form', 'resume-form-status');
+  /* ── Custom careers form handler (file upload as base64) ── */
+  (function () {
+    const form = document.getElementById('resume-form');
+    const status = document.getElementById('resume-form-status');
+    if (!form) return;
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      // Validate required fields
+      let isValid = true;
+      form.querySelectorAll('[required]').forEach(function (input) {
+        if (!input.value.trim()) { input.classList.add('invalid'); isValid = false; }
+        else if (input.type === 'email' && !/\S+@\S+\.\S+/.test(input.value)) { input.classList.add('invalid'); isValid = false; }
+        else input.classList.remove('invalid');
+      });
+
+      if (status) { status.className = 'form-status'; status.style.display = 'none'; }
+
+      if (!isValid) {
+        if (status) { status.textContent = '❌ Please correct the errors before submitting.'; status.classList.add('error'); status.style.display = 'block'; }
+        return;
+      }
+
+      // Validate resume file
+      const fileInput = document.getElementById('r-resume');
+      const file = fileInput && fileInput.files && fileInput.files[0];
+      if (!file) {
+        if (status) { status.textContent = '❌ Please attach your resume (PDF or DOCX).'; status.classList.add('error'); status.style.display = 'block'; }
+        return;
+      }
+
+      const allowedTypes = ['application/pdf', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/msword'];
+      if (!allowedTypes.includes(file.type)) {
+        if (status) { status.textContent = '❌ Only PDF or DOCX files are accepted.'; status.classList.add('error'); status.style.display = 'block'; }
+        return;
+      }
+
+      // 3MB frontend limit (base64 → ~4MB JSON, within Vercel 5MB backend limit)
+      if (file.size > 3 * 1024 * 1024) {
+        if (status) { status.textContent = '❌ File is too large. Maximum size is 3MB.'; status.classList.add('error'); status.style.display = 'block'; }
+        return;
+      }
+
+      const btn = form.querySelector('button[type="submit"]');
+      const origText = btn ? btn.innerHTML : '';
+      if (btn) { btn.disabled = true; btn.innerHTML = '⌛ Uploading & Submitting...'; }
+
+      // Read file as base64
+      const reader = new FileReader();
+      reader.onload = async function (evt) {
+        try {
+          const dataUrl = evt.target.result;
+          // Strip "data:...;base64," prefix
+          const base64 = dataUrl.split(',')[1];
+
+          const payload = {
+            first_name: document.getElementById('r-fname').value.trim(),
+            last_name: document.getElementById('r-lname').value.trim(),
+            email: document.getElementById('r-email').value.trim(),
+            phone: document.getElementById('r-phone').value.trim(),
+            position: document.getElementById('r-position').value,
+            experience: document.getElementById('r-experience').value,
+            cover_letter: document.getElementById('r-cover').value.trim(),
+            resume_base64: base64,
+            resume_filename: file.name,
+            resume_type: file.type,
+            _bot_check: document.getElementById('form-bot-check-careers').value,
+          };
+
+          const response = await fetch('/api/careers', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+          });
+
+          const result = await response.json();
+          if (btn) { btn.disabled = false; btn.innerHTML = origText; }
+
+          if (response.ok && result.success) {
+            if (status) {
+              status.textContent = '🎉 Application submitted! We will review it and reach out within 5–7 business days.';
+              status.classList.add('success');
+              status.style.display = 'block';
+            }
+            form.reset();
+            if (fileNameEl) fileNameEl.textContent = '';
+          } else if (response.status === 429) {
+            if (status) { status.textContent = '⏳ Too many submissions. Please try again later.'; status.classList.add('error'); status.style.display = 'block'; }
+          } else {
+            const errMsg = result.error || 'Something went wrong.';
+            if (status) { status.textContent = `❌ ${errMsg} Please email info@dxbiocode.com.`; status.classList.add('error'); status.style.display = 'block'; }
+          }
+        } catch (_err) {
+          if (btn) { btn.disabled = false; btn.innerHTML = origText; }
+          if (status) { status.textContent = '❌ Network error. Please email info@dxbiocode.com directly.'; status.classList.add('error'); status.style.display = 'block'; }
+        }
+      };
+
+      reader.onerror = function () {
+        if (btn) { btn.disabled = false; btn.innerHTML = origText; }
+        if (status) { status.textContent = '❌ Could not read the file. Please try another file.'; status.classList.add('error'); status.style.display = 'block'; }
+      };
+
+      reader.readAsDataURL(file);
+    });
+
+    form.querySelectorAll('input, textarea, select').forEach(function (input) {
+      input.addEventListener('input', function () { if (this.value.trim()) this.classList.remove('invalid'); });
+    });
+  }());
 </script>
 </body>
 </html>

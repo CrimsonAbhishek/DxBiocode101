@@ -235,33 +235,105 @@ document.querySelectorAll('img').forEach(img => {
   img.addEventListener('dragstart', e => e.preventDefault());
 });
 
-/* ====== FORM VALIDATION HELPER ====== */
-window.initContactForm = function(formId, statusId) {
+/* ====== FORM VALIDATION HELPER ======
+   Pass an endpoint URL as 3rd argument to enable real API submission.
+   Without it, falls back to the original mock (backward compat).
+   Requires form inputs to have `name` attributes for payload building.
+====================================== */
+window.initContactForm = function(formId, statusId, endpoint) {
   const form = document.getElementById(formId);
   const status = document.getElementById(statusId);
   if (!form) return;
-  form.addEventListener('submit', function(e) {
+
+  form.addEventListener('submit', async function(e) {
     e.preventDefault();
+
+    // ── Validate required fields ───────────────────────────────
     let isValid = true;
     form.querySelectorAll('[required]').forEach(input => {
       if (!input.value.trim()) { input.classList.add('invalid'); isValid = false; }
       else if (input.type === 'email' && !/\S+@\S+\.\S+/.test(input.value)) { input.classList.add('invalid'); isValid = false; }
       else input.classList.remove('invalid');
     });
+
     if (status) { status.className = 'form-status'; status.style.display = 'none'; }
-    if (isValid) {
-      const btn = form.querySelector('button[type="submit"]');
-      const origText = btn ? btn.innerHTML : '';
-      if (btn) { btn.disabled = true; btn.innerHTML = '⌛ Sending...'; }
+
+    if (!isValid) {
+      if (status) { status.textContent = '❌ Please correct the errors before submitting.'; status.classList.add('error'); status.style.display = 'block'; }
+      return;
+    }
+
+    const btn = form.querySelector('button[type="submit"]');
+    const origText = btn ? btn.innerHTML : '';
+    if (btn) { btn.disabled = true; btn.innerHTML = '⌛ Sending...'; }
+
+    if (endpoint) {
+      // ── Real API submission ──────────────────────────────────
+      try {
+        // Collect form data via name attributes
+        const payload = {};
+        form.querySelectorAll('input:not([type="file"]), textarea, select').forEach(el => {
+          if (el.name === 'bot-check') {
+            payload['_bot_check'] = el.value;
+          } else if (el.name) {
+            payload[el.name] = el.value;
+          }
+        });
+        // Ensure honeypot is always present
+        if (!('_bot_check' in payload)) payload['_bot_check'] = '';
+
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+
+        const result = await response.json();
+        if (btn) { btn.disabled = false; btn.innerHTML = origText; }
+
+        if (response.ok && result.success) {
+          if (status) {
+            status.textContent = '🎉 Thank you! Your submission was received. We will be in touch shortly.';
+            status.classList.add('success');
+            status.style.display = 'block';
+          }
+          form.reset();
+        } else if (response.status === 429) {
+          if (status) {
+            status.textContent = '⏳ Too many requests. Please try again in an hour.';
+            status.classList.add('error');
+            status.style.display = 'block';
+          }
+        } else {
+          const errMsg = result.error || 'Something went wrong.';
+          if (status) {
+            status.textContent = `❌ ${errMsg} Please email info@dxbiocode.com directly.`;
+            status.classList.add('error');
+            status.style.display = 'block';
+          }
+        }
+      } catch (_err) {
+        if (btn) { btn.disabled = false; btn.innerHTML = origText; }
+        if (status) {
+          status.textContent = '❌ Network error. Please email info@dxbiocode.com directly.';
+          status.classList.add('error');
+          status.style.display = 'block';
+        }
+      }
+    } else {
+      // ── Mock submission (no endpoint provided) ───────────────
       setTimeout(() => {
         if (btn) { btn.disabled = false; btn.innerHTML = origText; }
-        if (status) { status.textContent = '🎉 Thank you! Your submission was received successfully.'; status.classList.add('success'); }
+        if (status) {
+          status.textContent = '🎉 Thank you! Your submission was received successfully.';
+          status.classList.add('success');
+          status.style.display = 'block';
+        }
         form.reset();
       }, 1200);
-    } else {
-      if (status) { status.textContent = '❌ Please correct the errors before submitting.'; status.classList.add('error'); }
     }
   });
+
   form.querySelectorAll('input, textarea, select').forEach(input => {
     input.addEventListener('input', function() { if (this.value.trim()) this.classList.remove('invalid'); });
   });

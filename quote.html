@@ -395,25 +395,50 @@
         const btn = form.querySelector('button[type="submit"]');
         const origText = btn ? btn.innerHTML : '';
         if (btn) { btn.disabled = true; btn.innerHTML = '⌛ Submitting Request...'; }
-        
-        setTimeout(() => {
-          if (btn) { btn.disabled = false; btn.innerHTML = origText; }
-          if (status) {
-            status.textContent = '🎉 Thank you! Your Quote Request was successfully submitted. We will contact you soon.';
-            status.className = 'form-status success';
-            status.style.display = 'block';
-          }
-          
-          // Clear cart
-          localStorage.removeItem('dx-cart');
-          // Update global states
-          if (typeof window.renderCart === 'function') window.renderCart();
-          if (typeof window.updateCartBadge === 'function') window.updateCartBadge();
-          
-          // Re-render local page view
-          renderQuoteCartItems();
-          form.reset();
-        }, 1500);
+
+        const payload = {
+          name: document.getElementById('form-name').value.trim(),
+          phone: document.getElementById('form-phone').value.trim(),
+          email: document.getElementById('form-email').value.trim(),
+          organization: document.getElementById('form-org').value.trim(),
+          designation: document.getElementById('form-designation').value.trim(),
+          facility_type: document.getElementById('form-facility').value,
+          timeline: document.getElementById('form-timeline').value,
+          message: document.getElementById('form-msg').value.trim(),
+          items: localCart.map(function(item) { return { product_name: item.name, quantity: 1 }; }),
+          _bot_check: document.getElementById('form-bot-check') ? document.getElementById('form-bot-check').value : '',
+        };
+
+        fetch('/api/quotes', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        })
+          .then(function(response) { return response.json().then(function(data) { return { ok: response.ok, status: response.status, data: data }; }); })
+          .then(function(res) {
+            if (btn) { btn.disabled = false; btn.innerHTML = origText; }
+            if (res.ok && res.data.success) {
+              if (status) {
+                status.textContent = '🎉 Thank you! Your Quote Request was submitted. We will contact you within 1–2 business days.';
+                status.className = 'form-status success';
+                status.style.display = 'block';
+              }
+              localStorage.removeItem('dx-cart');
+              if (typeof window.renderCart === 'function') window.renderCart();
+              if (typeof window.updateCartBadge === 'function') window.updateCartBadge();
+              renderQuoteCartItems();
+              form.reset();
+            } else if (res.status === 429) {
+              if (status) { status.textContent = '⏳ Too many requests. Please try again later.'; status.className = 'form-status error'; status.style.display = 'block'; }
+            } else {
+              const errMsg = (res.data && res.data.error) ? res.data.error : 'Something went wrong.';
+              if (status) { status.textContent = '❌ ' + errMsg + ' Please email info@dxbiocode.com.'; status.className = 'form-status error'; status.style.display = 'block'; }
+            }
+          })
+          .catch(function() {
+            if (btn) { btn.disabled = false; btn.innerHTML = origText; }
+            if (status) { status.textContent = '❌ Network error. Please email info@dxbiocode.com directly.'; status.className = 'form-status error'; status.style.display = 'block'; }
+          });
       } else {
         if (status) {
           status.textContent = '❌ Please correct the errors before submitting.';
