@@ -1,0 +1,11 @@
+{
+  "name": "dx-biocode-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm run build --prefix Frontend",
+    "install": "npm install --prefix Frontend",
+    "dev": "npm run dev --prefix Frontend",
+    "start": "npm run start --prefix Backend"
+  }
+}
