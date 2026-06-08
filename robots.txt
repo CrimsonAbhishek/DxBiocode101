@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://dx-biocode-101.vercel.app/sitemap.xml

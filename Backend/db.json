@@ -1,0 +1,70 @@
+{
+  "quotes": [
+    {
+      "id": 1780838281005,
+      "created_at": "2026-06-07T13:18:00.349Z",
+      "name": "Test User",
+      "email": "test@example.com",
+      "phone": "9876543210",
+      "organization": "City Lab",
+      "designation": "Lab Manager",
+      "facility_type": "Diagnostic Laboratory",
+      "timeline": "Immediate (Within 30 Days)",
+      "message": "Need bulk pricing for 10 units.",
+      "items_json": "[{\"product_name\":\"DX 101 Immunofluorescence Analyzer\",\"quantity\":1},{\"product_name\":\"DX 101 Immunofluorescence Analyzer\",\"quantity\":1}]"
+    },
+    {
+      "id": 1780838616482,
+      "created_at": "2026-06-07T13:23:36.077Z",
+      "name": "Integration Test User",
+      "email": "integration-test@example.com",
+      "phone": "9876543210",
+      "organization": "Test Lab Corp",
+      "designation": "Director",
+      "facility_type": "Diagnostic Laboratory",
+      "timeline": "Immediate (Within 30 Days)",
+      "message": "Integration test message for quotes.",
+      "items_json": "[{\"product_name\":\"DX 101 Immunofluorescence Quantitative Analyzer\",\"quantity\":1}]"
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1780838616910,
+      "created_at": "2026-06-07T13:23:36.083Z",
+      "name": "Contact Test Bot",
+      "email": "contact-test@example.com",
+      "phone": "1234567890",
+      "organization": "Test Org",
+      "enquiry_type": "General Information",
+      "message": "Integration test message for contact."
+    }
+  ],
+  "career_applications": [
+    {
+      "id": 1780838616804,
+      "created_at": "2026-06-07T13:23:36.099Z",
+      "first_name": "TestFirst",
+      "last_name": "TestLast",
+      "email": "career-test@example.com",
+      "phone": "9998887777",
+      "position": "Bio-Medical Engineer",
+      "experience": "3-5 years",
+      "cover_letter": "Cover letter integration test text.",
+      "resume_url": null,
+      "resume_filename": "resume.pdf"
+    }
+  ],
+  "training_requests": [
+    {
+      "id": 1780838616609,
+      "created_at": "2026-06-07T13:23:36.088Z",
+      "name": "Training Test Bot",
+      "email": "training-test@example.com",
+      "phone": "5556667777",
+      "location": "Chennai",
+      "organization": "Apollo Hospitals",
+      "training_category": "DX 101 Training",
+      "message": "Training integration test message."
+    }
+  ]
+}
