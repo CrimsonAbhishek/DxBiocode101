@@ -9,7 +9,7 @@ export const TopBar: React.FC = () => {
           <span>✉️ <a href="mailto:info@dxbiocode.com">info@dxbiocode.com</a></span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <span className="ce-strip">✔ CE &amp; EU-IVD Approved</span>
+          <span className="ce-strip">✔ ISO 13485:2016 Certified</span>
           <span className="top-bar-badge">India's First Handheld Multi-Parameter POCT</span>
         </div>
       </div>

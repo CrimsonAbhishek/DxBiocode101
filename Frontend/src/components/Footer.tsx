@@ -68,8 +68,8 @@ export const Footer: React.FC = () => {
           <div className="footer-col">
             <h4>Certifications</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginBottom: '24px' }}>
-              <span className="ce-strip" style={{ fontSize: '12px' }}>✔ CE Certified</span>
-              <span className="ce-strip" style={{ fontSize: '12px' }}>✔ EU-IVD Compliant</span>
+              <span className="ce-strip" style={{ fontSize: '12px' }}>✔ ISO 13485:2016</span>
+              <span className="ce-strip" style={{ fontSize: '12px' }}>✔ ISO 9001:2015</span>
             </div>
             <h4>Test Categories</h4>
             <ul className="footer-links">

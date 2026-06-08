@@ -63,17 +63,11 @@ export const Home: React.FC = () => {
                 <span className="hero-tag">⚡ Results in 3–15 min</span>
                 <span className="hero-tag">📱 Android OS</span>
                 <span className="hero-tag">🔋 Long Battery Life</span>
-                <span className="hero-tag">☁️ Wi-Fi &amp; 4G</span>
+                <span className="hero-tag">☁️ Lims Connectivity HL7 interface</span>
               </div>
               <div className="hero-actions">
                 <Link to="/products" className="btn-primary">🛒 Shop Products</Link>
                 <Link to="/products#dx101" className="btn-secondary">📋 Specifications</Link>
-              </div>
-              <div className="hero-certifications">
-                <span className="cert-badge">✅ CE Certified</span>
-                <span className="cert-badge">✅ EU-IVD Compliant</span>
-                <span className="cert-badge">🌡 10°C – 35°C</span>
-                <span className="cert-badge">⚖ 400 g</span>
               </div>
             </div>
             <div className="hero-image-wrap">
@@ -107,8 +101,8 @@ export const Home: React.FC = () => {
             <div className="stat-label">Test Parameters Available</div>
           </div>
           <div className="stat-item">
-            <StatCounter targetText="400 g" />
-            <div className="stat-label">Ultra-Light &amp; Portable</div>
+            <StatCounter targetText="LIMS/HL7" />
+            <div className="stat-label">Universal Connectivity</div>
           </div>
         </div>
       </div>
@@ -131,7 +125,7 @@ export const Home: React.FC = () => {
                 <div className="feature-icon">🤲</div>
                 <div className="feature-text">
                   <h3>Portable &amp; Handheld</h3>
-                  <p>Compact at 186 × 80 × 54 mm and weighing just 400 g. Fits in a lab coat pocket and works anywhere.</p>
+                  <p>Compact at 186 × 80 × 54 mm and extremely lightweight. Fits in a lab coat pocket and works anywhere.</p>
                 </div>
               </TiltCard>
               <TiltCard className="feature-card">
@@ -152,7 +146,7 @@ export const Home: React.FC = () => {
                 <div className="feature-icon">📡</div>
                 <div className="feature-text">
                   <h3>Full Connectivity</h3>
-                  <p>Wi-Fi, 4G network, USB Type-C, Bluetooth thermal printer support, auto upload &amp; LIMS connectivity, and universal HL7 interface for seamless data sharing.</p>
+                  <p>Lims Connectivity HL7 interface, USB Type-C, Bluetooth thermal printer support, and auto upload for seamless data sharing.</p>
                 </div>
               </TiltCard>
               <TiltCard className="feature-card">
@@ -213,7 +207,7 @@ export const Home: React.FC = () => {
               <span className="section-eyebrow" style={{ color: 'rgba(255,255,255,0.6)' }}>Featured Product</span>
               <h2>DX 101 Immunofluorescence Quantitative Analyzer</h2>
               <p>
-                India's first handheld, multi-parameter point-of-care diagnostic device. CE certified and EU-IVD compliant
+                India's first handheld, multi-parameter point-of-care diagnostic device
                 — built for precision at the point of care.
               </p>
               <div className="fpb-price-block">

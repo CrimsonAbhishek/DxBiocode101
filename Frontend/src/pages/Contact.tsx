@@ -140,8 +140,8 @@ export const Contact: React.FC = () => {
                 </div>
 
                 <div style={{ marginTop: '32px', display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-                  <span className="ce-strip">✔ CE Approved</span>
-                  <span className="ce-strip">✔ EU-IVD Compliant</span>
+                  <span className="ce-strip">✔ ISO 13485 Certified</span>
+                  <span className="ce-strip">✔ ISO 9001 Certified</span>
                 </div>
               </div>
             </FadeUp>

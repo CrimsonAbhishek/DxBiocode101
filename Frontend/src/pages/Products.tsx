@@ -61,16 +61,15 @@ export const Products: React.FC = () => {
             <span className="phc-badge">⭐ Flagship Product · India's First</span>
             <h2 className="phc-title">DX 101 Immunofluorescence Quantitative Analyzer</h2>
             <p className="phc-desc">
-              India's first portable and handheld multi-parameter POCT device. Compact, user-friendly, and built for rapid quantitative results — in clinics, ICUs, ambulances, and beyond. CE certified and EU-IVD compliant.
+              India's first portable and handheld multi-parameter POCT device. Compact, user-friendly, and built for rapid quantitative results — in clinics, ICUs, ambulances, and beyond.
             </p>
             <div className="phc-tags">
               <span className="phc-tag">🏥 Point-of-Care Ready</span>
               <span className="phc-tag">⚡ Results in 3–15 min</span>
               <span className="phc-tag">📱 Android OS</span>
-              <span className="phc-tag">☁️ Wi-Fi &amp; 4G</span>
+              <span className="phc-tag">☁️ Lims Connectivity HL7 interface</span>
               <span className="phc-tag">🔋 Long Battery Life</span>
               <span className="phc-tag">💾 50,000 Results Storage</span>
-              <span className="phc-tag">⚖ 400 g Lightweight</span>
             </div>
             <div className="phc-actions">
               <button className="btn-primary" onClick={handleAddToCart}>
@@ -138,7 +137,7 @@ export const Products: React.FC = () => {
                   <div className="feature-icon">🤲</div>
                   <div className="feature-text">
                     <h3>Portable &amp; Handheld</h3>
-                    <p>Compact at 186 × 80 × 54 mm and weighing just 400 g. Fits in a lab coat pocket and works anywhere.</p>
+                    <p>Compact at 186 × 80 × 54 mm and extremely lightweight. Fits in a lab coat pocket and works anywhere.</p>
                   </div>
                 </TiltCard>
                 <TiltCard className="feature-card feature-card-center">
@@ -159,7 +158,7 @@ export const Products: React.FC = () => {
                   <div className="feature-icon">📡</div>
                   <div className="feature-text">
                     <h3>Full Connectivity</h3>
-                    <p>Wi-Fi, 4G network, USB Type-C, Bluetooth thermal printer support, auto upload &amp; LIMS connectivity, and universal HL7 interface for data sharing.</p>
+                    <p>Lims Connectivity HL7 interface, USB Type-C, Bluetooth thermal printer support, and auto upload for seamless data sharing.</p>
                   </div>
                 </TiltCard>
                 <TiltCard className="feature-card feature-card-center">
@@ -418,7 +417,7 @@ export const Products: React.FC = () => {
                   <table className="spec-table">
                     <tbody>
                       <tr><td>Dimensions</td><td>186 mm × 80 mm × 54 mm</td></tr>
-                      <tr><td>Weight</td><td>400 g</td></tr>
+                      <tr><td>Weight</td><td>Extremely lightweight</td></tr>
                       <tr><td>Display</td><td>5-inch LCD Touch Screen, 720 × 1280</td></tr>
                       <tr><td>Operating System</td><td>Android — smooth, OTA-updatable</td></tr>
                     </tbody>
@@ -430,7 +429,7 @@ export const Products: React.FC = () => {
                     <tbody>
                       <tr><td>Battery</td><td>Rechargeable Li-ion, long-lasting</td></tr>
                       <tr><td>Charging Port</td><td>USB Type-C</td></tr>
-                      <tr><td>Wireless</td><td>Wi-Fi &amp; 4G network communication</td></tr>
+                      <tr><td>Connectivity</td><td>Lims Connectivity HL7 interface</td></tr>
                       <tr><td>Printer</td><td>Bluetooth thermal printer support</td></tr>
                       <tr><td>LIMS/LIS</td><td>Auto upload &amp; LIMS connectivity, universal HL7 interface</td></tr>
                     </tbody>
@@ -473,10 +472,10 @@ export const Products: React.FC = () => {
                 <img src="/hero.webp" alt="DX 101 device technical view" className="specs-img" width="420" height="364" loading="lazy" />
                 <div className="spec-highlights">
                   <div className="spec-hl-card"><div className="spec-hl-val">5"</div><div className="spec-hl-key">Touch Screen</div></div>
-                  <div className="spec-hl-card"><div className="spec-hl-val">400g</div><div className="spec-hl-key">Ultra Light</div></div>
+                  <div className="spec-hl-card"><div className="spec-hl-val">Android</div><div className="spec-hl-key">Operating System</div></div>
                   <div className="spec-hl-card"><div className="spec-hl-val">USB-C</div><div className="spec-hl-key">Fast Charging</div></div>
                   <div className="spec-hl-card"><div className="spec-hl-val">50K</div><div className="spec-hl-key">Result Storage</div></div>
-                  <div className="spec-hl-card"><div className="spec-hl-val">4G</div><div className="spec-hl-key">Connectivity</div></div>
+                  <div className="spec-hl-card"><div className="spec-hl-val">LIMS</div><div className="spec-hl-key">HL7 Interface</div></div>
                   <div className="spec-hl-card"><div className="spec-hl-val">CV≤2%</div><div className="spec-hl-key">Repeatability</div></div>
                 </div>
               </div>
