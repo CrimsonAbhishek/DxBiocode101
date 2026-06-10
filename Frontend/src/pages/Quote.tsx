@@ -143,7 +143,7 @@ export const Quote: React.FC = () => {
                   <div className="q-item-list">
                     {cart.map((item, idx) => (
                       <div className="q-item" key={idx}>
-                        <img src={`/${item.img}`} alt={item.name} />
+                        <img src={item.img.startsWith('/') ? item.img : `/${item.img}`} alt={item.name} />
                         <div className="q-item-info">
                           <div className="q-item-name">{item.name}</div>
                           <div className="q-item-price">{item.price}</div>

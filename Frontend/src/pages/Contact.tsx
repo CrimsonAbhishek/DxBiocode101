@@ -118,10 +118,10 @@ export const Contact: React.FC = () => {
                     </div>
                   </div>
                   <div className="c-detail-item">
-                    <span className="icon">📞</span>
+                    <span className="icon">💬</span>
                     <div>
-                      <h4>Call Us</h4>
-                      <a href="tel:+918080885059">+91 8080885059</a>
+                      <h4>WhatsApp Us</h4>
+                      <a href="https://wa.me/918080885059" target="_blank" rel="noopener noreferrer">+91 8080885059</a>
                     </div>
                   </div>
                   <div className="c-detail-item">
@@ -135,7 +135,7 @@ export const Contact: React.FC = () => {
 
                 <div className="quick-contact">
                   <a href="mailto:info@dxbiocode.com" className="quick-chip">✉️ Send Email</a>
-                  <a href="tel:+918080885059" className="quick-chip">📞 Call Now</a>
+                  <a href="https://wa.me/918080885059" target="_blank" rel="noopener noreferrer" className="quick-chip">💬 WhatsApp Us</a>
                   <a href="/Dx 101 - Analyzer.pdf" download className="quick-chip">📥 Brochure</a>
                 </div>
 

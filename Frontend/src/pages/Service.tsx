@@ -441,7 +441,7 @@ export const Service: React.FC = () => {
               </p>
               <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap', position: 'relative', zIndex: 1 }}>
                 <Link to="/contact" className="btn-white">✉️ Send Us a Message</Link>
-                <a href="tel:+918080885059" className="btn-outline-white">📞 Call Now</a>
+                <a href="https://wa.me/918080885059" target="_blank" rel="noopener noreferrer" className="btn-outline-white">💬 WhatsApp Us</a>
               </div>
             </div>
           </div>

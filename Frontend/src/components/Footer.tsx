@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { getTestKitCategories } from '../utils/productUtils';
 
 export const Footer: React.FC = () => {
+  const categories = getTestKitCategories().slice(0, 5); // Take top 5 categories for footer
+
   return (
     <footer id="footer">
       <div className="footer-inner">
@@ -27,8 +30,8 @@ export const Footer: React.FC = () => {
               </span>
             </div>
             <div className="footer-contact-item">
-              <span className="icon">📞</span>
-              <a href="tel:+918080885059" style={{ color: 'rgba(255,255,255,0.65)', textDecoration: 'none' }}>
+              <span className="icon">💬</span>
+              <a href="https://wa.me/918080885059" target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.65)', textDecoration: 'none' }}>
                 +91 8080885059
               </a>
             </div>
@@ -44,9 +47,9 @@ export const Footer: React.FC = () => {
             <h4>Products</h4>
             <ul className="footer-links">
               <li><Link to="/products">All Products</Link></li>
-              <li><Link to="/products#dx101">DX 101 Analyzer</Link></li>
-              <li><Link to="/products#test-menu">Test Menu</Link></li>
-              <li><Link to="/products#specs">Specifications</Link></li>
+              <li><Link to="/products/dx-101">DX 101 Analyzer</Link></li>
+              <li><Link to="/products/test-kits">Test Kits Catalog</Link></li>
+              <li><Link to="/products/dx-101#specs">Specifications</Link></li>
             </ul>
           </div>
           
@@ -73,11 +76,12 @@ export const Footer: React.FC = () => {
             </div>
             <h4>Test Categories</h4>
             <ul className="footer-links">
-              <li><Link to="/products#test-menu">Cardiac Markers</Link></li>
-              <li><Link to="/products#test-menu">Thyroid Function</Link></li>
-              <li><Link to="/products#test-menu">Infectious Diseases</Link></li>
-              <li><Link to="/products#test-menu">Tumor Markers</Link></li>
-              <li><Link to="/products#test-menu">Fertility Panel</Link></li>
+              {categories.map(cat => {
+                const slug = cat.name.toLowerCase().replace(/ /g, '-');
+                return (
+                  <li key={cat.name}><Link to={`/products/test-kits/${slug}`}>{cat.name}</Link></li>
+                );
+              })}
             </ul>
           </div>
         </div>

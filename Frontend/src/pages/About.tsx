@@ -60,14 +60,14 @@ export const About: React.FC = () => {
               <TiltCard className="value-card">
                 <span className="value-icon">🚀</span>
                 <h3 className="value-title">Pioneering Innovation</h3>
-                <p className="value-desc">As the creators of India's first handheld POCT of its kind, we continuously push the boundaries of what is possible in diagnostic technology.</p>
+                <p className="value-desc">As India's first handheld POCT of its kind, we continuously push the boundaries of what is possible in diagnostic technology.</p>
               </TiltCard>
             </FadeUp>
             <FadeUp delay={0.3}>
               <TiltCard className="value-card">
                 <span className="value-icon">❤️</span>
                 <h3 className="value-title">Patient-Centricity</h3>
-                <p className="value-desc">Every feature we develop is aimed at reducing turnaround times, enabling faster clinical decisions, and ultimately saving lives.</p>
+                <p className="value-desc">Every feature is aimed at reducing turnaround times, enabling faster clinical decisions, and ultimately saving lives.</p>
               </TiltCard>
             </FadeUp>
           </div>

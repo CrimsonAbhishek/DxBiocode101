@@ -14,6 +14,9 @@ import { Contact } from './pages/Contact';
 import { About } from './pages/About';
 import { Careers } from './pages/Careers';
 import { Quote } from './pages/Quote';
+import { TestKitsCatalog } from './pages/TestKitsCatalog';
+import { TestKitCategory } from './pages/TestKitCategory';
+import { TestKitDetail } from './pages/TestKitDetail';
 
 // Scroll to top helper
 const ScrollToTop: React.FC = () => {
@@ -40,6 +43,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/products/test-kits" element={<TestKitsCatalog />} />
+        <Route path="/products/test-kits/:category" element={<TestKitCategory />} />
+        <Route path="/products/test-kits/:category/:kitId" element={<TestKitDetail />} />
         <Route path="/service" element={<Service />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />

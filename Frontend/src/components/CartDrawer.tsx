@@ -59,7 +59,7 @@ export const CartDrawer: React.FC = () => {
               ) : (
                 cart.map((item, idx) => (
                   <div className="cart-item" key={idx}>
-                    <img src={`/${item.img}`} alt={item.name} />
+                    <img src={item.img.startsWith('/') ? item.img : `/${item.img}`} alt={item.name} />
                     <div className="cart-item-info">
                       <div className="cart-item-name">{item.name}</div>
                       <div className="cart-item-price">{item.price}</div>

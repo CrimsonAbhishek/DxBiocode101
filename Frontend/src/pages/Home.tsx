@@ -4,10 +4,17 @@ import { FadeUp } from '../components/FadeUp';
 import { TiltCard } from '../components/TiltCard';
 import { StatCounter } from '../components/StatCounter';
 import { useCartStore } from '../store/cartStore';
+import { CategoryCard } from '../components/CategoryCard';
+import { getTestKitCategories } from '../utils/productUtils';
+import { products } from '../data/products';
 
 export const Home: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const addToCart = useCartStore((state) => state.addToCart);
+  
+  // Get DX 101 data dynamically
+  const dx101 = products.find(p => p.id === 'dx-101');
+  const testCategories = getTestKitCategories();
 
   useEffect(() => {
     if (!heroRef.current) return;
@@ -217,13 +224,18 @@ export const Home: React.FC = () => {
               <div className="fpb-actions">
                 <button
                   className="btn-primary"
-                  onClick={() =>
-                    addToCart({
-                      name: 'DX 101 Immunofluorescence Analyzer',
-                      price: 'Contact for Pricing',
-                      img: 'hero.webp',
-                    })
-                  }
+                  onClick={() => {
+                    if (dx101) {
+                      addToCart({
+                        id: dx101.id,
+                        name: dx101.name,
+                        price: 'Contact for Pricing',
+                        img: dx101.image,
+                        category: dx101.category,
+                        type: dx101.type
+                      });
+                    }
+                  }}
                 >
                   🛒 Add to Cart
                 </button>
@@ -241,6 +253,39 @@ export const Home: React.FC = () => {
                 height="330"
                 loading="lazy"
               />
+            </div>
+          </FadeUp>
+        </div>
+      </section>
+
+      {/* ===== TEST MENU CATEGORIES ===== */}
+      <section className="home-test-menu" style={{ padding: '80px 0', background: '#f8fafc' }}>
+        <div className="home-test-menu-inner" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
+          <FadeUp>
+            <div className="section-title-wrap" style={{ textAlign: 'center', marginBottom: '48px' }}>
+              <span className="section-eyebrow">Comprehensive Testing</span>
+              <h2 className="section-title">Diagnostic Test Kits Menu</h2>
+              <p className="section-sub" style={{ margin: '0 auto' }}>
+                Explore our wide range of test kits engineered exclusively for the DX 101 Analyzer.
+              </p>
+            </div>
+          </FadeUp>
+          
+          <div className="categories-grid" style={{ 
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', 
+            gap: '24px' 
+          }}>
+            {testCategories.map((cat, index) => (
+              <FadeUp key={cat.name} delay={index * 0.1}>
+                <CategoryCard name={cat.name} count={cat.count} />
+              </FadeUp>
+            ))}
+          </div>
+          
+          <FadeUp delay={0.4}>
+            <div style={{ textAlign: 'center', marginTop: '48px' }}>
+              <Link to="/products/test-kits" className="btn-primary">View Full Catalog</Link>
             </div>
           </FadeUp>
         </div>

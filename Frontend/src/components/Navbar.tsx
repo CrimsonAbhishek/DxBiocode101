@@ -3,14 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCartStore } from '../store/cartStore';
 
-const PRODUCTS_DB = [
-  { name: 'DX 101 Immunofluorescence Quantitative Analyzer', category: 'POCT Analyzer', img: 'hero.webp', href: '/products#dx101' },
-  { name: 'Cardiac Markers Test Panel', category: 'Test Consumables', img: 'hero.webp', href: '/products#test-menu' },
-  { name: 'Thyroid Function Test Panel', category: 'Test Consumables', img: 'hero.webp', href: '/products#test-menu' },
-  { name: 'Infectious Disease Panel', category: 'Test Consumables', img: 'hero.webp', href: '/products#test-menu' },
-  { name: 'Fertility Panel', category: 'Test Consumables', img: 'hero.webp', href: '/products#test-menu' },
-  { name: 'Tumor Markers Panel', category: 'Test Consumables', img: 'hero.webp', href: '/products#test-menu' },
-];
+import { searchProducts } from '../utils/productUtils';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,13 +40,7 @@ export const Navbar: React.FC = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const filteredProducts = searchQuery.trim()
-    ? PRODUCTS_DB.filter(
-        (p) =>
-          p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          p.category.toLowerCase().includes(searchQuery.toLowerCase())
-      )
-    : [];
+  const filteredProducts = searchQuery.trim() ? searchProducts(searchQuery) : [];
 
   const handleMobileToggle = () => {
     setIsMobileOpen(!isMobileOpen);
@@ -79,7 +66,8 @@ export const Navbar: React.FC = () => {
               <Link to="/products" className={activeClass('/products')}>Products ▾</Link>
               <div className="nav-dropdown-menu">
                 <Link to="/products">All Products</Link>
-                <Link to="/products#dx101">DX 101 Analyzer</Link>
+                <Link to="/products/dx-101">DX 101 Analyzer</Link>
+                <Link to="/products/test-kits">Test Kits</Link>
               </div>
             </li>
             <li className="nav-dropdown">
@@ -135,8 +123,8 @@ export const Navbar: React.FC = () => {
                         <div className="search-no-results">No products found</div>
                       )}
                       {filteredProducts.map((p, index) => (
-                        <Link to={p.href} key={index} className="search-result-item" onClick={() => setIsSearchOpen(false)}>
-                          <img src={`/${p.img}`} alt={p.name} />
+                        <Link to={`/products${p.type === 'test-kit' ? '/test-kits/' + p.category.toLowerCase().replace(/ /g, '-') : ''}/${p.slug}`} key={index} className="search-result-item" onClick={() => setIsSearchOpen(false)}>
+                          <img src={`${p.image}`} alt={p.name} />
                           <div>
                             <div className="sri-name">{p.name}</div>
                             <div className="sri-cat">{p.category}</div>
@@ -191,6 +179,7 @@ export const Navbar: React.FC = () => {
             >
               <Link to="/" className="mob-link" onClick={handleMobileToggle}>Home</Link>
               <Link to="/products" className="mob-link" onClick={handleMobileToggle}>Products</Link>
+              <Link to="/products/test-kits" className="mob-link" onClick={handleMobileToggle}>Test Kits</Link>
               <Link to="/service" className="mob-link" onClick={handleMobileToggle}>Service</Link>
               <Link to="/contact" className="mob-link" onClick={handleMobileToggle}>Contact</Link>
               <Link to="/careers" className="mob-link" onClick={handleMobileToggle}>Careers</Link>

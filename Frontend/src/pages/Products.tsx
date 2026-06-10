@@ -3,8 +3,10 @@ import { Link, useLocation } from 'react-router-dom';
 import { useCartStore } from '../store/cartStore';
 import { TiltCard } from '../components/TiltCard';
 import { CertificationsSection } from '../components/CertificationsSection';
+import { products } from '../data/products';
 
 export const Products: React.FC = () => {
+  const dx101 = products.find(p => p.id === 'dx-101');
   const [activeTab, setActiveTab] = useState('overview');
   const location = useLocation();
   const tabBarRef = useRef<HTMLDivElement>(null);
@@ -12,7 +14,7 @@ export const Products: React.FC = () => {
 
   useEffect(() => {
     const hash = location.hash.substring(1);
-    const validTabs = ['overview', 'applications', 'test-menu', 'specs', 'certifications'];
+    const validTabs = ['overview', 'applications', 'specs', 'certifications'];
     if (hash && validTabs.includes(hash)) {
       setActiveTab(hash);
       setTimeout(() => {
@@ -32,11 +34,16 @@ export const Products: React.FC = () => {
   };
 
   const handleAddToCart = () => {
-    addToCart({
-      name: 'DX 101 Immunofluorescence Analyzer',
-      price: 'Contact for Pricing',
-      img: 'hero.webp',
-    });
+    if (dx101) {
+      addToCart({
+        id: dx101.id,
+        name: dx101.name,
+        price: 'Contact for Pricing',
+        img: dx101.image,
+        category: dx101.category,
+        type: dx101.type
+      });
+    }
   };
 
   return (
@@ -100,12 +107,6 @@ export const Products: React.FC = () => {
               onClick={() => handleTabChange('applications')}
             >
               Applications
-            </button>
-            <button
-              className={`tab-btn ${activeTab === 'test-menu' ? 'active' : ''}`}
-              onClick={() => handleTabChange('test-menu')}
-            >
-              Test Menu
             </button>
             <button
               className={`tab-btn ${activeTab === 'specs' ? 'active' : ''}`}
@@ -254,153 +255,7 @@ export const Products: React.FC = () => {
           </div>
         )}
 
-        {/* Test Menu Tab Panel */}
-        {activeTab === 'test-menu' && (
-          <div className="tab-panel active">
-            <div className="section-title-wrap">
-              <span className="section-eyebrow">Test Menu</span>
-              <h2 className="section-title">Comprehensive Multi-Parameter Testing</h2>
-              <p className="section-sub">Over 80 assay parameters across 12 major clinical categories — all from a single handheld device.</p>
-            </div>
-            <div className="test-categories-grid">
-              <TiltCard className="test-cat-card">
-                <span className="test-cat-icon">❤️</span>
-                <div className="test-cat-title">Cardiac Markers</div>
-                <ul className="test-list">
-                  <li>cTnI / hs-cTnI</li>
-                  <li>TnT</li>
-                  <li>CK-MB</li>
-                  <li>BNP / NT-proBNP</li>
-                  <li>H-FABP</li>
-                  <li>ST2</li>
-                  <li>CK-MB / cTnI / Myo</li>
-                  <li>CK-MB / cTnI / H-FABP</li>
-                </ul>
-              </TiltCard>
-              <TiltCard className="test-cat-card">
-                <span className="test-cat-icon">🩺</span>
-                <div className="test-cat-title">Thyroid Function</div>
-                <ul className="test-list">
-                  <li>TSH</li>
-                  <li>T3 / T4</li>
-                  <li>fT3 / fT4</li>
-                </ul>
-                <div className="test-cat-title" style={{ marginTop: '14px' }}>Coagulation</div>
-                <ul className="test-list">
-                  <li>D-Dimer</li>
-                </ul>
-                <div className="test-cat-title" style={{ marginTop: '14px' }}>Diabetes</div>
-                <ul className="test-list">
-                  <li>HbA1c</li>
-                </ul>
-              </TiltCard>
-              <TiltCard className="test-cat-card">
-                <span className="test-cat-icon">🔬</span>
-                <div className="test-cat-title">Inflammation</div>
-                <ul className="test-list">
-                  <li>SAA</li>
-                  <li>IL-6</li>
-                  <li>PCT</li>
-                  <li>CRP / hs-CRP</li>
-                  <li>Calprotectin</li>
-                </ul>
-                <div className="test-cat-title" style={{ marginTop: '14px' }}>Renal Function</div>
-                <ul className="test-list">
-                  <li>CysC</li>
-                  <li>mAlb / β2-MG / NGAL</li>
-                </ul>
-              </TiltCard>
-              <TiltCard className="test-cat-card">
-                <span className="test-cat-icon">🦠</span>
-                <div className="test-cat-title">Infectious Diseases</div>
-                <ul className="test-list">
-                  <li>Anti-HCV / Anti-TP</li>
-                  <li>Anti-HIV / HBsAg</li>
-                  <li>Anti-HBs</li>
-                  <li>SARS-CoV-2 Ag</li>
-                  <li>H. pylori Ag/Ab</li>
-                  <li>Influenza A/B</li>
-                  <li>Dengue NS1/IgG/IgM</li>
-                  <li>RSV/Influenza A/B</li>
-                </ul>
-              </TiltCard>
-              <TiltCard className="test-cat-card">
-                <span className="test-cat-icon">🌸</span>
-                <div className="test-cat-title">Fertility</div>
-                <ul className="test-list">
-                  <li>HCG+β / LH / FSH</li>
-                  <li>AMH / PRL</li>
-                  <li>Progesterone</li>
-                  <li>Estradiol</li>
-                  <li>Testosterone</li>
-                </ul>
-              </TiltCard>
-              <TiltCard className="test-cat-card">
-                <span className="test-cat-icon">🏷️</span>
-                <div className="test-cat-title">Tumor Markers</div>
-                <ul className="test-list">
-                  <li>tPSA / fPSA</li>
-                  <li>AFP / CEA</li>
-                  <li>CA125 / CA19-9 / CA15-3</li>
-                  <li>PG I / PG II</li>
-                </ul>
-              </TiltCard>
-              <TiltCard className="test-cat-card">
-                <span className="test-cat-icon">☀️</span>
-                <div className="test-cat-title">Vitamins</div>
-                <ul className="test-list">
-                  <li>25-OH Vitamin D</li>
-                  <li>Folate</li>
-                  <li>Vitamin B12</li>
-                </ul>
-                <div className="test-cat-title" style={{ marginTop: '14px' }}>Metabolic</div>
-                <ul className="test-list">
-                  <li>Osteocalcin</li>
-                </ul>
-              </TiltCard>
-              <TiltCard className="test-cat-card">
-                <span className="test-cat-icon">🧬</span>
-                <div className="test-cat-title">Rheumatology</div>
-                <ul className="test-list">
-                  <li>RF</li>
-                  <li>ASO</li>
-                  <li>Anti-CCP</li>
-                </ul>
-                <div className="test-cat-title" style={{ marginTop: '14px' }}>Other Tests</div>
-                <ul className="test-list">
-                  <li>Cortisol</li>
-                  <li>Total IgE</li>
-                  <li>Ferritin</li>
-                </ul>
-              </TiltCard>
-              <TiltCard className="test-cat-card">
-                <span className="test-cat-icon">🩸</span>
-                <div className="test-cat-title">Sample Types</div>
-                <ul className="test-list">
-                  <li>Serum</li>
-                  <li>Plasma</li>
-                  <li>Whole Blood</li>
-                  <li>Capillary Blood</li>
-                  <li>Urine</li>
-                </ul>
-                <div style={{ marginTop: '12px', fontSize: '11.5px', color: '#6b7280', lineHeight: 1.5 }}>
-                  Volume: <strong style={{ color: '#3a7bd5' }}>10–200 µL</strong> depending on assay
-                </div>
-              </TiltCard>
-              <TiltCard className="test-cat-card" style={{ gridColumn: 'span 2' }}>
-                <span className="test-cat-icon">🌐</span>
-                <div className="test-cat-title">Languages Supported</div>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '6px' }}>
-                  <span style={{ background: '#eaf0fb', color: '#3a7bd5', padding: '4px 12px', borderRadius: '50px', fontSize: '12px', fontWeight: 600 }}>🇬🇧 English</span>
-                  <span style={{ background: '#eaf0fb', color: '#3a7bd5', padding: '4px 12px', borderRadius: '50px', fontSize: '12px', fontWeight: 600 }}>🇩🇪 German</span>
-                  <span style={{ background: '#eaf0fb', color: '#3a7bd5', padding: '4px 12px', borderRadius: '50px', fontSize: '12px', fontWeight: 600 }}>🇮🇳 Hindi</span>
-                  <span style={{ background: '#eaf0fb', color: '#3a7bd5', padding: '4px 12px', borderRadius: '50px', fontSize: '12px', fontWeight: 600 }}>🇮🇳 Tamil</span>
-                  <span style={{ background: '#eaf0fb', color: '#3a7bd5', padding: '4px 12px', borderRadius: '50px', fontSize: '12px', fontWeight: 600 }}>+ Customizable</span>
-                </div>
-              </TiltCard>
-            </div>
-          </div>
-        )}
+
 
         {/* Specifications Tab Panel */}
         {activeTab === 'specs' && (
