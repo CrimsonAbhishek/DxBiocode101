@@ -1,0 +1,32 @@
+{
+  "id": "calprotectin",
+  "slug": "calprotectin",
+  "name": "Calprotectin Fast Test Kit",
+  "type": "test-kit",
+  "category": "Inflammation",
+  "shortDescription": "Quantitative determination of Calprotectin using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of calprotectin in human fecal sample. The test is used as an aid in the adjunctive diagnosis of inflammatory bowel diseases. For professional and laboratory use.",
+  "specifications": {
+    "Test Item": "Calprotectin",
+    "Sample": "Fecal",
+    "Detection Range": "10.0-600.0 μg/g",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "15 min",
+    "Cut-off Value": "＜50.0 μg/g",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "Calprotectin",
+    "Inflammation",
+    "Assay"
+  ],
+  "seoTitle": "Calprotectin Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of calprotectin in human fecal sample. The test is used as an aid in the adjunctive diagnosis of inflammatory bow...",
+  "featured": false,
+  "status": "available"
+}

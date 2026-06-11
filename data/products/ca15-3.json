@@ -1,0 +1,33 @@
+{
+  "id": "ca15-3",
+  "slug": "ca15-3",
+  "name": "CA15-3 Fast Test Kit",
+  "type": "test-kit",
+  "category": "Cancer Markers",
+  "shortDescription": "Quantitative determination of CA15-3 using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of Cancer Antigen 15-3 (CA15-3) in serum or plasma samples. This test is utilized for the adjunctive diagnosis of breast cancer patients. For professional and laboratory use.",
+  "specifications": {
+    "Test Item": "CA15-3",
+    "Sample": "Serum/Plasma",
+    "Detection Range": "1.5-300.0 U/mL",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "10 min",
+    "Cut-off Value": "26.2 U/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "CA15-3",
+    "Cancer Markers",
+    "Assay",
+    "Cancer Diagnostics"
+  ],
+  "seoTitle": "CA15-3 Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of Cancer Antigen 15-3 (CA15-3) in serum or plasma samples. This test is utilized for the adjunctive diagnosis of...",
+  "featured": false,
+  "status": "available"
+}

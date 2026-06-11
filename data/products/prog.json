@@ -1,0 +1,32 @@
+{
+  "id": "prog",
+  "slug": "prog",
+  "name": "Prog Fast Test Kit",
+  "type": "test-kit",
+  "category": "Fertility",
+  "shortDescription": "Quantitative determination of Prog using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of progesterone in human serum and plasma samples. The test is used clinically as an aid in the diagnosis of diseases related to abnormal progesterone levels, such as threatened miscarriage and luteal phase defect. For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "Prog",
+    "Sample": "Serum/Plasma",
+    "Method": "Assay",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "0.10-40.00 ng/mL",
+    "Test Time": "15 min",
+    "Cut-off Value": "Refer to User Manual",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "Prog",
+    "Fertility",
+    "Assay"
+  ],
+  "seoTitle": "Prog Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of progesterone in human serum and plasma samples. The test is used clinically as an aid in the diagnosis of dise...",
+  "featured": false,
+  "status": "available"
+}

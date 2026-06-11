@@ -1,0 +1,33 @@
+{
+  "id": "h-fabp",
+  "slug": "h-fabp",
+  "name": "H-FABP Fast Test Kit",
+  "type": "test-kit",
+  "category": "Cardiac Markers",
+  "shortDescription": "Quantitative determination of H-FABP using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of Heart-type Fatty Acid Binding Protein (H-FABP) in human serum, plasma or whole blood samples. This test is used in the early diagnosis of AMI and pulmonary embolism, and monitoring of chronic heart failure.",
+  "specifications": {
+    "Test Item": "H-FABP",
+    "Sample": "Serum/Plasma/Whole Blood",
+    "Detection Range": "1.0-120.0 ng/mL",
+    "Storage Condition": "4-30℃",
+    "Method": "Immunofluorescence Assay",
+    "Test Time": "3 min",
+    "Cut-off Value": "6.36 ng/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "H-FABP",
+    "Cardiac Markers",
+    "Immunofluorescence Assay",
+    "Heart Failure"
+  ],
+  "seoTitle": "H-FABP Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of Heart-type Fatty Acid Binding Protein (H-FABP) in human serum, plasma or whole blood samples. This test is use...",
+  "featured": false,
+  "status": "available"
+}

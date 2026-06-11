@@ -1,0 +1,32 @@
+{
+  "id": "lh",
+  "slug": "lh",
+  "name": "LH Fast Test Kit",
+  "type": "test-kit",
+  "category": "Fertility",
+  "shortDescription": "Quantitative determination of LH using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of LH in human serum and plasma. This test is used to determine menopause, pinpoint ovulation and monitor endocrine therapy. For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "LH",
+    "Sample": "Serum/Plasma",
+    "Method": "Assay",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "0.20-150.00 mIU/mL",
+    "Test Time": "15 min",
+    "Cut-off Value": "Refer to User Manual",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "LH",
+    "Fertility",
+    "Assay"
+  ],
+  "seoTitle": "LH Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of LH in human serum and plasma. This test is used to determine menopause, pinpoint ovulation and monitor endocri...",
+  "featured": false,
+  "status": "available"
+}

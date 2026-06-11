@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "BNP Fast Test Kit",
+  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "description": "quantitative determination of B-type natriuretic peptide (BNP) in human plasma and whole blood samples. This test is used as an aid in the diagnosis of congestive heart failure and for the risk stratification of patients with acute coronary syndromes (ACS).",
+  "category": "Cardiac Markers",
+  "brand": {
+    "@type": "Brand",
+    "name": "DX BIOCODE"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "0",
+    "priceValidUntil": "2027-12-31",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "https://schema.org/InStock",
+    "url": "https://dx-biocode-101.vercel.app/products/bnp/"
+  }
+}

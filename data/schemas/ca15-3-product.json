@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "CA15-3 Fast Test Kit",
+  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "description": "quantitative determination of Cancer Antigen 15-3 (CA15-3) in serum or plasma samples. This test is utilized for the adjunctive diagnosis of breast cancer patients. For professional and laboratory use.",
+  "category": "Cancer Markers",
+  "brand": {
+    "@type": "Brand",
+    "name": "DX BIOCODE"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "0",
+    "priceValidUntil": "2027-12-31",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "https://schema.org/InStock",
+    "url": "https://dx-biocode-101.vercel.app/products/ca15-3/"
+  }
+}

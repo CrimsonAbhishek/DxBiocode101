@@ -1,0 +1,33 @@
+{
+  "id": "mg",
+  "slug": "mg",
+  "name": "-MG Fast Test Kit",
+  "type": "test-kit",
+  "category": "Renal Function",
+  "shortDescription": "Quantitative determination of -MG using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "-MG is useful for the detection and evaluation of glomerular filtration rate, renal transplantation and renal function. For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "-MG",
+    "Sample": "Serum/Plasma/Whole Blood",
+    "Method": "Assay",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "0.5-20.0 mg/L",
+    "Test Time": "3 min",
+    "Cut-off Value": "0.8-3.0 mg/L",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "-MG",
+    "Renal Function",
+    "Assay",
+    "Renal Function Assessment"
+  ],
+  "seoTitle": "-MG Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: -MG is useful for the detection and evaluation of glomerular filtration rate, renal transplantation and renal function. For professional and...",
+  "featured": false,
+  "status": "available"
+}

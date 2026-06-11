@@ -1,0 +1,32 @@
+{
+  "id": "ft4",
+  "slug": "ft4",
+  "name": "fT4 Fast Test Kit",
+  "type": "test-kit",
+  "category": "Thyroid Function",
+  "shortDescription": "Quantitative determination of fT4 using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of free T4 in human serum, plasma and whole blood samples. This test can be used as an aid in the assessment of thyroid status.",
+  "specifications": {
+    "Test Item": "fT4",
+    "Sample": "Serum/Plasma/Whole Blood",
+    "Method": "Assay",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "0.30-100.00 pmol/L",
+    "Test Time": "15 min",
+    "Cut-off Value": "12.00-22.00 pmol/L",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "fT4",
+    "Thyroid Function",
+    "Assay"
+  ],
+  "seoTitle": "fT4 Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of free T4 in human serum, plasma and whole blood samples. This test can be used as an aid in the assessment of t...",
+  "featured": false,
+  "status": "available"
+}

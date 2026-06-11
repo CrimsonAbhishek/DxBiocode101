@@ -1,0 +1,35 @@
+{
+  "id": "nt-probnp",
+  "slug": "nt-probnp",
+  "name": "NT-proBNP Fast Test Kit",
+  "type": "test-kit",
+  "category": "Cardiac Markers",
+  "shortDescription": "Quantitative determination of NT-proBNP using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of N-terminal B-type natriuretic peptide precursor (NT-proBNP) in human serum, plasma or whole blood samples. This test is used as an aid in the clinical diagnosis, prognosis and evaluation of Heart Failure (HF).",
+  "specifications": {
+    "Product Name": "(Immunofluorescence Assay)",
+    "Test Item": "NT-proBNP",
+    "Method": "Assay",
+    "Sample Type": "Serum/Plasma/Whole Blood",
+    "Detection Range": "100~35000 pg/mL",
+    "Cut-off Value": "100.0 pg/mL",
+    "Test Time": "10 min",
+    "Certificate": "CE, NMPA",
+    "Storage Condition": "4-30℃",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "NT-proBNP",
+    "Cardiac Markers",
+    "Assay",
+    "Heart Failure"
+  ],
+  "seoTitle": "NT-proBNP Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of N-terminal B-type natriuretic peptide precursor (NT-proBNP) in human serum, plasma or whole blood samples. Thi...",
+  "featured": false,
+  "status": "available"
+}

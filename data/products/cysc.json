@@ -1,0 +1,34 @@
+{
+  "id": "cysc",
+  "slug": "cysc",
+  "name": "CysC Fast Test Kit",
+  "type": "test-kit",
+  "category": "Renal Function",
+  "shortDescription": "Quantitative determination of CysC using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of Cystatin C (CysC) in human serum, plasma or whole blood samples. The test result is used as an aid in the assessment and evaluation of index of glomerular filtration rate, and has important application value in renal function, kidney damage and renal transplantation. For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "CysC",
+    "Sample": "Serum/Plasma/Whole Blood",
+    "Method": "Assay",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "0.5-10.0 mg/L",
+    "Test Time": "3 min",
+    "Cut-off Value": "0.51-1.09 mg/L",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "CysC",
+    "Renal Function",
+    "Assay",
+    "Renal Function Assessment",
+    "Kidney Injury"
+  ],
+  "seoTitle": "CysC Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of Cystatin C (CysC) in human serum, plasma or whole blood samples. The test result is used as an aid in the asse...",
+  "featured": false,
+  "status": "available"
+}

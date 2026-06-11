@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "CysC Fast Test Kit",
+  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "description": "quantitative determination of Cystatin C (CysC) in human serum, plasma or whole blood samples. The test result is used as an aid in the assessment and evaluation of index of glomerular filtration rate, and has important application value in renal function, kidney damage and renal transplantation. For professional and laboratory use only.",
+  "category": "Renal Function",
+  "brand": {
+    "@type": "Brand",
+    "name": "DX BIOCODE"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "0",
+    "priceValidUntil": "2027-12-31",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "https://schema.org/InStock",
+    "url": "https://dx-biocode-101.vercel.app/products/cysc/"
+  }
+}

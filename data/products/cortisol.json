@@ -1,0 +1,33 @@
+{
+  "id": "cortisol",
+  "slug": "cortisol",
+  "name": "Cortisol Fast Test Kit",
+  "type": "test-kit",
+  "category": "Other Test Reagents",
+  "shortDescription": "Quantitative determination of Cortisol using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of cortisol in human serum and plasma samples. lt is mainly used for auxiliary evaluation of Adrenal cortex function. For professional and laboratory use.",
+  "specifications": {
+    "Test Item": "Cortisol",
+    "Sample": "Serum/Plasma",
+    "Detection Range": "11-1655 nmol/L",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "15 min",
+    "Cut-off Value": "Refer to User Manual",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "Cortisol",
+    "Other Test Reagents",
+    "Assay",
+    "Renal Function Assessment"
+  ],
+  "seoTitle": "Cortisol Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of cortisol in human serum and plasma samples. lt is mainly used for auxiliary evaluation of Adrenal cortex funct...",
+  "featured": false,
+  "status": "available"
+}

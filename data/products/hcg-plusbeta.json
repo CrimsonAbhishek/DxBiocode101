@@ -1,0 +1,33 @@
+{
+  "id": "hcg-plusbeta",
+  "slug": "hcg-plusbeta",
+  "name": "HCG+β Fast Test Kit",
+  "type": "test-kit",
+  "category": "Fertility",
+  "shortDescription": "Quantitative determination of HCG+β using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of human chorionic gonadotropin (HCG) in human serum or plasma. This test is used as an aid in pregnancy test. For professional and laboratory use. This test can NOT be used to guide the diagnosis of pair trisomy 21.",
+  "specifications": {
+    "Test Item": "HCG+β",
+    "Sample": "Serum/Plasma",
+    "Method": "Assay",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "5.0-100000.0 mlU/ml",
+    "Test Time": "10 min",
+    "Cut-off Value": "Refer to User Manual",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "HCG+β",
+    "Fertility",
+    "Assay",
+    "Pregnancy Test"
+  ],
+  "seoTitle": "HCG+β Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of human chorionic gonadotropin (HCG) in human serum or plasma. This test is used as an aid in pregnancy test. Fo...",
+  "featured": false,
+  "status": "available"
+}

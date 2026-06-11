@@ -1,0 +1,36 @@
+{
+  "id": "ck-mbctnih-fabp",
+  "slug": "ck-mbctnih-fabp",
+  "name": "CK-MB/cTnI/H-FABP Fast Test Kit",
+  "type": "test-kit",
+  "category": "Cardiac Markers",
+  "shortDescription": "Quantitative determination of CK-MB/cTnI/H-FABP using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of CK-MB/cTnI/H-FABP in human serum, plasma or whole blood samples. This test is used as an aid in the clinical diagnosis, prognosis and evaluation of myocardial injury such as Acute Myocardial Infarction (AMI), Unstable Angina, Acute Myocarditis and Acute Coronary Syndrome (ACS).",
+  "specifications": {
+    "Test Item": "CK-MB/cTnI/H-FABP",
+    "Sample": "Serum/Plasma/Whole Blood",
+    "Detection Range": "H-FABP: 2.00-100.00 ng/mL",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "10 min",
+    "Cut-off Value": "H-FABP: 6.36 ng/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "CK-MB/cTnI/H-FABP",
+    "Cardiac Markers",
+    "Assay",
+    "Myocardial Injury",
+    "Acute Myocardial Infarction",
+    "Unstable Angina",
+    "Acute Coronary Syndrome"
+  ],
+  "seoTitle": "CK-MB/cTnI/H-FABP Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of CK-MB/cTnI/H-FABP in human serum, plasma or whole blood samples. This test is used as an aid in the clinical d...",
+  "featured": false,
+  "status": "available"
+}

@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "NT-proBNP Fast Test Kit",
+  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "description": "quantitative determination of N-terminal B-type natriuretic peptide precursor (NT-proBNP) in human serum, plasma or whole blood samples. This test is used as an aid in the clinical diagnosis, prognosis and evaluation of Heart Failure (HF).",
+  "category": "Cardiac Markers",
+  "brand": {
+    "@type": "Brand",
+    "name": "DX BIOCODE"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "0",
+    "priceValidUntil": "2027-12-31",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "https://schema.org/InStock",
+    "url": "https://dx-biocode-101.vercel.app/products/nt-probnp/"
+  }
+}

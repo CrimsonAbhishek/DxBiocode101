@@ -1,0 +1,33 @@
+{
+  "id": "aso",
+  "slug": "aso",
+  "name": "ASO Fast Test Kit",
+  "type": "test-kit",
+  "category": "Rheumatism",
+  "shortDescription": "Quantitative determination of ASO using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of anti streptolysin \"O\" antibody (ASO) in serum, plasma or whole blood samples. ASO is a very valuable marker for the diagnosis of group A streptococcal infection, its titer can reflect the severity of infection. Some diseases will lead to a significant increase in ASO titer, such as acute rheumatic fever. For professional and laboratory use. Specification",
+  "specifications": {
+    "Test Item": "ASO",
+    "Sample Type": "Serum/Plasma/Whole Blood",
+    "Method": "Immunofluorescence Assay",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "60.0-1370.0 IU/mL",
+    "Test Time": "10 min",
+    "Cut-off Value": "400.0 IU/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "ASO",
+    "Rheumatism",
+    "Immunofluorescence Assay",
+    "Infection Diagnosis"
+  ],
+  "seoTitle": "ASO Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of anti streptolysin \"O\" antibody (ASO) in serum, plasma or whole blood samples. ASO is a very valuable marker fo...",
+  "featured": false,
+  "status": "available"
+}

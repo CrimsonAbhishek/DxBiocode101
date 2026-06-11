@@ -1,0 +1,33 @@
+{
+  "id": "tpsa",
+  "slug": "tpsa",
+  "name": "tPSA Fast Test Kit",
+  "type": "test-kit",
+  "category": "Cancer Markers",
+  "shortDescription": "Quantitative determination of tPSA using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of tPSA in human serum and plasma samples. lt can be used as an aid in the diagnosis and management of patients with prostate cancer. For professional and laboratory use.",
+  "specifications": {
+    "Test Item": "tPSA",
+    "Sample": "Serum/Plasma",
+    "Detection Range": "0.50-100.00 ng/mL",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "15 min",
+    "Cut-off Value": "4.0 ng/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "tPSA",
+    "Cancer Markers",
+    "Assay",
+    "Cancer Diagnostics"
+  ],
+  "seoTitle": "tPSA Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of tPSA in human serum and plasma samples. lt can be used as an aid in the diagnosis and management of patients w...",
+  "featured": false,
+  "status": "available"
+}

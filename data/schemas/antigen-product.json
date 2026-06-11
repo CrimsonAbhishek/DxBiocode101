@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Antigen Fast Test Kit",
+  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "description": "quantitative detection of H. pylori antigen in human stool specimen. It is a useful aid in the diagnosis of a number of gastrointestinal disorders. For professional and laboratory use.",
+  "category": "Other Test Reagents",
+  "brand": {
+    "@type": "Brand",
+    "name": "DX BIOCODE"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "0",
+    "priceValidUntil": "2027-12-31",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "https://schema.org/InStock",
+    "url": "https://dx-biocode-101.vercel.app/products/antigen/"
+  }
+}

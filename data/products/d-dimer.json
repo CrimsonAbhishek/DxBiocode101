@@ -1,0 +1,32 @@
+{
+  "id": "d-dimer",
+  "slug": "d-dimer",
+  "name": "D-Dimer Fast Test Kit",
+  "type": "test-kit",
+  "category": "Cardiac Markers",
+  "shortDescription": "Quantitative determination of D-Dimer using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of D-Dimer in human plasma or whole blood samples. The test is used as an aid in the assessment and evaluation of patients suspected of deep-vein thrombosis or pulmonary embolism.",
+  "specifications": {
+    "Test Item": "D-Dimer",
+    "Sample": "Plasma/Whole Blood",
+    "Detection Range": "0.1-10.0 mg/L",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "10 min",
+    "Cut-off Value": "0.5 mg/L",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "D-Dimer",
+    "Cardiac Markers",
+    "Assay"
+  ],
+  "seoTitle": "D-Dimer Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of D-Dimer in human plasma or whole blood samples. The test is used as an aid in the assessment and evaluation of...",
+  "featured": false,
+  "status": "available"
+}

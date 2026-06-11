@@ -1,0 +1,32 @@
+{
+  "id": "amh",
+  "slug": "amh",
+  "name": "AMH Fast Test Kit",
+  "type": "test-kit",
+  "category": "Fertility",
+  "shortDescription": "Quantitative determination of AMH using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of AMH in human serum and plasma samples. This test can be used as an aid in indicating ovarian functional reserve, and also help to diagnose menstrual disorders or to monitor the health of women. For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "AMH",
+    "Sample": "Serum/Plasma",
+    "Method": "Assay",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "0.10-20.00 ng/mL",
+    "Test Time": "15 min",
+    "Cut-off Value": "Refer to User Manual",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "AMH",
+    "Fertility",
+    "Assay"
+  ],
+  "seoTitle": "AMH Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of AMH in human serum and plasma samples. This test can be used as an aid in indicating ovarian functional reserv...",
+  "featured": false,
+  "status": "available"
+}

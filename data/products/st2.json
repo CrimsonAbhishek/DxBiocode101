@@ -1,0 +1,36 @@
+{
+  "id": "st2",
+  "slug": "st2",
+  "name": "ST2 Fast Test Kit",
+  "type": "test-kit",
+  "category": "Cardiac Markers",
+  "shortDescription": "Quantitative determination of ST2 using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of Growth Stimulation expressed gene2 (ST2) in serum, plasma or whole blood samples. The test is used as an aid in the diagnosis of acute myocardial infarction, chronic or acute heart failure. For professional and laboratory use only.",
+  "specifications": {
+    "Product Name": "ST2 Fast Test Kit (Immunofluorescence Assay)",
+    "Test Item": "ST2",
+    "Method": "Assay",
+    "Sample": "Serum/Plasma/Whole Blood",
+    "Detection Range": "3.0-200.0 ng/mL",
+    "Cut-off Value": "35.0 ng/mL",
+    "Test Time": "15 min",
+    "Certificate": "",
+    "Storage Condition": "4-30℃",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "ST2",
+    "Cardiac Markers",
+    "Assay",
+    "Acute Myocardial Infarction",
+    "Heart Failure"
+  ],
+  "seoTitle": "ST2 Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of Growth Stimulation expressed gene2 (ST2) in serum, plasma or whole blood samples. The test is used as an aid i...",
+  "featured": false,
+  "status": "available"
+}

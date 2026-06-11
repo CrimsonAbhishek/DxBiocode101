@@ -1,0 +1,33 @@
+{
+  "id": "dengue-ns1-ag",
+  "slug": "dengue-ns1-ag",
+  "name": "Dengue NS1 Ag Fast Test Kit",
+  "type": "test-kit",
+  "category": "Infectious Disease",
+  "shortDescription": "Quantitative determination of Dengue NS1 Ag using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "Dengue NS1 Ag Rapid Test (Immunofluorescence Assay) is intended for the quantitative detection of dengue NS1 antigen in human serum, plasma or whole blood. It is used as an aid in the early clinical assessment of Dengue virus infection. Specification",
+  "specifications": {
+    "Test Item": "Dengue NS1 Ag",
+    "Sample Type": "Serum/Plasma/Whole Blood",
+    "Storage Condition": "4-30 °C",
+    "Detection Range": "1.00-50.00 S/CO",
+    "Test Time": "15 min",
+    "Method": "Immunofluorescence Assay",
+    "Shelf Life": "24 Months",
+    "Cut-off Value": "1.00 S/CO"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "Dengue NS1 Ag",
+    "Infectious Disease",
+    "Immunofluorescence Assay",
+    "Infection Diagnosis"
+  ],
+  "seoTitle": "Dengue NS1 Ag Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: Dengue NS1 Ag Rapid Test (Immunofluorescence Assay) is intended for the quantitative detection of dengue NS1 antigen in human serum, plasma ...",
+  "featured": false,
+  "status": "available"
+}

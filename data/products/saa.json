@@ -1,0 +1,34 @@
+{
+  "id": "saa",
+  "slug": "saa",
+  "name": "SAA Fast Test Kit",
+  "type": "test-kit",
+  "category": "Inflammation",
+  "shortDescription": "Quantitative determination of SAA using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of SAA in human serum, plasma, whole blood, and fingertip blood samples. lt can be used as a sensitive index in the diagnosis of infection and inflammation. For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "SAA",
+    "Sample": "Serum/Plasma/Whole Blood/peripheral blood",
+    "Detection Range": "5.0-200.0 mg/L",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "5 min",
+    "Cut-off Value": "10.0 mg/L",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "SAA",
+    "Inflammation",
+    "Assay",
+    "Infection Diagnosis",
+    "Inflammation Marker"
+  ],
+  "seoTitle": "SAA Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of SAA in human serum, plasma, whole blood, and fingertip blood samples. lt can be used as a sensitive index in t...",
+  "featured": false,
+  "status": "available"
+}

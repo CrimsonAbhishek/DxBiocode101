@@ -1,0 +1,32 @@
+{
+  "id": "t3",
+  "slug": "t3",
+  "name": "T3 Fast Test Kit",
+  "type": "test-kit",
+  "category": "Thyroid Function",
+  "shortDescription": "Quantitative determination of T3 using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of T3 in human serum and plasma samples. lt can be used in the monitoring of hyperthyroidism and hypothyroidism, and used as an aid in diagnosis of thyroid function. For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "T3",
+    "Sample": "Serum/Plasma",
+    "Method": "Assay",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "0.30-10.00 nmol/L",
+    "Test Time": "15 min",
+    "Cut-off Value": "1.30-3.10 nmol/L",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "T3",
+    "Thyroid Function",
+    "Assay"
+  ],
+  "seoTitle": "T3 Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of T3 in human serum and plasma samples. lt can be used in the monitoring of hyperthyroidism and hypothyroidism, ...",
+  "featured": false,
+  "status": "available"
+}

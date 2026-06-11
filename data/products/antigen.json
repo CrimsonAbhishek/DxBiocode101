@@ -1,0 +1,32 @@
+{
+  "id": "antigen",
+  "slug": "antigen",
+  "name": "Antigen Fast Test Kit",
+  "type": "test-kit",
+  "category": "Other Test Reagents",
+  "shortDescription": "Quantitative determination of Antigen using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative detection of H. pylori antigen in human stool specimen. It is a useful aid in the diagnosis of a number of gastrointestinal disorders. For professional and laboratory use.",
+  "specifications": {
+    "Test Item": "Antigen",
+    "Sample Type": "Stool",
+    "Detection Range": "1.0-200.0 ng/mL",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "10 min",
+    "Cut-off Value": "5.0 ng/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "Antigen",
+    "Other Test Reagents",
+    "Assay"
+  ],
+  "seoTitle": "Antigen Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative detection of H. pylori antigen in human stool specimen. It is a useful aid in the diagnosis of a number of gastrointestinal dis...",
+  "featured": false,
+  "status": "available"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "anti-ccp",
+  "slug": "anti-ccp",
+  "name": "Anti-CCP Fast Test Kit",
+  "type": "test-kit",
+  "category": "Rheumatism",
+  "shortDescription": "Quantitative determination of Anti-CCP using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of anti-CCP in serum, plasma or whole blood samples. The test is designed to aid in the diagnosis of autoimmune diseases, such as rheumatoid arthritis (RA). For professional and laboratory use only. Specification",
+  "specifications": {
+    "Test Item": "Anti-CCP",
+    "Sample Type": "Serum/Plasma/Whole Blood",
+    "Method": "Immunofluorescence Assay",
+    "Storage Condition": "4-30°C",
+    "Detection Range": "10.0-400.0 U/mL",
+    "Test Time": "15 min",
+    "Cut-off Value": "25.0 U/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "Anti-CCP",
+    "Rheumatism",
+    "Immunofluorescence Assay",
+    "Rheumatoid Arthritis"
+  ],
+  "seoTitle": "Anti-CCP Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of anti-CCP in serum, plasma or whole blood samples. The test is designed to aid in the diagnosis of autoimmune d...",
+  "featured": false,
+  "status": "available"
+}

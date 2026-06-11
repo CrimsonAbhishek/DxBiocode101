@@ -1,0 +1,32 @@
+{
+  "id": "hba1c",
+  "slug": "hba1c",
+  "name": "HbA1c Fast Test Kit",
+  "type": "test-kit",
+  "category": "Diabetes",
+  "shortDescription": "Quantitative determination of HbA1c using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "HbA1c",
+    "Sample": "Whole Blood",
+    "Method": "Assay",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "2.00-14.00%",
+    "Test Time": "5 min",
+    "Cut-off Value": "3.80-5.80%",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "HbA1c",
+    "Diabetes",
+    "Assay"
+  ],
+  "seoTitle": "HbA1c Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: For professional and laboratory use only....",
+  "featured": false,
+  "status": "available"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "insulin",
+  "slug": "insulin",
+  "name": "Insulin Fast Test Kit",
+  "type": "test-kit",
+  "category": "Metabolism",
+  "shortDescription": "Quantitative determination of Insulin using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of insulin in human serum and plasma samples. This test is used to aid in the diagnosis of glucose metabolism disorders and the evaluation of pancreatic islet function. For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "Insulin",
+    "Sample": "Serum/Plasma",
+    "Detection Range": "1.0-300.0 μU/mL",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "12-15 min",
+    "Cut-off Value": "≤1.0 μU/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "Insulin",
+    "Metabolism",
+    "Assay"
+  ],
+  "seoTitle": "Insulin Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of insulin in human serum and plasma samples. This test is used to aid in the diagnosis of glucose metabolism dis...",
+  "featured": false,
+  "status": "available"
+}

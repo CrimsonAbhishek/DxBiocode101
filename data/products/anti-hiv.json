@@ -1,0 +1,32 @@
+{
+  "id": "anti-hiv",
+  "slug": "anti-hiv",
+  "name": "Anti-HIV Fast Test Kit",
+  "type": "test-kit",
+  "category": "Infectious Disease",
+  "shortDescription": "Quantitative determination of Anti-HIV using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "qualitative determination of human immunodeficiency virus (HlV) antibody in serum or plasma samples. This test can be cinically used for the auxiliary diagnosis of acquired immunodeficiency syndrome (AlDS). For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "Anti-HIV",
+    "Sample": "Serum/Plasma",
+    "Sample Volume": "100 µL",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "15 min",
+    "Detection Range": "1.00-1000.00 S/CO",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "Anti-HIV",
+    "Infectious Disease",
+    "Assay"
+  ],
+  "seoTitle": "Anti-HIV Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: qualitative determination of human immunodeficiency virus (HlV) antibody in serum or plasma samples. This test can be cinically used for the...",
+  "featured": false,
+  "status": "available"
+}

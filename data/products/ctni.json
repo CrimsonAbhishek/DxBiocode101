@@ -1,0 +1,38 @@
+{
+  "id": "ctni",
+  "slug": "ctni",
+  "name": "cTnI Fast Test Kit",
+  "type": "test-kit",
+  "category": "Cardiac Markers",
+  "shortDescription": "Quantitative determination of cTnI using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of Cardiac Troponin I (cTnI) in human serum, plasma or whole blood samples. This test is used as an aid in the diagnosis of myocardial injury such as Acute Myocardial Infarction (AMI), Unstable Angina, Acute Myocarditis and Acute Coronary Syndrome (ACS).",
+  "specifications": {
+    "Product Name": "(Immunofluorescence Assay)",
+    "Test Item": "cTnI",
+    "Method": "Assay",
+    "Sample Type": "Serum/Plasma/Whole Blood",
+    "Detection Range": "0.10~50.00 ng/mL",
+    "Cut-off Value": "0.10 ng/mL",
+    "Test Time": "10 min",
+    "Certificate": "CE, NMPA",
+    "Storage Condition": "4-30℃",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "cTnI",
+    "Cardiac Markers",
+    "Assay",
+    "Myocardial Injury",
+    "Acute Myocardial Infarction",
+    "Unstable Angina",
+    "Acute Coronary Syndrome"
+  ],
+  "seoTitle": "cTnI Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of Cardiac Troponin I (cTnI) in human serum, plasma or whole blood samples. This test is used as an aid in the di...",
+  "featured": false,
+  "status": "available"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "prl",
+  "slug": "prl",
+  "name": "PRL Fast Test Kit",
+  "type": "test-kit",
+  "category": "Fertility",
+  "shortDescription": "Quantitative determination of PRL using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of prolactin (PRL) in serum or plasma samples. This test can be used as an aid in the diagnosis of male and female infertility and pituitary dysfunction, as well as for monitoring male and female gonadal disorders and managing amenorrhea and galactorrhea. For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "PRL",
+    "Sample Types": "Serum/Plasma",
+    "Methodology": "Assay",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "0.5-200 ng/mL",
+    "Test Time": "15 min",
+    "Cut-off Value": "Refer to User Manual",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "PRL",
+    "Fertility",
+    "Immunofluorescence Assay",
+    "Infertility"
+  ],
+  "seoTitle": "PRL Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of prolactin (PRL) in serum or plasma samples. This test can be used as an aid in the diagnosis of male and femal...",
+  "featured": false,
+  "status": "available"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "fsh",
+  "slug": "fsh",
+  "name": "FSH Fast Test Kit",
+  "type": "test-kit",
+  "category": "Fertility",
+  "shortDescription": "Quantitative determination of FSH using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of FSH in human serum and plasma. The test is used as an auxiliary diagnosis for evaluating pituitary endocrine function and ovarian diseases. For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "FSH",
+    "Sample Types": "Serum/Plasma",
+    "Methodology": "Assay",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "0.2-150.0 mIU/mL",
+    "Test Time": "15 min",
+    "Cut-off Value": "Refer to User Manual",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "FSH",
+    "Fertility",
+    "Immunofluorescence Assay"
+  ],
+  "seoTitle": "FSH Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of FSH in human serum and plasma. The test is used as an auxiliary diagnosis for evaluating pituitary endocrine f...",
+  "featured": false,
+  "status": "available"
+}

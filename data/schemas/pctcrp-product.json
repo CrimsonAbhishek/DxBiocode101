@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "PCT/CRP Fast Test Kit",
+  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "description": "quantitative determination of Procalcitonin (PCT) and C-reactive protein (CRP) in serum, plasma or whole blood. The combination of CRP and PCT will be more accurately to determine the degree of infection and inflammation. It helps to identify systemic or local infection, bacterial infection or virus infection, determine the severity of infection and instruct clinical use of antibiotics. Therefore, the combination of PCT and CRP, when using a wider range of applications, more convenient and more accurate diagnosis.",
+  "category": "Inflammation",
+  "brand": {
+    "@type": "Brand",
+    "name": "DX BIOCODE"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "0",
+    "priceValidUntil": "2027-12-31",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "https://schema.org/InStock",
+    "url": "https://dx-biocode-101.vercel.app/products/pctcrp/"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "pg-ipg-ii",
+  "slug": "pg-ipg-ii",
+  "name": "PG I/PG II Fast Test Kit",
+  "type": "test-kit",
+  "category": "Cancer Markers",
+  "shortDescription": "Quantitative determination of PG I/PG II using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of Pepsinogen I (PG I)/Pepsinogen II (PG II) in human serum, plasma samples. This test is used as an auxiliary diagnosis of the degree of gastric mucosal atrophy. For professional and laboratory use.",
+  "specifications": {
+    "Test Item": "PG I/PG II",
+    "Sample": "Serum/Plasma",
+    "Detection Range": "PG II: 1.0-100.0 ng/mL",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "15 min",
+    "Cut-off Value": "PG I/PG II: ＜3.0 ng/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "PG I/PG II",
+    "Cancer Markers",
+    "Assay"
+  ],
+  "seoTitle": "PG I/PG II Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of Pepsinogen I (PG I)/Pepsinogen II (PG II) in human serum, plasma samples. This test is used as an auxiliary di...",
+  "featured": false,
+  "status": "available"
+}

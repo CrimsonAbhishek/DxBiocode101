@@ -1,0 +1,33 @@
+{
+  "id": "ca19-9",
+  "slug": "ca19-9",
+  "name": "CA19-9 Fast Test Kit",
+  "type": "test-kit",
+  "category": "Cancer Markers",
+  "shortDescription": "Quantitative determination of CA19-9 using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of Cancer Antigen 19-9 (CA19-9) in serum, plasma or whole blood. The test is utilized for the adjunctive diagnosis of pancreatic cancer. For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "CA19-9",
+    "Sample": "/Whole Blood",
+    "Detection Range": "2.0-1000.0 U/mL",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "15 min",
+    "Cut-off Value": "27.0 U/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "CA19-9",
+    "Cancer Markers",
+    "Assay",
+    "Cancer Diagnostics"
+  ],
+  "seoTitle": "CA19-9 Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of Cancer Antigen 19-9 (CA19-9) in serum, plasma or whole blood. The test is utilized for the adjunctive diagnosi...",
+  "featured": false,
+  "status": "available"
+}

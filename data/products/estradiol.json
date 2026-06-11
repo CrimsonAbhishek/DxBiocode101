@@ -1,0 +1,32 @@
+{
+  "id": "estradiol",
+  "slug": "estradiol",
+  "name": "Estradiol Fast Test Kit",
+  "type": "test-kit",
+  "category": "Fertility",
+  "shortDescription": "Quantitative determination of Estradiol using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of estradiol in human serum and plasma. Estradiol tests are used to measure ovarian function. For professional and laboratory use. Specification",
+  "specifications": {
+    "Test Item": "Estradiol",
+    "Sample Type": "Serum/Plasma",
+    "Method": "Immunofluorescence",
+    "Storage Condition": "4-30°C",
+    "Test Time": "15 min",
+    "Detection Range": "40.0-4800.0 pg/mL",
+    "Cut-off Value": "Refer to user manual",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "Estradiol",
+    "Fertility",
+    "Immunofluorescence Assay"
+  ],
+  "seoTitle": "Estradiol Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of estradiol in human serum and plasma. Estradiol tests are used to measure ovarian function. For professional an...",
+  "featured": false,
+  "status": "available"
+}

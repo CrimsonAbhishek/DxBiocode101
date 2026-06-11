@@ -1,0 +1,33 @@
+{
+  "id": "hbsag",
+  "slug": "hbsag",
+  "name": "HBsAg Fast Test Kit",
+  "type": "test-kit",
+  "category": "Infectious Disease",
+  "shortDescription": "Quantitative determination of HBsAg using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of hepatitis B surface antigen (HBsAg) in human serum and plasma samples. The test is used clinically as suitable for blood supply screening and clinical diagnosis of hepatitis B virus infection. For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "HBsAg",
+    "Sample": "Serum/Plasma",
+    "Detection Range": "1~100 IU/mL",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "15 min",
+    "Cut-off Value": "<1.00 IU/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "HBsAg",
+    "Infectious Disease",
+    "Assay",
+    "Infection Diagnosis"
+  ],
+  "seoTitle": "HBsAg Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of hepatitis B surface antigen (HBsAg) in human serum and plasma samples. The test is used clinically as suitable...",
+  "featured": false,
+  "status": "available"
+}

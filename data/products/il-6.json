@@ -1,0 +1,33 @@
+{
+  "id": "il-6",
+  "slug": "il-6",
+  "name": "IL-6 Fast Test Kit",
+  "type": "test-kit",
+  "category": "Inflammation",
+  "shortDescription": "Quantitative determination of IL-6 using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of interleukin 6 (IL-6) in human serum, plasma, whole blood and fingertip blood samples. IL-6 is an early marker in acute inflammation and this test can be used as an aid in the inflammatory diseases. For professional and laboratory use.",
+  "specifications": {
+    "Test Item": "IL-6",
+    "Sample": "Serum/Plasma/Whole Blood/peripheral blood",
+    "Detection Range": "1.5-4000.0 pg/mL",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "15 min",
+    "Cut-off Value": "7.0 pg/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "IL-6",
+    "Inflammation",
+    "Assay",
+    "Inflammation Marker"
+  ],
+  "seoTitle": "IL-6 Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of interleukin 6 (IL-6) in human serum, plasma, whole blood and fingertip blood samples. IL-6 is an early marker ...",
+  "featured": false,
+  "status": "available"
+}

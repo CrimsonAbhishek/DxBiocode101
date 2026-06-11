@@ -1,0 +1,36 @@
+{
+  "id": "ck-mbctnimyo",
+  "slug": "ck-mbctnimyo",
+  "name": "CK-MB/cTnI/Myo Fast Test Kit",
+  "type": "test-kit",
+  "category": "Cardiac Markers",
+  "shortDescription": "Quantitative determination of CK-MB/cTnI/Myo using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "CK-MB/cTnI/Myo Fast Test Kit (Immunofluorescence Assay) is intended for in vitro quantitative determination of CK-MB/cTnI/Myo in serum, plasma or whole blood samples. This test is used as an aid in the clinical diagnosis, prognosis and evaluation of myocardial injury such as Acute Myocardial Infarction (AMI), Unstable Angina, Acute Myocarditis and Acute Coronary Syndrome (ACS).",
+  "specifications": {
+    "Test Item": "CK-MB/cTnI/Myo",
+    "Sample Type": "Serum/Plasma/Whole Blood",
+    "Method": "Assay",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "Myo: 30.0-600.0 ng/ml",
+    "Test Time": "10 min",
+    "Cut-off Value": "Myo: 50.0 ng/ml70.0 ng/ml",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "CK-MB/cTnI/Myo",
+    "Cardiac Markers",
+    "Assay",
+    "Myocardial Injury",
+    "Acute Myocardial Infarction",
+    "Unstable Angina",
+    "Acute Coronary Syndrome"
+  ],
+  "seoTitle": "CK-MB/cTnI/Myo Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: CK-MB/cTnI/Myo Fast Test Kit (Immunofluorescence Assay) is intended for in vitro quantitative determination of CK-MB/cTnI/Myo in serum, plas...",
+  "featured": false,
+  "status": "available"
+}

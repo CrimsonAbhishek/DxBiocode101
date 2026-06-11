@@ -1,0 +1,32 @@
+{
+  "id": "osteocalcin",
+  "slug": "osteocalcin",
+  "name": "Osteocalcin Fast Test Kit",
+  "type": "test-kit",
+  "category": "Metabolism",
+  "shortDescription": "Quantitative determination of Osteocalcin using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of Osteocalcin in serum or plasma samples. This test is mainly used for the auxiliary diagnosis of various osteoporosis and early bone synthesis after bone injury. For professional and laboratory use.",
+  "specifications": {
+    "Test Item": "Osteocalcin",
+    "Sample": "Serum/Plasma",
+    "Method": "Assay",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "1.5-300.0 ng/mL",
+    "Test Time": "15 min",
+    "Cut-off Value": "Female: 11-48 ng/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "Osteocalcin",
+    "Metabolism",
+    "Assay"
+  ],
+  "seoTitle": "Osteocalcin Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of Osteocalcin in serum or plasma samples. This test is mainly used for the auxiliary diagnosis of various osteop...",
+  "featured": false,
+  "status": "available"
+}

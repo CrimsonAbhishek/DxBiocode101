@@ -1,0 +1,32 @@
+{
+  "id": "total-ige",
+  "slug": "total-ige",
+  "name": "Total IgE Fast Test Kit",
+  "type": "test-kit",
+  "category": "Other Test Reagents",
+  "shortDescription": "Quantitative determination of Total IgE using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of circulating total IgE antibodies in human serum, plasma and whole blood samples. This test can be used as an aid in the clinical diagnosis of lgE mediated allergic disorders in conjunction with other clinical findings.",
+  "specifications": {
+    "Test Item": "Total IgE",
+    "Sample Types": "Serum/Plasma",
+    "Detection Range": "1.00-2000.00 IU/mL",
+    "Storage Condition": "4-30℃",
+    "Methodology": "Assay",
+    "Test Time": "15 min",
+    "Cut-off Value": "1.00-165.00 IU/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "Total IgE",
+    "Other Test Reagents",
+    "Immunofluorescence Assay"
+  ],
+  "seoTitle": "Total IgE Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of circulating total IgE antibodies in human serum, plasma and whole blood samples. This test can be used as an a...",
+  "featured": false,
+  "status": "available"
+}

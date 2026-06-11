@@ -1,0 +1,34 @@
+{
+  "id": "h-pylori",
+  "slug": "h-pylori",
+  "name": "H. pylori Fast Test Kit",
+  "type": "test-kit",
+  "category": "Infectious Disease",
+  "shortDescription": "Quantitative determination of H. pylori using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative detection of H. pylori specific antigen in human stool specimen. It is a useful aid in the diagnosis of a number of gastrointestinal disorders. For professional and laboratory use only. About H. pylori infection in the gastrointestinal tract can be used as an auxiliary diagnosis for gastritis, gastric ulcer, and gastric cancer. Contents For Getein1100 Package specifications: 10 tests/box, 25 tests/box test card in a sealed pouch with desiccant 2) Sample diluent 3) User Manual:1 piece/box 4) SD card: 1 piece/box Note: Do not mix or interchange different batches of kits.",
+  "specifications": {
+    "Test Item": "H. pylori",
+    "Sample": "Stool specimen",
+    "Detection Range": "1.0 ng/mL~200.0 ng/mL",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "10 min",
+    "Cut-off Value": "5.0 ng/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "H. pylori",
+    "Infectious Disease",
+    "Assay",
+    "Infection Diagnosis",
+    "Cancer Diagnostics"
+  ],
+  "seoTitle": "H. pylori Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative detection of H. pylori specific antigen in human stool specimen. It is a useful aid in the diagnosis of a number of gastrointes...",
+  "featured": false,
+  "status": "available"
+}

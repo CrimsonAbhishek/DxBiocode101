@@ -1,0 +1,21 @@
+{
+  "id": "dx-101",
+  "slug": "dx-101",
+  "name": "DX 101 Immunofluorescence Quantitative Analyzer",
+  "type": "analyzer",
+  "category": "Analyzers",
+  "shortDescription": "India's first portable and handheld multi-parameter POCT device. Compact, user-friendly, and built for rapid quantitative results.",
+  "image": "",
+  "features": [
+    "🏥 Point-of-Care Ready",
+    "⚡ Results in 3–15 min",
+    "📱 Android OS",
+    "☁️ Lims Connectivity HL7 interface",
+    "🔋 Long Battery Life",
+    "💾 50,000 Results Storage"
+  ],
+  "seoTitle": "DX 101 Immunofluorescence Analyzer | DX BIOCODE",
+  "seoDescription": "Portable point-of-care quantitative diagnostic analyzer for rapid results.",
+  "featured": true,
+  "status": "available"
+}

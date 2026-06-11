@@ -1,0 +1,32 @@
+{
+  "id": "anti-hbs",
+  "slug": "anti-hbs",
+  "name": "Anti-HBs Fast Test Kit",
+  "type": "test-kit",
+  "category": "Infectious Disease",
+  "shortDescription": "Quantitative determination of Anti-HBs using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of hepatitis B surface antibody (Anti-HBs) in human serum, plasma and whole blood samples. The test can aid to monitor the recovery of patients with hepatitis B virus (HBV) and evaluate the efficacy of hepatitis B vaccine.",
+  "specifications": {
+    "Test Item": "Anti-HBs",
+    "Sample Type": "Serum/Plasma/Whole Blood",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "10.00-1000.00 mlU/mL",
+    "Method": "Assay",
+    "Test Time": "15 min",
+    "Shelf Life": "24 months",
+    "Cut-off Value": "10.00 mlU/mL"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "Anti-HBs",
+    "Infectious Disease",
+    "Assay"
+  ],
+  "seoTitle": "Anti-HBs Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of hepatitis B surface antibody (Anti-HBs) in human serum, plasma and whole blood samples. The test can aid to mo...",
+  "featured": false,
+  "status": "available"
+}

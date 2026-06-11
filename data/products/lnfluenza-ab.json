@@ -1,0 +1,31 @@
+{
+  "id": "lnfluenza-ab",
+  "slug": "lnfluenza-ab",
+  "name": "lnfluenza A/B Fast Test Kit",
+  "type": "test-kit",
+  "category": "Infectious Disease",
+  "shortDescription": "Quantitative determination of lnfluenza A/B Antigen using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "lnfluenza A/B Fast Test Kit (lmmunofluorescence Assay) is intended for the qualitative detection of nucleocapsid protein antigen from influenza A and influenza B in human nasal swab samples from individuals suspected of respiratory viral infection consistent with influenza A and influenza B by their healthcare provider. This test is intended for professional and laboratory use. lnfluenza A/B Fast Test Kit (lmmunofluorescence Assay) is an aid in the differentiate of patients with suspected influenza A and influenza B virus infection in conjunction with clinical symptoms and result of other diagnostic methods. Results from the test should not be used as the sole basis for diagnosis and exclusion of influenza A and influenza B infection.",
+  "specifications": {
+    "Test Item": "lnfluenza A/B Antigen",
+    "Sample Type": "Nasal Swab",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "15 min",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "lnfluenza A/B Antigen",
+    "Infectious Disease",
+    "Assay",
+    "Infection Diagnosis"
+  ],
+  "seoTitle": "lnfluenza A/B Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: lnfluenza A/B Fast Test Kit (lmmunofluorescence Assay) is intended for the qualitative detection of nucleocapsid protein antigen from influe...",
+  "featured": false,
+  "status": "available"
+}

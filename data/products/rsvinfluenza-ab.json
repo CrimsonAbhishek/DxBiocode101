@@ -1,0 +1,33 @@
+{
+  "id": "rsvinfluenza-ab",
+  "slug": "rsvinfluenza-ab",
+  "name": "RSV/Influenza A/B Fast Test Kit",
+  "type": "test-kit",
+  "category": "Infectious Disease",
+  "shortDescription": "Quantitative determination of RSV/Influenza A/B using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "qualitative detection of influenza A and influenza B antigens and respiratory syncytial virus (RSV) antigen in human nasal swab. The test is indicated to be used as an auxiliary diagnostic of influenza virus and respiratory syncytial virus infections in conjunction with clinical and epidemiological risk factors. For professional and laboratory use.",
+  "specifications": {
+    "Test Item": "RSV/Influenza A/B",
+    "Sample Type": "Nasal Swab",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "/",
+    "Method": "Assay",
+    "Test Time": "15 min",
+    "Shelf Life": "24 months",
+    "Cut-off Value": "COI＜1.00"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "RSV/Influenza A/B",
+    "Infectious Disease",
+    "Assay",
+    "Infection Diagnosis"
+  ],
+  "seoTitle": "RSV/Influenza A/B Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: qualitative detection of influenza A and influenza B antigens and respiratory syncytial virus (RSV) antigen in human nasal swab. The test is...",
+  "featured": false,
+  "status": "available"
+}

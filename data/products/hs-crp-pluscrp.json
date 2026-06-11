@@ -1,0 +1,34 @@
+{
+  "id": "hs-crp-pluscrp",
+  "slug": "hs-crp-pluscrp",
+  "name": "hs-CRP+CRP Fast Test Kit",
+  "type": "test-kit",
+  "category": "Inflammation",
+  "shortDescription": "Quantitative determination of hs-CRP+CRP using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of C-reactive protein (CRP) in serum, plasma, whole blood or fingertip blood samples. Measurement of CRP is useful for the detection and evaluation of infection, tissue injury and inflammatory disorders. Measurement of high sensitivity CRP (hs-CRP), when used in conjunction with traditional clinical laboratory evaluation of acute coronary syndromes (ACS), may be useful as an independent marker of prognosis for recurrent events in patients with stable coronary disease or ACS. For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "hs-CRP+CRP",
+    "Sample": "Serum/Plasma/Whole Blood/Fingertip Blood",
+    "Detection Range": "0.5-200 mg/L",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "3 min",
+    "Cut-off Value": "3.0 mg/L",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "hs-CRP+CRP",
+    "Inflammation",
+    "Assay",
+    "Acute Coronary Syndrome",
+    "Infection Diagnosis"
+  ],
+  "seoTitle": "hs-CRP+CRP Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of C-reactive protein (CRP) in serum, plasma, whole blood or fingertip blood samples. Measurement of CRP is usefu...",
+  "featured": false,
+  "status": "available"
+}

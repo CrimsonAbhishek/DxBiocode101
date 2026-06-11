@@ -1,0 +1,32 @@
+{
+  "id": "anti-hcv",
+  "slug": "anti-hcv",
+  "name": "Anti-HCV Fast Test Kit",
+  "type": "test-kit",
+  "category": "Infectious Disease",
+  "shortDescription": "Quantitative determination of Anti-HCV using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "qualitative determination of hepatitis C virus (HCV) antibody in serum or plasma samples. This test can be clinically used for the auxiliary diagnosis of hepatitis C. For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "Anti-HCV",
+    "Sample": "Serum/Plasma",
+    "Detection Range": "1.00-20.00 S/CO",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "15 min",
+    "Cut-off Value": "<1.00 S/CO",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "Anti-HCV",
+    "Infectious Disease",
+    "Assay"
+  ],
+  "seoTitle": "Anti-HCV Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: qualitative determination of hepatitis C virus (HCV) antibody in serum or plasma samples. This test can be clinically used for the auxiliary...",
+  "featured": false,
+  "status": "available"
+}

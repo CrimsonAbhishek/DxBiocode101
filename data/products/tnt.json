@@ -1,0 +1,38 @@
+{
+  "id": "tnt",
+  "slug": "tnt",
+  "name": "TnT Fast Test Kit",
+  "type": "test-kit",
+  "category": "Cardiac Markers",
+  "shortDescription": "Quantitative determination of TnT using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of TnT in serum, plasma or whole blood samples. The test is indicated to be used as an auxiliary diagnostic of acute myocardial infarction (AMl), heart failure, unstable angina pectoris, myocarditis and other myocardial injuries, it can also be used for the assessment of prognosis and risk stratification of acute pulmonary embolism and the monitoring of myocardial injury in thoracic surgery. For professional and laboratory use.",
+  "specifications": {
+    "Product Name": "TnT Fast Test Kit (Immunofluorescence Assay)",
+    "Test Item": "TnT",
+    "Method": "Assay",
+    "Sample Type": "Serum/Plasma/Whole Blood",
+    "Detection Range": "10.0~10000.0 pg/mL",
+    "Cut-off Value": "14.0 pg/mL",
+    "Test Time": "15 min",
+    "Certificate": "CE, NMPA",
+    "Storage Condition": "4-30℃",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "TnT",
+    "Cardiac Markers",
+    "Assay",
+    "Myocardial Injury",
+    "Acute Myocardial Infarction",
+    "Unstable Angina",
+    "Heart Failure"
+  ],
+  "seoTitle": "TnT Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of TnT in serum, plasma or whole blood samples. The test is indicated to be used as an auxiliary diagnostic of ac...",
+  "featured": false,
+  "status": "available"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "anti-tp",
+  "slug": "anti-tp",
+  "name": "Anti-TP Fast Test Kit",
+  "type": "test-kit",
+  "category": "Infectious Disease",
+  "shortDescription": "Quantitative determination of Anti-TP using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "qualitative determination of treponema pallidum (TP) antibody in serum or plasma samples. This test is suitable for the auxiliary diagnosis and management of syphilis. For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "Anti-TP",
+    "Sample": "Serum/Plasma",
+    "Detection Range": "1-50 S/CO",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "15 min",
+    "Cut-off Value": "<1.00 S/CO",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "Anti-TP",
+    "Infectious Disease",
+    "Assay"
+  ],
+  "seoTitle": "Anti-TP Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: qualitative determination of treponema pallidum (TP) antibody in serum or plasma samples. This test is suitable for the auxiliary diagnosis ...",
+  "featured": false,
+  "status": "available"
+}

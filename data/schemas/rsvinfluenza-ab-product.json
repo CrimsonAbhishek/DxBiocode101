@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "RSV/Influenza A/B Fast Test Kit",
+  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "description": "qualitative detection of influenza A and influenza B antigens and respiratory syncytial virus (RSV) antigen in human nasal swab. The test is indicated to be used as an auxiliary diagnostic of influenza virus and respiratory syncytial virus infections in conjunction with clinical and epidemiological risk factors. For professional and laboratory use.",
+  "category": "Infectious Disease",
+  "brand": {
+    "@type": "Brand",
+    "name": "DX BIOCODE"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "0",
+    "priceValidUntil": "2027-12-31",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "https://schema.org/InStock",
+    "url": "https://dx-biocode-101.vercel.app/products/rsvinfluenza-ab/"
+  }
+}

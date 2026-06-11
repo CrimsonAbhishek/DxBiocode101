@@ -1,0 +1,33 @@
+{
+  "id": "malb",
+  "slug": "malb",
+  "name": "mAlb Fast Test Kit",
+  "type": "test-kit",
+  "category": "Renal Function",
+  "shortDescription": "Quantitative determination of mAlb using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of microalbuminuria (mAlb) in human urine samples. An elevated mAlb concentration below the proteinuric level has long been recognized as a marker of kidney disease and increased cardiovascular risk in diabetic nephropathy.",
+  "specifications": {
+    "Test Item": "mAlb",
+    "Sample": "Urine",
+    "Method": "Assay",
+    "Storage Con dition": "4-30℃",
+    "Detection Range": "10.0-200.0 mg/L",
+    "Test Time": "3 min",
+    "Cut-off Value": "20.0 mg/L",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "mAlb",
+    "Renal Function",
+    "Assay",
+    "Kidney Injury"
+  ],
+  "seoTitle": "mAlb Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of microalbuminuria (mAlb) in human urine samples. An elevated mAlb concentration below the proteinuric level has...",
+  "featured": false,
+  "status": "available"
+}

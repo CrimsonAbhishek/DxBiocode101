@@ -1,0 +1,32 @@
+{
+  "id": "fob",
+  "slug": "fob",
+  "name": "FOB Fast Test Kit",
+  "type": "test-kit",
+  "category": "Cancer Markers",
+  "shortDescription": "Quantitative determination of FOB using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative detection of hemoglobin in human fecal sample. lt is used as an adjunctive diagnosis of hemorrhagic lesions. For professional and laboratory use.",
+  "specifications": {
+    "Test Item": "FOB",
+    "Sample": "Fecal",
+    "Detection Range": "25-1000 ng/mL",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "10 min",
+    "Cut-off Value": "50 ng/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "FOB",
+    "Cancer Markers",
+    "Assay"
+  ],
+  "seoTitle": "FOB Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative detection of hemoglobin in human fecal sample. lt is used as an adjunctive diagnosis of hemorrhagic lesions. For professional a...",
+  "featured": false,
+  "status": "available"
+}

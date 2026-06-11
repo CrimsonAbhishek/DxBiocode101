@@ -1,0 +1,33 @@
+{
+  "id": "pct",
+  "slug": "pct",
+  "name": "PCT Fast Test Kit",
+  "type": "test-kit",
+  "category": "Inflammation",
+  "shortDescription": "Quantitative determination of PCT using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of Procalcitonin (PCT) in human serum, plasma or whole blood samples. The test is used as an aid in the assessment and evaluation of patients suspected of bacterial infection, trauma or shock.",
+  "specifications": {
+    "Test Item": "PCT",
+    "Sample": "Serum/Plasma/Whole Blood",
+    "Detection Range": "0.05-50.00 ng/ml",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "15 min",
+    "Cut-off Value": "0.10 ng/ml",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "PCT",
+    "Inflammation",
+    "Assay",
+    "Infection Diagnosis"
+  ],
+  "seoTitle": "PCT Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of Procalcitonin (PCT) in human serum, plasma or whole blood samples. The test is used as an aid in the assessmen...",
+  "featured": false,
+  "status": "available"
+}

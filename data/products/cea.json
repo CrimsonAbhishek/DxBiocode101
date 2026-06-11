@@ -1,0 +1,33 @@
+{
+  "id": "cea",
+  "slug": "cea",
+  "name": "CEA Fast Test Kit",
+  "type": "test-kit",
+  "category": "Cancer Markers",
+  "shortDescription": "Quantitative determination of CEA using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of carcinoembryonic antigen (CEA) in serum or plasma samples. The test is used dinically as an aid in the diagnosis and management of cancer patients. For professional and laboratory use only. This test can NOT be used to guide the diagnosis of pair trisomy 21.",
+  "specifications": {
+    "Test Item": "CEA",
+    "Sample": "Serum/Plasma",
+    "Detection Range": "2.0-500.0 ng/mL",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "15 min",
+    "Cut-off Value": "4.7 ng/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "CEA",
+    "Cancer Markers",
+    "Assay",
+    "Cancer Diagnostics"
+  ],
+  "seoTitle": "CEA Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of carcinoembryonic antigen (CEA) in serum or plasma samples. The test is used dinically as an aid in the diagnos...",
+  "featured": false,
+  "status": "available"
+}

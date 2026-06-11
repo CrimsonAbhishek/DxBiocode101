@@ -1,0 +1,32 @@
+{
+  "id": "ft3",
+  "slug": "ft3",
+  "name": "fT3 Fast Test Kit",
+  "type": "test-kit",
+  "category": "Thyroid Function",
+  "shortDescription": "Quantitative determination of fT3 using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of free triiodothyronine (fT3) in human serum, plasma and whole blood. lt is used as an aid in diagnosis of thyroid diseases. For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "fT3",
+    "Sample": "Serum/Plasma/Whole Blood",
+    "Method": "Assay",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "0.40-50.00 pmol/L",
+    "Test Time": "15 min",
+    "Cut-off Value": "3.10-6.80 pmol/L",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "fT3",
+    "Thyroid Function",
+    "Assay"
+  ],
+  "seoTitle": "fT3 Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of free triiodothyronine (fT3) in human serum, plasma and whole blood. lt is used as an aid in diagnosis of thyro...",
+  "featured": false,
+  "status": "available"
+}

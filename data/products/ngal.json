@@ -1,0 +1,33 @@
+{
+  "id": "ngal",
+  "slug": "ngal",
+  "name": "NGAL Fast Test Kit",
+  "type": "test-kit",
+  "category": "Renal Function",
+  "shortDescription": "Quantitative determination of NGAL using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of neutrophils gelatinase associated lipocalin (NGAL) in human serum and urine samples. This test is used as an aid in the early diagnosis of acute kidney injury (AKl), risk classification and treatment monitoring. For professional and laboratory use only.",
+  "specifications": {
+    "Test Item": "NGAL",
+    "Sample": "Serum/Urine",
+    "Method": "Assay",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "50.0-5000.0 ng/mL",
+    "Test Time": "10 min",
+    "Cut-off Value": "100.0 ng/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "NGAL",
+    "Renal Function",
+    "Assay",
+    "Kidney Injury"
+  ],
+  "seoTitle": "NGAL Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of neutrophils gelatinase associated lipocalin (NGAL) in human serum and urine samples. This test is used as an a...",
+  "featured": false,
+  "status": "available"
+}

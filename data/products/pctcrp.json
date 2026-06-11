@@ -1,0 +1,34 @@
+{
+  "id": "pctcrp",
+  "slug": "pctcrp",
+  "name": "PCT/CRP Fast Test Kit",
+  "type": "test-kit",
+  "category": "Inflammation",
+  "shortDescription": "Quantitative determination of PCT/CRP using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of Procalcitonin (PCT) and C-reactive protein (CRP) in serum, plasma or whole blood. The combination of CRP and PCT will be more accurately to determine the degree of infection and inflammation. It helps to identify systemic or local infection, bacterial infection or virus infection, determine the severity of infection and instruct clinical use of antibiotics. Therefore, the combination of PCT and CRP, when using a wider range of applications, more convenient and more accurate diagnosis.",
+  "specifications": {
+    "Test Item": "PCT/CRP",
+    "Sample": "Serum/Plasma/Whole Blood",
+    "Detection Range": "CRP: 0.5-200.0 mg/L",
+    "Storage Condition": "4-30℃",
+    "Method": "Assay",
+    "Test Time": "15 min",
+    "Cut-off Value": "CRP: 3.0 mg/L",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "PCT/CRP",
+    "Inflammation",
+    "Assay",
+    "Infection Diagnosis",
+    "Inflammation Marker"
+  ],
+  "seoTitle": "PCT/CRP Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of Procalcitonin (PCT) and C-reactive protein (CRP) in serum, plasma or whole blood. The combination of CRP and P...",
+  "featured": false,
+  "status": "available"
+}

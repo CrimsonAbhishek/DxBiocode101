@@ -1,0 +1,33 @@
+{
+  "id": "rf",
+  "slug": "rf",
+  "name": "RF Fast Test Kit",
+  "type": "test-kit",
+  "category": "Rheumatism",
+  "shortDescription": "Quantitative determination of RF using the DX 101 Immunofluorescence Quantitative Analyzer.",
+  "image": "",
+  "intendedUse": "quantitative determination of rheumatoid factor (RF) in serum, plasma or whole blood samples. The test is designed to aid in the diagnosis of autoimmune diseases, such as rheumatoid arthritis (RA). For professional and laboratory use only. Specification",
+  "specifications": {
+    "Test Item": "RF",
+    "Sample Type": "Serum/Plasma/Whole Blood",
+    "Method": "Immunofluorescence Assay",
+    "Storage Condition": "4-30℃",
+    "Detection Range": "10.0-640.0 IU/mL",
+    "Test Time": "10 min",
+    "Cut-off Value": "15.9 IU/mL",
+    "Shelf Life": "24 months"
+  },
+  "applicableDevice": [
+    "dx-101"
+  ],
+  "tags": [
+    "RF",
+    "Rheumatism",
+    "Immunofluorescence Assay",
+    "Rheumatoid Arthritis"
+  ],
+  "seoTitle": "RF Fast Test Kit | DX BIOCODE",
+  "seoDescription": "Intended Use: quantitative determination of rheumatoid factor (RF) in serum, plasma or whole blood samples. The test is designed to aid in the diagnosis o...",
+  "featured": false,
+  "status": "available"
+}
