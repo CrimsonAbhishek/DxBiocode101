@@ -14,6 +14,15 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dxbiocode.com/products.html" />
   <title>Products | DX BIOCODE Medical Diagnostic Equipment</title>
+  <script>
+    function checkHashRedirect() {
+      if (window.location.hash === '#test-menu') {
+        window.location.replace('index.html#test-menu');
+      }
+    }
+    checkHashRedirect();
+    window.addEventListener('hashchange', checkHashRedirect);
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload"
@@ -248,98 +257,6 @@
       font-weight: 500;
     }
 
-    /* Test Menu Section */
-    .test-menu-section {
-      padding: 64px 0;
-      border-top: 2px solid #e5e7eb;
-    }
-
-    .test-categories-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 18px;
-    }
-
-    .test-cat-card {
-      background: #fff;
-      border: 1px solid #e5e7eb;
-      border-radius: var(--radius-md);
-      padding: 22px 18px;
-      transition: var(--transition);
-      cursor: default;
-      position: relative;
-      overflow: hidden;
-      will-change: transform;
-      transform-style: preserve-3d;
-    }
-
-    .test-cat-card::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: var(--brand-gradient);
-      transform: scaleX(0);
-      transition: transform .3s ease;
-    }
-
-    .test-cat-card:hover::after {
-      transform: scaleX(1);
-    }
-
-    .test-cat-card:hover {
-      border-color: rgba(155, 47, 200, 0.15);
-      background: #fafafa;
-      box-shadow: 0 12px 40px rgba(155, 47, 200, .18);
-      transform: translateY(-6px);
-    }
-
-    .test-cat-icon {
-      font-size: 30px;
-      margin-bottom: 12px;
-      display: block;
-      transition: transform .3s ease;
-    }
-
-    .test-cat-card:hover .test-cat-icon {
-      transform: scale(1.15)rotate(-5deg);
-    }
-
-    .test-cat-title {
-      font-size: 13.5px;
-      font-weight: 700;
-      color: #0f172a;
-      margin-bottom: 10px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    .test-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .test-list li {
-      font-size: 12px;
-      color: #6b7280;
-      padding: 2px 0;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .test-list li::before {
-      content: '';
-      width: 5px;
-      height: 5px;
-      background: var(--brand-gradient);
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
 
     /* Future products teaser */
     .coming-soon-grid {
@@ -394,11 +311,7 @@
       letter-spacing: .5px;
     }
 
-    @media (max-width: 1024px) {
-      .test-categories-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
+
 
     @media (max-width: 768px) {
       .product-hero-card {
@@ -410,20 +323,12 @@
         grid-template-columns: 1fr;
       }
 
-      .test-categories-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
       .coming-soon-grid {
         grid-template-columns: 1fr;
       }
     }
 
     @media (max-width: 480px) {
-      .test-categories-grid {
-        grid-template-columns: 1fr;
-      }
-
       .spec-highlights {
         grid-template-columns: 1fr 1fr;
       }
@@ -636,7 +541,6 @@
       <div class="tab-bar-inner">
         <a href="#overview" class="tab-btn active" data-tab="overview">Overview</a>
         <a href="index.html#applications" class="tab-btn">Applications</a>
-        <a href="#test-menu" class="tab-btn" data-tab="test-menu">Test Menu</a>
         <a href="#specs" class="tab-btn" data-tab="specs">Specifications</a>
         <a href="#certifications" class="tab-btn" data-tab="certifications">Certifications</a>
         <a href="about.html" class="tab-btn">About Us</a>
@@ -889,161 +793,7 @@
       </div>
     </div>
 
-    <!-- Test Menu -->
-    <div class="test-menu-section tab-panel" id="test-menu">
-      <div class="section-title-wrap fade-up">
-        <span class="section-eyebrow">Test Menu</span>
-        <h2 class="section-title">Comprehensive Multi-Parameter Testing</h2>
-        <p class="section-sub">Over 80 assay parameters across 12 major clinical categories — all from a single handheld
-          device.</p>
-      </div>
-      <div class="test-categories-grid">
-        <div class="test-cat-card fade-up fade-up-delay-1">
-          <span class="test-cat-icon">❤️</span>
-          <div class="test-cat-title">Cardiac Markers</div>
-          <ul class="test-list">
-            <li>cTnI / hs-cTnI</li>
-            <li>TnT</li>
-            <li>CK-MB</li>
-            <li>BNP / NT-proBNP</li>
-            <li>H-FABP</li>
-            <li>ST2</li>
-            <li>CK-MB / cTnI / Myo</li>
-            <li>CK-MB / cTnI / H-FABP</li>
-          </ul>
-        </div>
-        <div class="test-cat-card fade-up fade-up-delay-2">
-          <span class="test-cat-icon">🩺</span>
-          <div class="test-cat-title">Thyroid Function</div>
-          <ul class="test-list">
-            <li>TSH</li>
-            <li>T3 / T4</li>
-            <li>fT3 / fT4</li>
-          </ul>
-          <div class="test-cat-title" style="margin-top:14px;">Coagulation</div>
-          <ul class="test-list">
-            <li>D-Dimer</li>
-          </ul>
-          <div class="test-cat-title" style="margin-top:14px;">Diabetes</div>
-          <ul class="test-list">
-            <li>HbA1c</li>
-          </ul>
-        </div>
-        <div class="test-cat-card fade-up fade-up-delay-3">
-          <span class="test-cat-icon">🔬</span>
-          <div class="test-cat-title">Inflammation</div>
-          <ul class="test-list">
-            <li>SAA</li>
-            <li>IL-6</li>
-            <li>PCT</li>
-            <li>CRP / hs-CRP</li>
-            <li>Calprotectin</li>
-          </ul>
-          <div class="test-cat-title" style="margin-top:14px;">Renal Function</div>
-          <ul class="test-list">
-            <li>CysC</li>
-            <li>mAlb / β2-MG / NGAL</li>
-          </ul>
-        </div>
-        <div class="test-cat-card fade-up fade-up-delay-4">
-          <span class="test-cat-icon">🦠</span>
-          <div class="test-cat-title">Infectious Diseases</div>
-          <ul class="test-list">
-            <li>Anti-HCV / Anti-TP</li>
-            <li>Anti-HIV / HBsAg</li>
-            <li>Anti-HBs</li>
-            <li>SARS-CoV-2 Ag</li>
-            <li>H. pylori Ag/Ab</li>
-            <li>Influenza A/B</li>
-            <li>Dengue NS1/IgG/IgM</li>
-            <li>RSV/Influenza A/B</li>
-          </ul>
-        </div>
-        <div class="test-cat-card fade-up fade-up-delay-1">
-          <span class="test-cat-icon">🌸</span>
-          <div class="test-cat-title">Fertility</div>
-          <ul class="test-list">
-            <li>HCG+β / LH / FSH</li>
-            <li>AMH / PRL</li>
-            <li>Progesterone</li>
-            <li>Estradiol</li>
-            <li>Testosterone</li>
-          </ul>
-        </div>
-        <div class="test-cat-card fade-up fade-up-delay-2">
-          <span class="test-cat-icon">🏷️</span>
-          <div class="test-cat-title">Tumor Markers</div>
-          <ul class="test-list">
-            <li>tPSA / fPSA</li>
-            <li>AFP / CEA</li>
-            <li>CA125 / CA19-9 / CA15-3</li>
-            <li>PG I / PG II</li>
-          </ul>
-        </div>
-        <div class="test-cat-card fade-up fade-up-delay-3">
-          <span class="test-cat-icon">☀️</span>
-          <div class="test-cat-title">Vitamins</div>
-          <ul class="test-list">
-            <li>25-OH Vitamin D</li>
-            <li>Folate</li>
-            <li>Vitamin B12</li>
-          </ul>
-          <div class="test-cat-title" style="margin-top:14px;">Metabolic</div>
-          <ul class="test-list">
-            <li>Osteocalcin</li>
-          </ul>
-        </div>
-        <div class="test-cat-card fade-up fade-up-delay-4">
-          <span class="test-cat-icon">🧬</span>
-          <div class="test-cat-title">Rheumatology</div>
-          <ul class="test-list">
-            <li>RF</li>
-            <li>ASO</li>
-            <li>Anti-CCP</li>
-          </ul>
-          <div class="test-cat-title" style="margin-top:14px;">Other Tests</div>
-          <ul class="test-list">
-            <li>Cortisol</li>
-            <li>Total IgE</li>
-            <li>Ferritin</li>
-          </ul>
-        </div>
-        <div class="test-cat-card fade-up fade-up-delay-1">
-          <span class="test-cat-icon">🩸</span>
-          <div class="test-cat-title">Sample Types</div>
-          <ul class="test-list">
-            <li>Serum</li>
-            <li>Plasma</li>
-            <li>Whole Blood</li>
-            <li>Capillary Blood</li>
-            <li>Urine</li>
-          </ul>
-          <div style="margin-top:12px;font-size:11.5px;color:#6b7280;line-height:1.5;">Volume: <strong
-              style="color:#3a7bd5">10–200 µL</strong> depending on assay</div>
-        </div>
-        <div class="test-cat-card fade-up fade-up-delay-2" style="grid-column:span 2;">
-          <span class="test-cat-icon">🌐</span>
-          <div class="test-cat-title">Languages Supported</div>
-          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;">
-            <span
-              style="background:#eaf0fb;color:#3a7bd5;padding:4px 12px;border-radius:50px;font-size:12px;font-weight:600;">🇬🇧
-              English</span>
-            <span
-              style="background:#eaf0fb;color:#3a7bd5;padding:4px 12px;border-radius:50px;font-size:12px;font-weight:600;">🇩🇪
-              German</span>
-            <span
-              style="background:#eaf0fb;color:#3a7bd5;padding:4px 12px;border-radius:50px;font-size:12px;font-weight:600;">🇮🇳
-              Hindi</span>
-            <span
-              style="background:#eaf0fb;color:#3a7bd5;padding:4px 12px;border-radius:50px;font-size:12px;font-weight:600;">🇮🇳
-              Tamil</span>
-            <span
-              style="background:#eaf0fb;color:#3a7bd5;padding:4px 12px;border-radius:50px;font-size:12px;font-weight:600;">+
-              Customizable</span>
-          </div>
-        </div>
-      </div>
-    </div>
+
 
     <!-- Test Kits Listing Section -->
     <div class="test-kits-section" id="test-kits" style="padding: 64px 0; border-top: 2px solid #e5e7eb;">
@@ -1319,7 +1069,7 @@
           <ul class="footer-links">
             <li><a href="products.html">All Products</a></li>
             <li><a href="products.html#dx101">DX 101 Analyzer</a></li>
-            <li><a href="products.html#test-menu">Test Menu</a></li>
+            <li><a href="index.html#test-menu">Test Menu</a></li>
             <li><a href="products.html#specs">Specifications</a></li>
           </ul>
         </div>
@@ -1345,11 +1095,11 @@
           </div>
           <h4>Test Categories</h4>
           <ul class="footer-links">
-            <li><a href="#test-menu">Cardiac Markers</a></li>
-            <li><a href="#test-menu">Thyroid Function</a></li>
-            <li><a href="#test-menu">Infectious Diseases</a></li>
-            <li><a href="#test-menu">Tumor Markers</a></li>
-            <li><a href="#test-menu">Fertility Panel</a></li>
+            <li><a href="index.html#test-menu">Cardiac Markers</a></li>
+            <li><a href="index.html#test-menu">Thyroid Function</a></li>
+            <li><a href="index.html#test-menu">Infectious Diseases</a></li>
+            <li><a href="index.html#test-menu">Tumor Markers</a></li>
+            <li><a href="index.html#test-menu">Fertility Panel</a></li>
           </ul>
         </div>
       </div>

@@ -66,11 +66,11 @@ const searchResults = document.getElementById('search-results-dropdown');
 
 let PRODUCTS_DB = [
   { name: 'DX 101 Immunofluorescence Quantitative Analyzer', category: 'POCT Analyzer', img: '/hero.webp', href: '/products.html#dx101' },
-  { name: 'Cardiac Markers Test Panel', category: 'Test Consumables', img: '/hero.webp', href: '/products.html#test-menu' },
-  { name: 'Thyroid Function Test Panel', category: 'Test Consumables', img: '/hero.webp', href: '/products.html#test-menu' },
-  { name: 'Infectious Disease Panel', category: 'Test Consumables', img: '/hero.webp', href: '/products.html#test-menu' },
-  { name: 'Fertility Panel', category: 'Test Consumables', img: '/hero.webp', href: '/products.html#test-menu' },
-  { name: 'Tumor Markers Panel', category: 'Test Consumables', img: '/hero.webp', href: '/products.html#test-menu' },
+  { name: 'Cardiac Markers Test Panel', category: 'Test Consumables', img: '/hero.webp', href: '/index.html#test-menu' },
+  { name: 'Thyroid Function Test Panel', category: 'Test Consumables', img: '/hero.webp', href: '/index.html#test-menu' },
+  { name: 'Infectious Disease Panel', category: 'Test Consumables', img: '/hero.webp', href: '/index.html#test-menu' },
+  { name: 'Fertility Panel', category: 'Test Consumables', img: '/hero.webp', href: '/index.html#test-menu' },
+  { name: 'Tumor Markers Panel', category: 'Test Consumables', img: '/hero.webp', href: '/index.html#test-menu' },
 ];
 
 let PRODUCT_MAP = {};
