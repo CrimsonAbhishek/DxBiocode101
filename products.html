@@ -18,6 +18,8 @@
     function checkHashRedirect() {
       if (window.location.hash === '#test-menu') {
         window.location.replace('index.html#test-menu');
+      } else if (window.location.hash === '#certifications') {
+        window.location.replace('index.html#certifications');
       }
     }
     checkHashRedirect();
@@ -542,7 +544,7 @@
         <a href="#overview" class="tab-btn active" data-tab="overview">Overview</a>
         <a href="index.html#applications" class="tab-btn">Applications</a>
         <a href="#specs" class="tab-btn" data-tab="specs">Specifications</a>
-        <a href="#certifications" class="tab-btn" data-tab="certifications">Certifications</a>
+        <a href="index.html#certifications" class="tab-btn">Certifications</a>
         <a href="about.html" class="tab-btn">About Us</a>
       </div>
     </div>
@@ -905,98 +907,7 @@
       </div>
     </div>
 
-    <!-- Certifications Section Tab Panel -->
-    <div class="certifications-section tab-panel" id="certifications">
-      <div class="section-title-wrap fade-up">
-        <span class="section-eyebrow">Quality &amp; Compliance</span>
-        <h2 class="section-title">Clinical Credentials &amp; Standards</h2>
-        <p class="section-sub">DX BIOCODE devices are manufactured and certified to meet the most rigorous international
-          clinical and regulatory standards.</p>
-      </div>
 
-      <div class="certs-grid">
-        <!-- ISO 9001 -->
-        <div class="cert-card fade-up fade-up-delay-1">
-          <div class="cert-badge-wrap">📋</div>
-          <span class="cert-tag">Quality Management</span>
-          <h3>ISO 9001:2015</h3>
-          <p class="cert-desc">International standard certifying organization-wide quality management, client focus, and
-            continuous operational optimization.</p>
-        </div>
-
-        <!-- ISO 13485 -->
-        <div class="cert-card fade-up fade-up-delay-2">
-          <div class="cert-badge-wrap">🩺</div>
-          <span class="cert-tag">Medical Device Standard</span>
-          <h3>ISO 13485:2016</h3>
-          <p class="cert-desc">Specific global quality management standard verifying safety and manufacturing compliance
-            for diagnostic medical devices.</p>
-        </div>
-
-        <!-- FSC -->
-        <div class="cert-card fade-up fade-up-delay-3">
-          <div class="cert-badge-wrap">✈️</div>
-          <span class="cert-tag">Global Export</span>
-          <h3>FSC Certified</h3>
-          <p class="cert-desc">Free Sales Certificate validates that the device is legally manufactured and commercially
-            sold without restrictions globally.</p>
-        </div>
-
-        <!-- CE -->
-        <div class="cert-card fade-up fade-up-delay-1">
-          <div class="cert-badge-wrap">🇪🇺</div>
-          <span class="cert-tag">European Conformity</span>
-          <h3>CE Mark</h3>
-          <p class="cert-desc">Confirms that the device meets health, safety, and environmental protection standards
-            within the European Economic Area.</p>
-        </div>
-
-        <!-- NMPA -->
-        <div class="cert-card fade-up fade-up-delay-2">
-          <div class="cert-badge-wrap">🛡️</div>
-          <span class="cert-tag">Regulatory Approved</span>
-          <h3>NMPA Compliant</h3>
-          <p class="cert-desc">Evaluates safety and efficacy, certifying the device for clinical diagnostic
-            applications.</p>
-        </div>
-
-        <!-- MDSAP -->
-        <div class="cert-card fade-up fade-up-delay-3">
-          <div class="cert-badge-wrap">🌐</div>
-          <span class="cert-tag">Global Unified Audit</span>
-          <h3>MDSAP Audit</h3>
-          <p class="cert-desc">Single regulatory audit satisfying requirements for USA (FDA), Canada (HC), Brazil
-            (ANVISA), Australia (TGA), and Japan (MHLW).</p>
-        </div>
-
-        <!-- NGSP -->
-        <div class="cert-card fade-up fade-up-delay-1">
-          <div class="cert-badge-wrap">🩸</div>
-          <span class="cert-tag">Diabetes Standard</span>
-          <h3>NGSP Standard</h3>
-          <p class="cert-desc">Standardizes HbA1c testing parameters, ensuring direct correlation to the landmark DCCT
-            clinical trials.</p>
-        </div>
-
-        <!-- IFCC -->
-        <div class="cert-card fade-up fade-up-delay-2">
-          <div class="cert-badge-wrap">🧪</div>
-          <span class="cert-tag">Clinical Chemistry</span>
-          <h3>IFCC Standardized</h3>
-          <p class="cert-desc">Standardized calibration metrics aligned with the International Federation of Clinical
-            Chemistry for global lab compatibility.</p>
-        </div>
-
-        <!-- IVD -->
-        <div class="cert-card fade-up fade-up-delay-3">
-          <div class="cert-badge-wrap">🔬</div>
-          <span class="cert-tag">In Vitro Diagnostics</span>
-          <h3>IVD Approved</h3>
-          <p class="cert-desc">Certified for analyzing clinical samples (blood, plasma, urine) outside the body to
-            deliver accurate quantitative values.</p>
-        </div>
-      </div>
-    </div>
 
     <!-- Coming Soon Products -->
     <div style="padding:64px 0;border-top:2px solid #e5e7eb;">
