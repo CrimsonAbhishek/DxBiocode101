@@ -29,6 +29,6 @@ function csrf_verify(): void {
         die(json_encode(['success' => false, 'message' => 'Invalid request. Please refresh and try again.']));
     }
 
-    // Rotate token after use to prevent replay
-    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+    // Token rotation is now handled explicitly on login/logout in auth.php
+    // to preserve valid UX for AJAX-heavy admin dashboard pages.
 }

@@ -12,6 +12,11 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     die(json_encode(['success' => false, 'message' => 'Method not allowed.']));
 }
 
+if (isset($_SERVER['CONTENT_LENGTH']) && (int)$_SERVER['CONTENT_LENGTH'] > 102400) {
+    http_response_code(413);
+    die(json_encode(['success' => false, 'message' => 'Payload too large (max 100KB).']));
+}
+
 $base = dirname(__DIR__);
 require_once $base . '/includes/csrf.php';
 require_once $base . '/includes/rate-limit.php';
@@ -69,8 +74,8 @@ if (!empty($errors)) {
 $db = get_db();
 
 $stmt = $db->prepare("
-    INSERT INTO contact_requests (name, email, phone, subject, message)
-    VALUES (:name, :email, :phone, :subject, :message)
+    INSERT INTO contact_requests (name, email, phone, subject, message, ip_address)
+    VALUES (:name, :email, :phone, :subject, :message, :ip)
 ");
 
 $stmt->execute([
@@ -79,6 +84,7 @@ $stmt->execute([
     ':phone'   => $phone ?: null,
     ':subject' => $subject ?: null,
     ':message' => $message,
+    ':ip'      => $_SERVER['REMOTE_ADDR'] ?? '127.0.0.1',
 ]);
 
 // ── 6. Send emails ────────────────────────────────────────────

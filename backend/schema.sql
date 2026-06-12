@@ -35,11 +35,13 @@ CREATE TABLE IF NOT EXISTS `quote_requests` (
   `product_count`   INT UNSIGNED     NOT NULL DEFAULT 0,
   `status`          ENUM('new','contacted','quoted','closed') NOT NULL DEFAULT 'new',
   `internal_notes`  TEXT             DEFAULT NULL COMMENT 'Admin-only, never shown to customer',
+  `ip_address`      VARCHAR(45)      DEFAULT NULL,
   `created_at`      TIMESTAMP        NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   INDEX `idx_status`        (`status`),
   INDEX `idx_email`         (`email`),
   INDEX `idx_company_type`  (`company_type`),
+  INDEX `idx_ip_address`    (`ip_address`),
   INDEX `idx_created_at`    (`created_at`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -53,8 +55,10 @@ CREATE TABLE IF NOT EXISTS `contact_requests` (
   `phone`       VARCHAR(30)      DEFAULT NULL,
   `subject`     VARCHAR(200)     DEFAULT NULL,
   `message`     TEXT             NOT NULL,
+  `ip_address`  VARCHAR(45)      DEFAULT NULL,
   `created_at`  TIMESTAMP        NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   INDEX `idx_email`      (`email`),
+  INDEX `idx_ip_address` (`ip_address`),
   INDEX `idx_created_at` (`created_at`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

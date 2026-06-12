@@ -12,6 +12,11 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     die(json_encode(['success' => false, 'message' => 'Method not allowed.']));
 }
 
+if (isset($_SERVER['CONTENT_LENGTH']) && (int)$_SERVER['CONTENT_LENGTH'] > 102400) {
+    http_response_code(413);
+    die(json_encode(['success' => false, 'message' => 'Payload too large (max 100KB).']));
+}
+
 $base = dirname(__DIR__);
 require_once $base . '/includes/csrf.php';
 require_once $base . '/includes/rate-limit.php';
@@ -74,7 +79,10 @@ if (mb_strlen($message) > 5000) $errors[] = 'Message is too long (max 5000 chara
 $products      = [];
 $product_count = 0;
 if (is_array($products_raw)) {
-    foreach ($products_raw as $p) {
+    if (count($products_raw) > 50) {
+        $errors[] = 'Too many products requested (max 50).';
+    } else {
+        foreach ($products_raw as $p) {
         $prod_name = trim($p['product'] ?? $p['name'] ?? '');
         $prod_qty  = max(1, (int)($p['quantity'] ?? 1));
         if (!empty($prod_name) && mb_strlen($prod_name) <= 200) {
@@ -97,9 +105,9 @@ $db = get_db();
 
 $stmt = $db->prepare("
     INSERT INTO quote_requests
-      (name, company, company_type, email, phone, country, message, products_json, product_count, status)
+      (name, company, company_type, email, phone, country, message, products_json, product_count, status, ip_address)
     VALUES
-      (:name, :company, :company_type, :email, :phone, :country, :message, :products_json, :product_count, 'new')
+      (:name, :company, :company_type, :email, :phone, :country, :message, :products_json, :product_count, 'new', :ip)
 ");
 
 $stmt->execute([
@@ -112,6 +120,7 @@ $stmt->execute([
     ':message'       => $message       ?: null,
     ':products_json' => json_encode($products, JSON_UNESCAPED_UNICODE),
     ':product_count' => $product_count,
+    ':ip'            => $_SERVER['REMOTE_ADDR'] ?? '127.0.0.1',
 ]);
 
 // ── 7. Send emails ────────────────────────────────────────────

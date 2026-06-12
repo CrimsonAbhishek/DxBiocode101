@@ -47,6 +47,9 @@ function login_admin(string $username): void {
     $_SESSION[ADMIN_SESSION_KEY]  = true;
     $_SESSION[ADMIN_SESSION_USER] = $username;
     $_SESSION['last_activity']    = time();
+    
+    // Explicitly rotate CSRF token on authentication state change
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }
 
 function logout_admin(): void {

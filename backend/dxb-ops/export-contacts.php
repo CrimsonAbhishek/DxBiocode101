@@ -44,8 +44,17 @@ fputcsv($output, [
     'ID', 'Name', 'Email', 'Phone', 'Subject', 'Message', 'Date Submitted'
 ]);
 
+function sanitize_csv_field($field) {
+    if ($field === null || $field === '') return '';
+    $field = (string)$field;
+    if (in_array($field[0], ['=', '+', '-', '@'], true)) {
+        return "'" . $field;
+    }
+    return $field;
+}
+
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-    fputcsv($output, [
+    $csv_row = [
         $row['id'],
         $row['name'],
         $row['email'],
@@ -53,7 +62,9 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         $row['subject'] ?? '',
         $row['message'] ?? '',
         $row['created_at']
-    ]);
+    ];
+
+    fputcsv($output, array_map('sanitize_csv_field', $csv_row));
 }
 
 fclose($output);

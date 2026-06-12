@@ -57,6 +57,15 @@ fputcsv($output, [
     'Products', 'Total Qty', 'Message', 'Status', 'Internal Notes', 'Date Submitted'
 ]);
 
+function sanitize_csv_field($field) {
+    if ($field === null || $field === '') return '';
+    $field = (string)$field;
+    if (in_array($field[0], ['=', '+', '-', '@'], true)) {
+        return "'" . $field;
+    }
+    return $field;
+}
+
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     $products_str = '';
     $products = json_decode($row['products_json'] ?? '[]', true);
@@ -68,7 +77,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         $products_str = implode(', ', $p_arr);
     }
 
-    fputcsv($output, [
+    $csv_row = [
         $row['id'],
         $row['name'],
         $row['company'] ?? '',
@@ -82,7 +91,9 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         $row['status'],
         $row['internal_notes'] ?? '',
         $row['created_at']
-    ]);
+    ];
+
+    fputcsv($output, array_map('sanitize_csv_field', $csv_row));
 }
 
 fclose($output);
