@@ -1,6 +1,6 @@
 <?php
 // Inject real CSRF token before serving the page
-require_once __DIR__ . '/includes/csrf.php';
+require_once __DIR__ . '/backend/includes/csrf.php';
 session_start();
 $csrf_token = csrf_token();
 ?>

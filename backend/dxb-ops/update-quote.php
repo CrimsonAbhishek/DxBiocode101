@@ -5,9 +5,11 @@
 
 declare(strict_types=1);
 header('Content-Type: application/json; charset=utf-8');
+header('X-Content-Type-Options: nosniff');
 
 $base = dirname(__DIR__);
 require_once $base . '/includes/auth.php';
+require_once $base . '/includes/csrf.php';
 require_once $base . '/config/db.php';
 
 // Must be authenticated

@@ -7,11 +7,13 @@ declare(strict_types=1);
 
 $base = dirname(__DIR__);
 require_once $base . '/config/db.php';
+require_once $base . '/includes/csrf.php';
 
 $message = '';
 $success = false;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    csrf_verify();
     $username = trim($_POST['username'] ?? '');
     $password = $_POST['password'] ?? '';
     $confirm  = $_POST['confirm'] ?? '';
@@ -67,6 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <?php endif; ?>
   <?php if (!$success): ?>
   <form method="POST">
+    <?= csrf_field() ?>
     <label>Setup Secret</label>
     <input type="password" name="secret" required placeholder="Hint: look in DEPLOYMENT.md" />
     <label>Username</label>

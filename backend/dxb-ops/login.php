@@ -6,6 +6,7 @@
 $base = dirname(__DIR__);
 require_once $base . '/includes/auth.php';
 require_once $base . '/includes/rate-limit.php';
+require_once $base . '/includes/csrf.php';
 require_once $base . '/config/db.php';
 
 session_start_secure();
@@ -20,6 +21,9 @@ $error   = '';
 $timeout = !empty($_GET['timeout']);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Verify CSRF token
+    csrf_verify();
+
     // Rate limit login attempts
     if (!rate_limit_check('admin_login', 5, 300)) {
         $error = 'Too many login attempts. Please wait 5 minutes.';
@@ -75,6 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php endif; ?>
 
     <form method="POST" autocomplete="off">
+      <?= csrf_field() ?>
       <div class="form-group">
         <label for="username">Username</label>
         <input type="text" id="username" name="username" required
