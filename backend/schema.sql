@@ -41,8 +41,7 @@ CREATE TABLE IF NOT EXISTS `quote_requests` (
   INDEX `idx_status`        (`status`),
   INDEX `idx_email`         (`email`),
   INDEX `idx_company_type`  (`company_type`),
-  INDEX `idx_ip_address`    (`ip_address`),
-  INDEX `idx_created_at`    (`created_at`)
+  INDEX `idx_rate_limit`    (`ip_address`, `created_at`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- ----------------------------------------------------------------
@@ -59,6 +58,5 @@ CREATE TABLE IF NOT EXISTS `contact_requests` (
   `created_at`  TIMESTAMP        NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   INDEX `idx_email`      (`email`),
-  INDEX `idx_ip_address` (`ip_address`),
-  INDEX `idx_created_at` (`created_at`)
+  INDEX `idx_rate_limit` (`ip_address`, `created_at`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
