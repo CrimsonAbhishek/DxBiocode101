@@ -1,0 +1,10 @@
+{
+  "name": "dxbiocode/backend",
+  "description": "DX BIOCODE PHP backend",
+  "require": {
+    "phpmailer/phpmailer": "^6.9"
+  },
+  "config": {
+    "vendor-dir": "vendor"
+  }
+}

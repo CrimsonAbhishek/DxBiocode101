@@ -803,7 +803,7 @@
     "slug": "tpsa",
     "name": "tPSA Fast Test Kit",
     "type": "test-kit",
-    "category": "Cancer Markers",
+    "category": "Tumor Markers",
     "shortDescription": "Quantitative determination of tPSA using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative determination of tPSA in human serum and plasma samples. lt can be used as an aid in the diagnosis and management of patients with prostate cancer. For professional and laboratory use.",
@@ -822,7 +822,7 @@
     ],
     "tags": [
       "tPSA",
-      "Cancer Markers",
+      "Tumor Markers",
       "Assay",
       "Cancer Diagnostics"
     ],
@@ -836,7 +836,7 @@
     "slug": "fpsa",
     "name": "fPSA Fast Test Kit",
     "type": "test-kit",
-    "category": "Cancer Markers",
+    "category": "Tumor Markers",
     "shortDescription": "Quantitative determination of fPSA using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative determination of free PSA in human serum and plasma samples. lt is mainly used for dynamic monitoring of patients with malignant tumors to assist in judging the disease process or treatment effect. It cannot be used as a basis for early diagnosis of malignant tumors, and is not suitable for tumor screening in the general population. This assay is intended to be used in conjunction with the Getein total PSA test as an aid in distinguishing prostate cancer from benign prostatic conditions in men age 50 years or older who have a digital rectal examination (DRE) that is not suspicious for prostate cancer and the Getein total PSA value between 4 ng/mL and 10 ng/mL.",
@@ -855,7 +855,7 @@
     ],
     "tags": [
       "fPSA",
-      "Cancer Markers",
+      "Tumor Markers",
       "Assay",
       "Tumor Marker",
       "Cancer Diagnostics"
@@ -870,7 +870,7 @@
     "slug": "cea",
     "name": "CEA Fast Test Kit",
     "type": "test-kit",
-    "category": "Cancer Markers",
+    "category": "Tumor Markers",
     "shortDescription": "Quantitative determination of CEA using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative determination of carcinoembryonic antigen (CEA) in serum or plasma samples. The test is used dinically as an aid in the diagnosis and management of cancer patients. For professional and laboratory use only. This test can NOT be used to guide the diagnosis of pair trisomy 21.",
@@ -889,7 +889,7 @@
     ],
     "tags": [
       "CEA",
-      "Cancer Markers",
+      "Tumor Markers",
       "Assay",
       "Cancer Diagnostics"
     ],
@@ -903,7 +903,7 @@
     "slug": "afp",
     "name": "AFP Fast Test Kit",
     "type": "test-kit",
-    "category": "Cancer Markers",
+    "category": "Tumor Markers",
     "shortDescription": "Quantitative determination of AFP using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative determination of AFP in human serum or plasma samples. This test can be used as an aid in the diagnosis and monitoring of primary liver cancer. For professional and laboratory use only. This test can NOT be used to guide the diagnosis of pair trisomy 21.",
@@ -922,7 +922,7 @@
     ],
     "tags": [
       "AFP",
-      "Cancer Markers",
+      "Tumor Markers",
       "Assay",
       "Cancer Diagnostics"
     ],
@@ -936,7 +936,7 @@
     "slug": "ca125",
     "name": "CA125 Fast Test Kit",
     "type": "test-kit",
-    "category": "Cancer Markers",
+    "category": "Tumor Markers",
     "shortDescription": "Quantitative determination of CA125 using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative determination of Cancer Antigen 125 (CA125) in serum, plasma or whole blood samples. The test is indicated for use as an aid in the detection of ovarian carcinoma. For professional and laboratory use.",
@@ -955,7 +955,7 @@
     ],
     "tags": [
       "CA125",
-      "Cancer Markers",
+      "Tumor Markers",
       "Assay",
       "Cancer Diagnostics"
     ],
@@ -969,7 +969,7 @@
     "slug": "ca15-3",
     "name": "CA15-3 Fast Test Kit",
     "type": "test-kit",
-    "category": "Cancer Markers",
+    "category": "Tumor Markers",
     "shortDescription": "Quantitative determination of CA15-3 using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative determination of Cancer Antigen 15-3 (CA15-3) in serum or plasma samples. This test is utilized for the adjunctive diagnosis of breast cancer patients. For professional and laboratory use.",
@@ -988,7 +988,7 @@
     ],
     "tags": [
       "CA15-3",
-      "Cancer Markers",
+      "Tumor Markers",
       "Assay",
       "Cancer Diagnostics"
     ],
@@ -1002,7 +1002,7 @@
     "slug": "ca19-9",
     "name": "CA19-9 Fast Test Kit",
     "type": "test-kit",
-    "category": "Cancer Markers",
+    "category": "Tumor Markers",
     "shortDescription": "Quantitative determination of CA19-9 using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative determination of Cancer Antigen 19-9 (CA19-9) in serum, plasma or whole blood. The test is utilized for the adjunctive diagnosis of pancreatic cancer. For professional and laboratory use only.",
@@ -1021,7 +1021,7 @@
     ],
     "tags": [
       "CA19-9",
-      "Cancer Markers",
+      "Tumor Markers",
       "Assay",
       "Cancer Diagnostics"
     ],
@@ -1035,7 +1035,7 @@
     "slug": "fob",
     "name": "FOB Fast Test Kit",
     "type": "test-kit",
-    "category": "Cancer Markers",
+    "category": "Tumor Markers",
     "shortDescription": "Quantitative determination of FOB using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative detection of hemoglobin in human fecal sample. lt is used as an adjunctive diagnosis of hemorrhagic lesions. For professional and laboratory use.",
@@ -1054,7 +1054,7 @@
     ],
     "tags": [
       "FOB",
-      "Cancer Markers",
+      "Tumor Markers",
       "Assay"
     ],
     "seoTitle": "FOB Fast Test Kit | DX BIOCODE",
@@ -1067,7 +1067,7 @@
     "slug": "pg-ipg-ii",
     "name": "PG I/PG II Fast Test Kit",
     "type": "test-kit",
-    "category": "Cancer Markers",
+    "category": "Tumor Markers",
     "shortDescription": "Quantitative determination of PG I/PG II using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative determination of Pepsinogen I (PG I)/Pepsinogen II (PG II) in human serum, plasma samples. This test is used as an auxiliary diagnosis of the degree of gastric mucosal atrophy. For professional and laboratory use.",
@@ -1086,7 +1086,7 @@
     ],
     "tags": [
       "PG I/PG II",
-      "Cancer Markers",
+      "Tumor Markers",
       "Assay"
     ],
     "seoTitle": "PG I/PG II Fast Test Kit | DX BIOCODE",
@@ -1131,7 +1131,7 @@
     "slug": "insulin",
     "name": "Insulin Fast Test Kit",
     "type": "test-kit",
-    "category": "Metabolism",
+    "category": "Metabolic",
     "shortDescription": "Quantitative determination of Insulin using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative determination of insulin in human serum and plasma samples. This test is used to aid in the diagnosis of glucose metabolism disorders and the evaluation of pancreatic islet function. For professional and laboratory use only.",
@@ -1150,7 +1150,7 @@
     ],
     "tags": [
       "Insulin",
-      "Metabolism",
+      "Metabolic",
       "Assay"
     ],
     "seoTitle": "Insulin Fast Test Kit | DX BIOCODE",
@@ -1163,7 +1163,7 @@
     "slug": "osteocalcin",
     "name": "Osteocalcin Fast Test Kit",
     "type": "test-kit",
-    "category": "Metabolism",
+    "category": "Metabolic",
     "shortDescription": "Quantitative determination of Osteocalcin using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative determination of Osteocalcin in serum or plasma samples. This test is mainly used for the auxiliary diagnosis of various osteoporosis and early bone synthesis after bone injury. For professional and laboratory use.",
@@ -1182,7 +1182,7 @@
     ],
     "tags": [
       "Osteocalcin",
-      "Metabolism",
+      "Metabolic",
       "Assay"
     ],
     "seoTitle": "Osteocalcin Fast Test Kit | DX BIOCODE",
@@ -1195,7 +1195,7 @@
     "slug": "hbsag",
     "name": "HBsAg Fast Test Kit",
     "type": "test-kit",
-    "category": "Infectious Disease",
+    "category": "Infectious Diseases",
     "shortDescription": "Quantitative determination of HBsAg using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative determination of hepatitis B surface antigen (HBsAg) in human serum and plasma samples. The test is used clinically as suitable for blood supply screening and clinical diagnosis of hepatitis B virus infection. For professional and laboratory use only.",
@@ -1214,7 +1214,7 @@
     ],
     "tags": [
       "HBsAg",
-      "Infectious Disease",
+      "Infectious Diseases",
       "Assay",
       "Infection Diagnosis"
     ],
@@ -1228,7 +1228,7 @@
     "slug": "anti-hbs",
     "name": "Anti-HBs Fast Test Kit",
     "type": "test-kit",
-    "category": "Infectious Disease",
+    "category": "Infectious Diseases",
     "shortDescription": "Quantitative determination of Anti-HBs using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative determination of hepatitis B surface antibody (Anti-HBs) in human serum, plasma and whole blood samples. The test can aid to monitor the recovery of patients with hepatitis B virus (HBV) and evaluate the efficacy of hepatitis B vaccine.",
@@ -1247,7 +1247,7 @@
     ],
     "tags": [
       "Anti-HBs",
-      "Infectious Disease",
+      "Infectious Diseases",
       "Assay"
     ],
     "seoTitle": "Anti-HBs Fast Test Kit | DX BIOCODE",
@@ -1260,7 +1260,7 @@
     "slug": "anti-hcv",
     "name": "Anti-HCV Fast Test Kit",
     "type": "test-kit",
-    "category": "Infectious Disease",
+    "category": "Infectious Diseases",
     "shortDescription": "Quantitative determination of Anti-HCV using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "qualitative determination of hepatitis C virus (HCV) antibody in serum or plasma samples. This test can be clinically used for the auxiliary diagnosis of hepatitis C. For professional and laboratory use only.",
@@ -1279,7 +1279,7 @@
     ],
     "tags": [
       "Anti-HCV",
-      "Infectious Disease",
+      "Infectious Diseases",
       "Assay"
     ],
     "seoTitle": "Anti-HCV Fast Test Kit | DX BIOCODE",
@@ -1292,7 +1292,7 @@
     "slug": "anti-hiv",
     "name": "Anti-HIV Fast Test Kit",
     "type": "test-kit",
-    "category": "Infectious Disease",
+    "category": "Infectious Diseases",
     "shortDescription": "Quantitative determination of Anti-HIV using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "qualitative determination of human immunodeficiency virus (HlV) antibody in serum or plasma samples. This test can be cinically used for the auxiliary diagnosis of acquired immunodeficiency syndrome (AlDS). For professional and laboratory use only.",
@@ -1311,7 +1311,7 @@
     ],
     "tags": [
       "Anti-HIV",
-      "Infectious Disease",
+      "Infectious Diseases",
       "Assay"
     ],
     "seoTitle": "Anti-HIV Fast Test Kit | DX BIOCODE",
@@ -1324,7 +1324,7 @@
     "slug": "anti-tp",
     "name": "Anti-TP Fast Test Kit",
     "type": "test-kit",
-    "category": "Infectious Disease",
+    "category": "Infectious Diseases",
     "shortDescription": "Quantitative determination of Anti-TP using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "qualitative determination of treponema pallidum (TP) antibody in serum or plasma samples. This test is suitable for the auxiliary diagnosis and management of syphilis. For professional and laboratory use only.",
@@ -1343,7 +1343,7 @@
     ],
     "tags": [
       "Anti-TP",
-      "Infectious Disease",
+      "Infectious Diseases",
       "Assay"
     ],
     "seoTitle": "Anti-TP Fast Test Kit | DX BIOCODE",
@@ -1356,7 +1356,7 @@
     "slug": "antigen",
     "name": "Antigen Fast Test Kit",
     "type": "test-kit",
-    "category": "Other Test Reagents",
+    "category": "Other Tests",
     "shortDescription": "Quantitative determination of Antigen using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative detection of H. pylori antigen in human stool specimen. It is a useful aid in the diagnosis of a number of gastrointestinal disorders. For professional and laboratory use.",
@@ -1375,7 +1375,7 @@
     ],
     "tags": [
       "Antigen",
-      "Other Test Reagents",
+      "Other Tests",
       "Assay"
     ],
     "seoTitle": "Antigen Fast Test Kit | DX BIOCODE",
@@ -1388,7 +1388,7 @@
     "slug": "dengue-ns1-ag",
     "name": "Dengue NS1 Ag Fast Test Kit",
     "type": "test-kit",
-    "category": "Infectious Disease",
+    "category": "Infectious Diseases",
     "shortDescription": "Quantitative determination of Dengue NS1 Ag using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "Dengue NS1 Ag Rapid Test (Immunofluorescence Assay) is intended for the quantitative detection of dengue NS1 antigen in human serum, plasma or whole blood. It is used as an aid in the early clinical assessment of Dengue virus infection. Specification",
@@ -1407,7 +1407,7 @@
     ],
     "tags": [
       "Dengue NS1 Ag",
-      "Infectious Disease",
+      "Infectious Diseases",
       "Immunofluorescence Assay",
       "Infection Diagnosis"
     ],
@@ -1421,7 +1421,7 @@
     "slug": "h-pylori",
     "name": "H. pylori Fast Test Kit",
     "type": "test-kit",
-    "category": "Infectious Disease",
+    "category": "Infectious Diseases",
     "shortDescription": "Quantitative determination of H. pylori using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative detection of H. pylori specific antigen in human stool specimen. It is a useful aid in the diagnosis of a number of gastrointestinal disorders. For professional and laboratory use only. About H. pylori infection in the gastrointestinal tract can be used as an auxiliary diagnosis for gastritis, gastric ulcer, and gastric cancer. Contents For Getein1100 Package specifications: 10 tests/box, 25 tests/box test card in a sealed pouch with desiccant 2) Sample diluent 3) User Manual:1 piece/box 4) SD card: 1 piece/box Note: Do not mix or interchange different batches of kits.",
@@ -1440,7 +1440,7 @@
     ],
     "tags": [
       "H. pylori",
-      "Infectious Disease",
+      "Infectious Diseases",
       "Assay",
       "Infection Diagnosis",
       "Cancer Diagnostics"
@@ -1455,7 +1455,7 @@
     "slug": "lnfluenza-ab",
     "name": "lnfluenza A/B Fast Test Kit",
     "type": "test-kit",
-    "category": "Infectious Disease",
+    "category": "Infectious Diseases",
     "shortDescription": "Quantitative determination of lnfluenza A/B Antigen using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "lnfluenza A/B Fast Test Kit (lmmunofluorescence Assay) is intended for the qualitative detection of nucleocapsid protein antigen from influenza A and influenza B in human nasal swab samples from individuals suspected of respiratory viral infection consistent with influenza A and influenza B by their healthcare provider. This test is intended for professional and laboratory use. lnfluenza A/B Fast Test Kit (lmmunofluorescence Assay) is an aid in the differentiate of patients with suspected influenza A and influenza B virus infection in conjunction with clinical symptoms and result of other diagnostic methods. Results from the test should not be used as the sole basis for diagnosis and exclusion of influenza A and influenza B infection.",
@@ -1472,7 +1472,7 @@
     ],
     "tags": [
       "lnfluenza A/B Antigen",
-      "Infectious Disease",
+      "Infectious Diseases",
       "Assay",
       "Infection Diagnosis"
     ],
@@ -1486,7 +1486,7 @@
     "slug": "rsvinfluenza-ab",
     "name": "RSV/Influenza A/B Fast Test Kit",
     "type": "test-kit",
-    "category": "Infectious Disease",
+    "category": "Infectious Diseases",
     "shortDescription": "Quantitative determination of RSV/Influenza A/B using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "qualitative detection of influenza A and influenza B antigens and respiratory syncytial virus (RSV) antigen in human nasal swab. The test is indicated to be used as an auxiliary diagnostic of influenza virus and respiratory syncytial virus infections in conjunction with clinical and epidemiological risk factors. For professional and laboratory use.",
@@ -1505,7 +1505,7 @@
     ],
     "tags": [
       "RSV/Influenza A/B",
-      "Infectious Disease",
+      "Infectious Diseases",
       "Assay",
       "Infection Diagnosis"
     ],
@@ -1886,7 +1886,7 @@
     "slug": "anti-ccp",
     "name": "Anti-CCP Fast Test Kit",
     "type": "test-kit",
-    "category": "Rheumatism",
+    "category": "Rheumatology",
     "shortDescription": "Quantitative determination of Anti-CCP using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative determination of anti-CCP in serum, plasma or whole blood samples. The test is designed to aid in the diagnosis of autoimmune diseases, such as rheumatoid arthritis (RA). For professional and laboratory use only. Specification",
@@ -1905,7 +1905,7 @@
     ],
     "tags": [
       "Anti-CCP",
-      "Rheumatism",
+      "Rheumatology",
       "Immunofluorescence Assay",
       "Rheumatoid Arthritis"
     ],
@@ -1919,7 +1919,7 @@
     "slug": "aso",
     "name": "ASO Fast Test Kit",
     "type": "test-kit",
-    "category": "Rheumatism",
+    "category": "Rheumatology",
     "shortDescription": "Quantitative determination of ASO using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative determination of anti streptolysin \"O\" antibody (ASO) in serum, plasma or whole blood samples. ASO is a very valuable marker for the diagnosis of group A streptococcal infection, its titer can reflect the severity of infection. Some diseases will lead to a significant increase in ASO titer, such as acute rheumatic fever. For professional and laboratory use. Specification",
@@ -1938,7 +1938,7 @@
     ],
     "tags": [
       "ASO",
-      "Rheumatism",
+      "Rheumatology",
       "Immunofluorescence Assay",
       "Infection Diagnosis"
     ],
@@ -1952,7 +1952,7 @@
     "slug": "rf",
     "name": "RF Fast Test Kit",
     "type": "test-kit",
-    "category": "Rheumatism",
+    "category": "Rheumatology",
     "shortDescription": "Quantitative determination of RF using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative determination of rheumatoid factor (RF) in serum, plasma or whole blood samples. The test is designed to aid in the diagnosis of autoimmune diseases, such as rheumatoid arthritis (RA). For professional and laboratory use only. Specification",
@@ -1971,7 +1971,7 @@
     ],
     "tags": [
       "RF",
-      "Rheumatism",
+      "Rheumatology",
       "Immunofluorescence Assay",
       "Rheumatoid Arthritis"
     ],
@@ -1985,7 +1985,7 @@
     "slug": "cortisol",
     "name": "Cortisol Fast Test Kit",
     "type": "test-kit",
-    "category": "Other Test Reagents",
+    "category": "Other Tests",
     "shortDescription": "Quantitative determination of Cortisol using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative determination of cortisol in human serum and plasma samples. lt is mainly used for auxiliary evaluation of Adrenal cortex function. For professional and laboratory use.",
@@ -2004,7 +2004,7 @@
     ],
     "tags": [
       "Cortisol",
-      "Other Test Reagents",
+      "Other Tests",
       "Assay",
       "Renal Function Assessment"
     ],
@@ -2018,7 +2018,7 @@
     "slug": "total-ige",
     "name": "Total IgE Fast Test Kit",
     "type": "test-kit",
-    "category": "Other Test Reagents",
+    "category": "Other Tests",
     "shortDescription": "Quantitative determination of Total IgE using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative determination of circulating total IgE antibodies in human serum, plasma and whole blood samples. This test can be used as an aid in the clinical diagnosis of lgE mediated allergic disorders in conjunction with other clinical findings.",
@@ -2037,7 +2037,7 @@
     ],
     "tags": [
       "Total IgE",
-      "Other Test Reagents",
+      "Other Tests",
       "Immunofluorescence Assay"
     ],
     "seoTitle": "Total IgE Fast Test Kit | DX BIOCODE",
@@ -2050,7 +2050,7 @@
     "slug": "ferritin",
     "name": "Ferritin Fast Test Kit",
     "type": "test-kit",
-    "category": "Other Test Reagents",
+    "category": "Other Tests",
     "shortDescription": "Quantitative determination of Ferritin using the DX 101 Immunofluorescence Quantitative Analyzer.",
     "image": "",
     "intendedUse": "quantitative determination of ferritin in human serum, plasma and whole blood samples. lt can be used as an aid in the diagnosis of iron deficiency anemia or iron overload related diseases. For professional and laboratory use only.",
@@ -2069,7 +2069,7 @@
     ],
     "tags": [
       "Ferritin",
-      "Other Test Reagents",
+      "Other Tests",
       "Assay"
     ],
     "seoTitle": "Ferritin Fast Test Kit | DX BIOCODE",

@@ -155,10 +155,16 @@ function renderCart() {
   const header = document.querySelector('.cart-panel-header');
   if (header) {
     header.innerHTML = `
-      <h3 style="font-family:'Space Grotesk',sans-serif; font-size:16px; font-weight:800; color:var(--text-dark); display:flex; align-items:center; gap:6px; margin:0;">📋 Request a Quote</h3>
+      <div style="display:flex; flex-direction:column; gap:2px;">
+        <h3 style="font-family:'Space Grotesk',sans-serif; font-size:16px; font-weight:800; color:var(--text-dark); margin:0; display:flex; align-items:center; gap:8px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color:var(--blue-primary)"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg>
+          Request a Quote
+        </h3>
+        <p style="font-size:10.5px; color:var(--text-light); margin:0;">Configure your diagnostic kit selection</p>
+      </div>
       <div style="display:flex; align-items:center; gap:8px;">
-        ${cart.length ? `<button onclick="clearQuoteCart()" style="background:none; border:none; color:var(--accent-pink); font-size:10.5px; font-weight:700; cursor:pointer; text-transform:uppercase; letter-spacing:0.5px; padding:4px 6px;">✕ Clear All</button>` : ''}
-        <button class="cart-close-btn" id="cart-close-btn" style="position:static; margin:0; padding:4px 8px; font-size:16px;">✕</button>
+        ${cart.length ? `<button onclick="clearQuoteCart()" style="background:none; border:none; color:var(--text-light); font-size:10.5px; font-weight:600; cursor:pointer; padding:4px 8px; border-radius:6px; transition:color 0.2s, background 0.2s;" onmouseover="this.style.color='#ef4444';this.style.background='#fef2f2'" onmouseout="this.style.color='var(--text-light)';this.style.background='none'">Clear all</button>` : ''}
+        <button class="cart-close-btn" id="cart-close-btn" style="position:static; margin:0; padding:6px 10px; font-size:16px;">✕</button>
       </div>
     `;
     const closeBtn = document.getElementById('cart-close-btn');
@@ -166,10 +172,11 @@ function renderCart() {
   }
 
   if (!cart.length) {
-    list.innerHTML = `<div class="cart-empty" id="cart-empty" style="text-align:center; padding:48px 24px;">
-      <div style="font-size:48px;margin-bottom:12px;">📋</div>
-      <p style="font-size:14.5px; color:var(--text-light); margin-bottom:16px;">Your quote request is empty</p>
-      <a href="/products.html" class="btn-primary" style="font-size:13px; padding:10px 20px; text-decoration:none; display:inline-flex; justify-content:center;">Browse Products</a>
+    list.innerHTML = `<div class="cart-empty" id="cart-empty" style="text-align:center; padding:56px 24px;">
+      <div style="width:60px; height:60px; background:var(--brand-gradient-soft); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 16px; font-size:28px; border:1px solid var(--border-subtle);">📋</div>
+      <p style="font-size:14px; font-weight:600; color:var(--text-dark); margin-bottom:4px;">No products selected yet</p>
+      <p style="font-size:12.5px; color:var(--text-light); margin-bottom:20px;">Add diagnostic test kits to build your quote</p>
+      <a href="/products.html" class="btn-primary" style="font-size:13px; padding:10px 20px; text-decoration:none; display:inline-flex; justify-content:center;">Browse Products →</a>
     </div>`;
     if (footerEl) footerEl.style.display = 'none';
     return;
@@ -177,64 +184,86 @@ function renderCart() {
 
   // Category Colors Map
   const categoryColors = {
-    "Cardiac Markers": { bg: "#fff1f2", border: "#fecdd3", color: "#e11d48" },
-    "Thyroid Function": { bg: "#fff7ed", border: "#ffedd5", color: "#ea580c" },
-    "Inflammation": { bg: "#f5f3ff", border: "#ddd6fe", color: "#7c3aed" },
-    "Infectious Diseases": { bg: "#ecfdf5", border: "#a7f3d0", color: "#059669" },
-    "Fertility": { bg: "#fdf2f8", border: "#fce7f3", color: "#db2777" },
-    "Tumor Markers": { bg: "#f0fdfa", border: "#ccfbf1", color: "#0d9488" },
-    "Renal Function": { bg: "#eff6ff", border: "#dbeafe", color: "#2563eb" },
-    "Rheumatology": { bg: "#fffbeb", border: "#fef3c7", color: "#d97706" },
-    "Diabetes": { bg: "#faf5ff", border: "#f3e8ff", color: "#9333ea" },
-    "Metabolic": { bg: "#f0fdf4", border: "#dcfce7", color: "#16a34a" },
-    "Other Tests": { bg: "#f8fafc", border: "#e2e8f0", color: "#475569" }
+    "Cardiac Markers":      { bg: "#fff1f2", border: "#fecdd3", color: "#e11d48" },
+    "Thyroid Function":     { bg: "#fff7ed", border: "#ffedd5", color: "#ea580c" },
+    "Inflammation":         { bg: "#f5f3ff", border: "#ddd6fe", color: "#7c3aed" },
+    "Infectious Diseases":  { bg: "#ecfdf5", border: "#a7f3d0", color: "#059669" },
+    "Fertility":            { bg: "#fdf2f8", border: "#fce7f3", color: "#db2777" },
+    "Tumor Markers":        { bg: "#f0fdfa", border: "#ccfbf1", color: "#0d9488" },
+    "Renal Function":       { bg: "#eff6ff", border: "#dbeafe", color: "#2563eb" },
+    "Rheumatology":         { bg: "#fffbeb", border: "#fef3c7", color: "#d97706" },
+    "Diabetes":             { bg: "#faf5ff", border: "#f3e8ff", color: "#9333ea" },
+    "Metabolic":            { bg: "#f0fdf4", border: "#dcfce7", color: "#16a34a" },
+    "Other Tests":          { bg: "#f8fafc", border: "#e2e8f0", color: "#475569" }
   };
 
-  // Group items by category (using PRODUCT_MAP for metadata lookup)
+  const categoryIcons = {
+    "Cardiac Markers":      "❤️",
+    "Thyroid Function":     "🩺",
+    "Inflammation":         "🔥",
+    "Infectious Diseases":  "🦠",
+    "Fertility":            "🌸",
+    "Tumor Markers":        "🏷️",
+    "Renal Function":       "🫘",
+    "Rheumatology":         "🧬",
+    "Diabetes":             "🩸",
+    "Metabolic":            "⚗️",
+    "Other Tests":          "🔬"
+  };
+
+  // Group items by category
   const groups = {};
+  let hasTestKit = false;
+  let hasAnalyzer = false;
+
   cart.forEach((item, idx) => {
     const info = PRODUCT_MAP[item.name] || {};
     const category = info.category || "Other Products";
     if (!groups[category]) groups[category] = [];
-    groups[category].push({ item, originalIndex: idx });
+    groups[category].push({ item, originalIndex: idx, info });
+    if (info.type === 'test-kit') hasTestKit = true;
+    if (info.slug === 'dx-101') hasAnalyzer = true;
   });
 
   let listHtml = '';
-  let hasTestKit = false;
-  let hasAnalyzer = false;
 
   for (const [category, groupItems] of Object.entries(groups)) {
     const style = categoryColors[category] || { bg: "#f1f5f9", border: "#e2e8f0", color: "#475569" };
-    
+    const icon = categoryIcons[category] || "📦";
+    const count = groupItems.reduce((s, g) => s + (g.item.quantity || 1), 0);
+
     listHtml += `
-      <div class="quote-category-group">
-        <div class="quote-category-header" style="color: ${style.color}; background: ${style.bg}; border-left: 3px solid ${style.color};">
-          ${category}
+      <div class="quote-category-group" data-cat="${category}">
+        <div class="quote-category-header" style="color:${style.color}; background:${style.bg}; border-left:3px solid ${style.color};" onclick="toggleCategory(this.closest('.quote-category-group'))">
+          <span style="display:flex;align-items:center;gap:7px;">
+            <span style="font-size:13px;">${icon}</span>
+            <span>${category}</span>
+            <span style="background:${style.color}; color:white; font-size:9px; font-weight:800; padding:1px 7px; border-radius:10px; opacity:0.85;">${count}</span>
+          </span>
+          <span class="quote-category-chevron">▼</span>
         </div>
-        <div style="display:flex; flex-direction:column; gap:12px;">
+        <div class="quote-category-items">
           ${groupItems.map(g => {
             const item = g.item;
             const idx = g.originalIndex;
-            const info = PRODUCT_MAP[item.name] || {};
-            
-            if (info.type === 'test-kit') hasTestKit = true;
-            if (info.slug === 'dx-101') hasAnalyzer = true;
+            const info = g.info;
+            const specs = info.specifications || {};
+            const testTime = specs['Test Time'] || specs['Result Time'] || '3–15 min';
 
             return `
-              <div class="quote-item">
-                <img src="${item.img}" alt="${item.name}" class="quote-item-img" />
-                <div class="quote-item-info">
+              <div class="quote-item adding" id="quote-item-${idx}">
+                <img src="${item.img || '/placeholder.svg'}" alt="${item.name}" class="quote-item-img" />
+                <div class="quote-item-info" style="flex:1; min-width:0;">
                   <div class="quote-item-name" title="${item.name}">${item.name}</div>
-                  <span class="quote-item-badge" style="background: ${style.bg}; border: 1px solid ${style.border}; color: ${style.color};">${category}</span>
-                  
-                  <div style="display:flex; align-items:center; justify-content:space-between; margin-top:2px;">
-                    <!-- Quantity Controls -->
-                    <div style="display:flex; align-items:center; gap:8px;">
-                      <button class="quote-qty-btn" onclick="updateQty(${idx}, -1)">-</button>
-                      <span class="quote-qty-val">${item.quantity || 1}</span>
+                  <div class="quote-item-spec">⏱ ${testTime}</div>
+                  <span class="quote-item-badge" style="background:${style.bg}; border:1px solid ${style.border}; color:${style.color};">${category}</span>
+                  <div class="quote-item-controls">
+                    <div class="quote-qty-wrap">
+                      <button class="quote-qty-btn" onclick="updateQty(${idx}, -1)">−</button>
+                      <span class="quote-qty-val" id="qty-val-${idx}">${item.quantity || 1}</span>
                       <button class="quote-qty-btn" onclick="updateQty(${idx}, 1)">+</button>
                     </div>
-                    <button class="quote-remove-btn" onclick="removeFromCart(${idx})">✕</button>
+                    <button class="quote-remove-btn" onclick="removeFromCart(${idx})" title="Remove">✕ Remove</button>
                   </div>
                 </div>
               </div>
@@ -247,7 +276,12 @@ function renderCart() {
 
   list.innerHTML = listHtml;
 
-  // Calculate Summary metrics
+  // Remove the adding class after animation completes
+  setTimeout(() => {
+    list.querySelectorAll('.quote-item.adding').forEach(el => el.classList.remove('adding'));
+  }, 400);
+
+  // Summary metrics
   const totalProducts = cart.reduce((sum, item) => sum + (item.quantity || 1), 0);
   const uniqueCategories = new Set(cart.map(item => {
     const info = PRODUCT_MAP[item.name] || {};
@@ -255,27 +289,31 @@ function renderCart() {
   }));
   const totalCategories = uniqueCategories.size;
 
-  // Analyzer Recommendation Card (if test kit selected but analyzer is missing)
+  // Recommended Analyzer Card
   let recommendationCardHtml = '';
   if (hasTestKit && !hasAnalyzer) {
-    let dx101Img = '/hero.webp';
     recommendationCardHtml = `
-      <div class="analyzer-recommendation" style="background: var(--brand-gradient-soft); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 12px; margin-bottom: 16px; display: flex; align-items: center; gap: 12px; position: relative; overflow: hidden; border-left: 3px solid var(--blue-primary);">
-        <img src="${dx101Img}" alt="DX 101" style="width: 40px; height: 40px; object-fit: cover; border-radius: 4px; box-shadow: var(--shadow-sm); border:1px solid #cbd5e1;" />
-        <div style="flex: 1; min-width: 0; display:flex; flex-direction:column; gap:2px;">
-          <div style="font-size: 10.5px; font-weight: 800; color: var(--blue-primary); text-transform: uppercase; letter-spacing: 0.5px; line-height:1;">Recommended Analyzer</div>
-          <div style="font-size: 12px; font-weight: 700; color: var(--text-dark); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">DX 101 POCT Analyzer</div>
-          <p style="font-size: 10px; color: var(--text-light); margin: 0; line-height: 1.2;">Required to run the selected fast test kits.</p>
+      <div class="analyzer-recommendation">
+        <div class="analyzer-rec-label">Recommended Device</div>
+        <div class="analyzer-rec-body">
+          <img src="/hero.webp" alt="DX 101 Analyzer" class="analyzer-rec-img" />
+          <div class="analyzer-rec-info">
+            <div class="analyzer-rec-name">DX 101 Immunofluorescence Analyzer</div>
+            <div class="analyzer-rec-desc">Required for running selected diagnostic test kits at the point of care.</div>
+          </div>
         </div>
-        <button onclick="addAnalyzerRecommendation()" style="background: var(--brand-gradient); color: white; border: none; border-radius: 4px; padding: 6px 10px; font-size: 10px; font-weight: 700; cursor: pointer; white-space: nowrap; box-shadow: 0 2px 6px rgba(155, 47, 200, 0.2);">+ Add</button>
+        <div class="analyzer-rec-actions">
+          <a href="/products/dx-101/" class="analyzer-rec-btn-secondary" target="_blank">View Device</a>
+          <button class="analyzer-rec-btn-primary" onclick="addAnalyzerRecommendation()">+ Add to Quote</button>
+        </div>
       </div>
     `;
   }
 
-  // Update Footer with B2B Quote summary and custom CTA link (pathing handled correctly)
+  // Footer with summary + CTA
   if (footerEl) {
     footerEl.style.display = 'block';
-    
+
     let quotePath = 'quote.html';
     if (window.location.pathname.includes('/products/')) {
       quotePath = '../../quote.html';
@@ -283,24 +321,31 @@ function renderCart() {
 
     footerEl.innerHTML = `
       ${recommendationCardHtml}
-      
+
       <!-- Quote Summary -->
-      <div class="quote-summary" style="background:#fafafa; border:1px solid #e5e7eb; border-radius:var(--radius-sm); padding:12px; display:flex; flex-direction:column; gap:6px; margin-bottom:12px; box-shadow:var(--shadow-sm);">
-        <div style="display:flex; justify-content:space-between; font-size:12.5px; color:var(--text-light); font-weight:500;">
-          <span>Total Products:</span>
-          <strong style="color:var(--text-dark);">${totalProducts}</strong>
+      <div class="quote-summary-block">
+        <div class="quote-summary-title">Quote Summary</div>
+        <div class="quote-summary-row">
+          <span class="quote-summary-label">📦 Products Selected</span>
+          <span class="quote-summary-value">${totalProducts}</span>
         </div>
-        <div style="display:flex; justify-content:space-between; font-size:12.5px; color:var(--text-light); font-weight:500;">
-          <span>Clinical Categories:</span>
-          <strong style="color:var(--text-dark);">${totalCategories}</strong>
+        <div class="quote-summary-row">
+          <span class="quote-summary-label">🏷️ Categories Covered</span>
+          <span class="quote-summary-value">${totalCategories}</span>
         </div>
+        <div class="quote-summary-note">Custom pricing available based on volume and region.</div>
       </div>
-      
-      <!-- Action Buttons -->
-      <a href="${quotePath}" class="btn-primary" style="width:100%; justify-content:center; text-align:center; display:flex; padding:12px; font-weight:700; font-size:13px; border-radius:var(--radius-sm); box-shadow:0 4px 15px rgba(155,47,200,0.25); text-decoration:none;">Get Pricing for Selected Products</a>
+
+      <!-- Primary CTA -->
+      <a href="${quotePath}" class="quote-cta-btn">Request Official Quotation →</a>
     `;
   }
 }
+
+window.toggleCategory = function(groupEl) {
+  groupEl.classList.toggle('collapsed');
+};
+
 
 window.addToCart = function(name, price, img) {
   const existing = cart.find(item => item.name === name);
@@ -316,10 +361,21 @@ window.addToCart = function(name, price, img) {
 };
 
 window.removeFromCart = function(idx) {
-  cart.splice(idx, 1);
-  saveCart();
-  updateCartBadge();
-  renderCart();
+  const itemEl = document.getElementById('quote-item-' + idx);
+  if (itemEl) {
+    itemEl.classList.add('removing');
+    setTimeout(() => {
+      cart.splice(idx, 1);
+      saveCart();
+      updateCartBadge();
+      renderCart();
+    }, 280);
+  } else {
+    cart.splice(idx, 1);
+    saveCart();
+    updateCartBadge();
+    renderCart();
+  }
 };
 
 window.updateQty = function(idx, change) {
@@ -327,13 +383,25 @@ window.updateQty = function(idx, change) {
   if (item) {
     item.quantity = (item.quantity || 1) + change;
     if (item.quantity <= 0) {
-      cart.splice(idx, 1);
+      window.removeFromCart(idx);
+      return;
     }
     saveCart();
     updateCartBadge();
-    renderCart();
+    // Animate just the qty value without full re-render for smoothness
+    const qtyEl = document.getElementById('qty-val-' + idx);
+    if (qtyEl) {
+      qtyEl.textContent = item.quantity;
+      qtyEl.classList.remove('qty-bump');
+      void qtyEl.offsetWidth; // force reflow
+      qtyEl.classList.add('qty-bump');
+      setTimeout(() => qtyEl.classList.remove('qty-bump'), 260);
+    } else {
+      renderCart();
+    }
   }
 };
+
 
 window.clearQuoteCart = function() {
   if (confirm("Are you sure you want to clear your quote request?")) {
@@ -654,9 +722,8 @@ if (tabButtons.length > 0 && tabPanels.length > 0) {
             </div>
             
             <div class="related-card-content" style="padding: 24px; display: flex; flex-direction: column; gap: 14px; flex-grow: 1;">
-              <span class="kit-badge" style="background: ${style.bg}; border: 1px solid ${style.border}; color: ${style.color}; padding: 4px 10px; border-radius: 50px; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; align-self: flex-start;">${kit.category}</span>
-              
               <h4 class="related-card-title" style="font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 700; color: var(--text-dark); margin: 0; line-height: 1.35; letter-spacing: -0.3px;">${kit.name}</h4>
+              <span class="kit-badge" style="background: ${style.bg}; border: 1px solid ${style.border}; color: ${style.color}; padding: 4px 10px; border-radius: 50px; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; align-self: flex-start;">${kit.category}</span>
               
               <!-- Dynamic Metadata details (Task 3) -->
               <div class="card-details" style="display: flex; flex-direction: column; gap: 8px; margin: 4px 0; border-top: 1px solid #f1f5f9; border-bottom: 1px solid #f1f5f9; padding: 12px 0;">

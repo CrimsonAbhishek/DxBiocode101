@@ -1,0 +1,35 @@
+# ================================================================
+# DX BIOCODE — Root .htaccess
+# ================================================================
+
+Options -Indexes
+
+# ── HTTPS redirect (enable on Hostinger after SSL is active) ──
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# ── Redirect .html → .php for CSRF-enabled pages ─────────────
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^quote\.html$   /quote.php   [R=301,L]
+  RewriteRule ^contact\.html$ /contact.php [R=301,L]
+</IfModule>
+
+# ── Security headers ──────────────────────────────────────────
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ── Prevent access to sensitive files ─────────────────────────
+<FilesMatch "\.(sql|log|md|json|lock|git|env)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order deny,allow
+    Deny from all
+  </IfModule>
+</FilesMatch>
