@@ -184,31 +184,31 @@ function renderCart() {
 
   // Category Colors Map
   const categoryColors = {
-    "Cardiac Markers":      { bg: "#fff1f2", border: "#fecdd3", color: "#e11d48" },
-    "Thyroid Function":     { bg: "#fff7ed", border: "#ffedd5", color: "#ea580c" },
-    "Inflammation":         { bg: "#f5f3ff", border: "#ddd6fe", color: "#7c3aed" },
-    "Infectious Diseases":  { bg: "#ecfdf5", border: "#a7f3d0", color: "#059669" },
-    "Fertility":            { bg: "#fdf2f8", border: "#fce7f3", color: "#db2777" },
-    "Tumor Markers":        { bg: "#f0fdfa", border: "#ccfbf1", color: "#0d9488" },
-    "Renal Function":       { bg: "#eff6ff", border: "#dbeafe", color: "#2563eb" },
-    "Rheumatology":         { bg: "#fffbeb", border: "#fef3c7", color: "#d97706" },
-    "Diabetes":             { bg: "#faf5ff", border: "#f3e8ff", color: "#9333ea" },
-    "Metabolic":            { bg: "#f0fdf4", border: "#dcfce7", color: "#16a34a" },
-    "Other Tests":          { bg: "#f8fafc", border: "#e2e8f0", color: "#475569" }
+    "Cardiac Markers": { bg: "#fff1f2", border: "#fecdd3", color: "#e11d48" },
+    "Thyroid Function": { bg: "#fff7ed", border: "#ffedd5", color: "#ea580c" },
+    "Inflammation": { bg: "#f5f3ff", border: "#ddd6fe", color: "#7c3aed" },
+    "Infectious Diseases": { bg: "#ecfdf5", border: "#a7f3d0", color: "#059669" },
+    "Fertility": { bg: "#fdf2f8", border: "#fce7f3", color: "#db2777" },
+    "Tumor Markers": { bg: "#f0fdfa", border: "#ccfbf1", color: "#0d9488" },
+    "Renal Function": { bg: "#eff6ff", border: "#dbeafe", color: "#2563eb" },
+    "Rheumatology": { bg: "#fffbeb", border: "#fef3c7", color: "#d97706" },
+    "Diabetes": { bg: "#faf5ff", border: "#f3e8ff", color: "#9333ea" },
+    "Metabolic": { bg: "#f0fdf4", border: "#dcfce7", color: "#16a34a" },
+    "Other Tests": { bg: "#f8fafc", border: "#e2e8f0", color: "#475569" }
   };
 
   const categoryIcons = {
-    "Cardiac Markers":      "❤️",
-    "Thyroid Function":     "🩺",
-    "Inflammation":         "🔥",
-    "Infectious Diseases":  "🦠",
-    "Fertility":            "🌸",
-    "Tumor Markers":        "🏷️",
-    "Renal Function":       "🫘",
-    "Rheumatology":         "🧬",
-    "Diabetes":             "🩸",
-    "Metabolic":            "⚗️",
-    "Other Tests":          "🔬"
+    "Cardiac Markers": "❤️",
+    "Thyroid Function": "🩺",
+    "Inflammation": "🔥",
+    "Infectious Diseases": "🦠",
+    "Fertility": "🌸",
+    "Tumor Markers": "🏷️",
+    "Renal Function": "🫘",
+    "Rheumatology": "🧬",
+    "Diabetes": "🩸",
+    "Metabolic": "⚗️",
+    "Other Tests": "🔬"
   };
 
   // Group items by category
@@ -244,13 +244,13 @@ function renderCart() {
         </div>
         <div class="quote-category-items">
           ${groupItems.map(g => {
-            const item = g.item;
-            const idx = g.originalIndex;
-            const info = g.info;
-            const specs = info.specifications || {};
-            const testTime = specs['Test Time'] || specs['Result Time'] || '3–15 min';
+      const item = g.item;
+      const idx = g.originalIndex;
+      const info = g.info;
+      const specs = info.specifications || {};
+      const testTime = specs['Test Time'] || specs['Result Time'] || '3–15 min';
 
-            return `
+      return `
               <div class="quote-item adding" id="quote-item-${idx}">
                 <img src="${item.img || '/placeholder.svg'}" alt="${item.name}" class="quote-item-img" />
                 <div class="quote-item-info" style="flex:1; min-width:0;">
@@ -268,7 +268,7 @@ function renderCart() {
                 </div>
               </div>
             `;
-          }).join('')}
+    }).join('')}
         </div>
       </div>
     `;
@@ -342,12 +342,12 @@ function renderCart() {
   }
 }
 
-window.toggleCategory = function(groupEl) {
+window.toggleCategory = function (groupEl) {
   groupEl.classList.toggle('collapsed');
 };
 
 
-window.addToCart = function(name, price, img) {
+window.addToCart = function (name, price, img) {
   const existing = cart.find(item => item.name === name);
   if (existing) {
     existing.quantity = (existing.quantity || 1) + 1;
@@ -360,7 +360,7 @@ window.addToCart = function(name, price, img) {
   openCart();
 };
 
-window.removeFromCart = function(idx) {
+window.removeFromCart = function (idx) {
   const itemEl = document.getElementById('quote-item-' + idx);
   if (itemEl) {
     itemEl.classList.add('removing');
@@ -378,7 +378,7 @@ window.removeFromCart = function(idx) {
   }
 };
 
-window.updateQty = function(idx, change) {
+window.updateQty = function (idx, change) {
   const item = cart[idx];
   if (item) {
     item.quantity = (item.quantity || 1) + change;
@@ -403,7 +403,7 @@ window.updateQty = function(idx, change) {
 };
 
 
-window.clearQuoteCart = function() {
+window.clearQuoteCart = function () {
   if (confirm("Are you sure you want to clear your quote request?")) {
     cart = [];
     saveCart();
@@ -412,7 +412,7 @@ window.clearQuoteCart = function() {
   }
 };
 
-window.addAnalyzerRecommendation = function() {
+window.addAnalyzerRecommendation = function () {
   window.addToCart("DX 101 Immunofluorescence Quantitative Analyzer", "Contact for Pricing", "/hero.webp");
 };
 
@@ -439,12 +439,12 @@ renderCart();
 document.querySelectorAll('.btn-primary, .btn-secondary, .btn-white, .btn-outline-white').forEach(btn => {
   btn.style.position = 'relative';
   btn.style.overflow = 'hidden';
-  btn.addEventListener('click', function(e) {
+  btn.addEventListener('click', function (e) {
     const r = this.getBoundingClientRect();
     const sz = Math.max(r.width, r.height) * 2;
     const span = document.createElement('span');
     span.className = 'ripple-span';
-    span.style.cssText = `width:${sz}px;height:${sz}px;left:${e.clientX-r.left-sz/2}px;top:${e.clientY-r.top-sz/2}px;`;
+    span.style.cssText = `width:${sz}px;height:${sz}px;left:${e.clientX - r.left - sz / 2}px;top:${e.clientY - r.top - sz / 2}px;`;
     this.appendChild(span);
     setTimeout(() => span.remove(), 700);
   });
@@ -452,14 +452,14 @@ document.querySelectorAll('.btn-primary, .btn-secondary, .btn-white, .btn-outlin
 
 /* ====== 3D CARD TILT ====== */
 document.querySelectorAll('.feature-card, .test-cat-card, .product-card, .cert-card').forEach(card => {
-  card.addEventListener('mousemove', function(e) {
+  card.addEventListener('mousemove', function (e) {
     const r = this.getBoundingClientRect();
     const x = (e.clientX - r.left) / r.width - 0.5;
     const y = (e.clientY - r.top) / r.height - 0.5;
     const base = this.classList.contains('feature-card') ? 'translateX(4px)' : '';
-    this.style.transform = `${base} perspective(600px) rotateX(${(-y*10).toFixed(1)}deg) rotateY(${(x*10).toFixed(1)}deg) scale(1.025)`;
+    this.style.transform = `${base} perspective(600px) rotateX(${(-y * 10).toFixed(1)}deg) rotateY(${(x * 10).toFixed(1)}deg) scale(1.025)`;
   });
-  card.addEventListener('mouseleave', function() { this.style.transform = ''; });
+  card.addEventListener('mouseleave', function () { this.style.transform = ''; });
 });
 
 /* ====== STAT COUNTER ====== */
@@ -497,47 +497,120 @@ document.querySelectorAll('img').forEach(img => {
    Without it, falls back to the original mock (backward compat).
    Requires form inputs to have `name` attributes for payload building.
 ====================================== */
-window.initContactForm = function(formId, statusId, endpoint) {
+window.initContactForm = function (formId, statusId, endpoint, csrfToken = '') {
   const form = document.getElementById(formId);
   const status = document.getElementById(statusId);
   if (!form) return;
 
-  form.addEventListener('submit', async function(e) {
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const readiness = document.getElementById('form-readiness');
+  const msgInput = form.querySelector('textarea[name="message"]');
+  const msgCounter = document.getElementById('msg-counter');
+
+  // 1. Smart Prefill - Country (if country field exists)
+  try {
+    const countryInput = form.querySelector('input[name="country"]');
+    if (countryInput && !countryInput.value) {
+      const locale = navigator.language;
+      if (locale && locale.includes('-')) {
+        const countryCode = locale.split('-')[1];
+        const regionNames = new Intl.DisplayNames([locale], { type: 'region' });
+        countryInput.value = regionNames.of(countryCode) || '';
+      }
+    }
+  } catch (e) { }
+
+  // 2. Character Counter
+  if (msgInput && msgCounter) {
+    const updateCounter = () => {
+      const len = msgInput.value.length;
+      msgCounter.textContent = `${len} / 1000 characters`;
+      msgCounter.classList.toggle('warning', len > 900);
+    };
+    msgInput.addEventListener('input', updateCounter);
+    updateCounter();
+  }
+
+  // 3. Real-time validation
+  const validateForm = () => {
+    let allValid = true;
+    form.querySelectorAll('[required]').forEach(input => {
+      let ok = input.value.trim() !== '';
+      if (ok && input.type === 'email') {
+        ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value);
+      }
+      if (!ok) allValid = false;
+    });
+
+    if (submitBtn) submitBtn.disabled = !allValid;
+    if (readiness) {
+      if (allValid) {
+        readiness.textContent = 'Ready to submit.';
+        readiness.classList.add('ready');
+      } else {
+        readiness.textContent = 'Complete all required fields to continue.';
+        readiness.classList.remove('ready');
+      }
+    }
+    return allValid;
+  };
+
+  form.querySelectorAll('input, textarea, select').forEach(el => {
+    el.addEventListener('input', () => {
+      if (el.value.trim()) el.classList.remove('invalid');
+      validateForm();
+    });
+    el.addEventListener('blur', () => {
+      if (el.hasAttribute('required')) {
+        let ok = el.value.trim() !== '';
+        if (ok && el.type === 'email') {
+          ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value);
+        }
+        el.classList.toggle('invalid', !ok);
+      }
+      validateForm();
+    });
+  });
+
+  validateForm();
+
+  form.addEventListener('submit', async function (e) {
     e.preventDefault();
 
-    // ── Validate required fields ───────────────────────────────
-    let isValid = true;
-    form.querySelectorAll('[required]').forEach(input => {
-      if (!input.value.trim()) { input.classList.add('invalid'); isValid = false; }
-      else if (input.type === 'email' && !/\S+@\S+\.\S+/.test(input.value)) { input.classList.add('invalid'); isValid = false; }
-      else input.classList.remove('invalid');
-    });
+    if (!validateForm()) return;
 
     if (status) { status.className = 'form-status'; status.style.display = 'none'; }
 
-    if (!isValid) {
-      if (status) { status.textContent = '❌ Please correct the errors before submitting.'; status.classList.add('error'); status.style.display = 'block'; }
-      return;
-    }
+    const origText = submitBtn ? submitBtn.innerHTML : '';
+    if (submitBtn) { submitBtn.disabled = true; submitBtn.innerHTML = '⌛ Sending...'; }
 
-    const btn = form.querySelector('button[type="submit"]');
-    const origText = btn ? btn.innerHTML : '';
-    if (btn) { btn.disabled = true; btn.innerHTML = '⌛ Sending...'; }
+    // Disable all inputs during submission
+    const inputs = form.querySelectorAll('input, textarea, select, button');
+    inputs.forEach(el => el.disabled = true);
 
     if (endpoint) {
       // ── Real API submission ──────────────────────────────────
       try {
-        // Collect form data via name attributes
         const payload = {};
         form.querySelectorAll('input:not([type="file"]), textarea, select').forEach(el => {
           if (el.name === 'bot-check') {
             payload['_bot_check'] = el.value;
+          } else if (el.name === 'phone') {
+            // 5. Phone Normalization
+            let rawPhone = el.value.trim();
+            let cleanPhone = rawPhone;
+            if (rawPhone) {
+              const isPlus = rawPhone.startsWith('+');
+              cleanPhone = rawPhone.replace(/\D/g, '');
+              if (isPlus) cleanPhone = '+' + cleanPhone;
+            }
+            payload[el.name] = cleanPhone;
           } else if (el.name) {
             payload[el.name] = el.value;
           }
         });
-        // Ensure honeypot is always present
         if (!('_bot_check' in payload)) payload['_bot_check'] = '';
+        if (csrfToken) payload['csrf_token'] = csrfToken;
 
         const response = await fetch(endpoint, {
           method: 'POST',
@@ -546,31 +619,39 @@ window.initContactForm = function(formId, statusId, endpoint) {
         });
 
         const result = await response.json();
-        if (btn) { btn.disabled = false; btn.innerHTML = origText; }
 
         if (response.ok && result.success) {
-          if (status) {
-            status.textContent = '🎉 Thank you! Your submission was received. We will be in touch shortly.';
-            status.classList.add('success');
-            status.style.display = 'block';
-          }
-          form.reset();
-        } else if (response.status === 429) {
-          if (status) {
-            status.textContent = '⏳ Too many requests. Please try again in an hour.';
-            status.classList.add('error');
-            status.style.display = 'block';
-          }
+          // 6. Success State
+          form.innerHTML = `
+            <div class="form-success-state">
+              <div class="success-icon-wrap">✓</div>
+              <h3 class="success-title">Thank you! Your contact request has been received.</h3>
+              <p class="success-desc">Our team will review your message and contact you within <strong>1–2 business days</strong>.<br><br>If your request is urgent, you may also contact us directly via email or WhatsApp.</p>
+              <button type="button" class="btn-secondary" onclick="window.location.reload()">Submit Another Request</button>
+            </div>
+          `;
         } else {
-          const errMsg = result.error || 'Something went wrong.';
-          if (status) {
-            status.textContent = `❌ ${errMsg} Please email info@dxbiocode.com directly.`;
-            status.classList.add('error');
-            status.style.display = 'block';
+          inputs.forEach(el => el.disabled = false);
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.innerHTML = origText; }
+
+          if (response.status === 429) {
+            if (status) {
+              status.textContent = '⏳ Too many requests. Please try again in an hour.';
+              status.classList.add('error');
+              status.style.display = 'block';
+            }
+          } else {
+            const errMsg = result.error || 'Something went wrong.';
+            if (status) {
+              status.textContent = `❌ ${errMsg} Please email info@dxbiocode.com directly.`;
+              status.classList.add('error');
+              status.style.display = 'block';
+            }
           }
         }
       } catch (_err) {
-        if (btn) { btn.disabled = false; btn.innerHTML = origText; }
+        inputs.forEach(el => el.disabled = false);
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.innerHTML = origText; }
         if (status) {
           status.textContent = '❌ Network error. Please email info@dxbiocode.com directly.';
           status.classList.add('error');
@@ -580,19 +661,16 @@ window.initContactForm = function(formId, statusId, endpoint) {
     } else {
       // ── Mock submission (no endpoint provided) ───────────────
       setTimeout(() => {
-        if (btn) { btn.disabled = false; btn.innerHTML = origText; }
-        if (status) {
-          status.textContent = '🎉 Thank you! Your submission was received successfully.';
-          status.classList.add('success');
-          status.style.display = 'block';
-        }
-        form.reset();
+        form.innerHTML = `
+          <div class="form-success-state">
+            <div class="success-icon-wrap">✓</div>
+            <h3 class="success-title">Thank you! Your request has been received.</h3>
+            <p class="success-desc">Our team will review your message and contact you within <strong>1–2 business days</strong>.<br><br>If your request is urgent, you may also contact us directly via email or WhatsApp.</p>
+            <button type="button" class="btn-secondary" onclick="window.location.reload()">Submit Another Request</button>
+          </div>
+        `;
       }, 1200);
     }
-  });
-
-  form.querySelectorAll('input, textarea, select').forEach(input => {
-    input.addEventListener('input', function() { if (this.value.trim()) this.classList.remove('invalid'); });
   });
 };
 
@@ -615,7 +693,7 @@ if (tabButtons.length > 0 && tabPanels.length > 0) {
     if (targetPanel && targetBtn) {
       targetPanel.classList.add('active');
       targetBtn.classList.add('active');
-      
+
       // Make all fade-up elements in the active panel visible immediately
       targetPanel.querySelectorAll('.fade-up').forEach(el => {
         el.classList.add('visible');
@@ -663,7 +741,7 @@ if (tabButtons.length > 0 && tabPanels.length > 0) {
 }
 
 /* ====== DYNAMIC TEST KITS CATALOG ====== */
-(function() {
+(function () {
   const catalogGrid = document.getElementById('catalog-grid');
   const catalogSearch = document.getElementById('catalog-search');
   const pillButtons = document.querySelectorAll('.pill-btn');
@@ -750,9 +828,9 @@ if (tabButtons.length > 0 && tabPanels.length > 0) {
       const cat = activeCategory;
 
       const filtered = allKits.filter(kit => {
-        const matchesSearch = kit.name.toLowerCase().includes(q) || 
-                              kit.category.toLowerCase().includes(q) || 
-                              (kit.intendedUse && kit.intendedUse.toLowerCase().includes(q));
+        const matchesSearch = kit.name.toLowerCase().includes(q) ||
+          kit.category.toLowerCase().includes(q) ||
+          (kit.intendedUse && kit.intendedUse.toLowerCase().includes(q));
         const matchesCat = !cat || kit.category === cat;
         return matchesSearch && matchesCat;
       });

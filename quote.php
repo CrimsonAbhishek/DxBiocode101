@@ -210,13 +210,13 @@ $csrf_token = csrf_token();
           <div class="form-row-2">
             <div class="form-group">
               <label for="q-name">Full Name <span class="req">*</span></label>
-              <input type="text" id="q-name" placeholder="Dr. John Doe" required autocomplete="name" />
-              <span class="error-msg">Please enter your name</span>
+              <input type="text" id="q-name" placeholder="Dr. John Doe" required autocomplete="name" aria-describedby="q-name-error" />
+              <span class="error-msg" id="q-name-error">This field is required.</span>
             </div>
             <div class="form-group">
               <label for="q-email">Email Address <span class="req">*</span></label>
-              <input type="email" id="q-email" placeholder="john@hospital.com" required autocomplete="email" />
-              <span class="error-msg">Please enter a valid email</span>
+              <input type="email" id="q-email" placeholder="john@hospital.com" required autocomplete="email" aria-describedby="q-email-error" />
+              <span class="error-msg" id="q-email-error">Please enter a valid email address.</span>
             </div>
           </div>
 
@@ -255,10 +255,12 @@ $csrf_token = csrf_token();
           <!-- Message -->
           <div class="form-group">
             <label for="q-msg">Message / Requirements</label>
-            <textarea id="q-msg" rows="4" placeholder="Specify panels, volumes, or any special requirements…"></textarea>
+            <textarea id="q-msg" rows="4" placeholder="Specify panels, volumes, or any special requirements…" maxlength="1000" aria-describedby="q-msg-counter"></textarea>
+            <div class="char-counter" id="q-msg-counter">0 / 1000 characters</div>
           </div>
 
-          <button type="submit" class="btn-primary" id="quote-submit-btn"
+          <div class="form-readiness" id="quote-form-readiness">Complete all required fields to continue.</div>
+          <button type="submit" class="btn-primary" id="quote-submit-btn" disabled
                   style="width:100%;justify-content:center;margin-top:8px;">
             ✉️ Request Official Quotation
           </button>
@@ -357,40 +359,123 @@ window.removeQuoteItem = function(idx) {
   if (typeof window.updateCartBadge === 'function') window.updateCartBadge();
 };
 
-// ── Form submission ───────────────────────────────────────────
+// ── Form submission & UX Enhancements ───────────────────────────
 const form   = document.getElementById('dx-quote-form');
 const status = document.getElementById('form-status');
+const submitBtn = document.getElementById('quote-submit-btn');
+const readiness = document.getElementById('quote-form-readiness');
+const msgInput = document.getElementById('q-msg');
+const msgCounter = document.getElementById('q-msg-counter');
 
 if (form) {
+  // 1. Smart Prefill - Country
+  try {
+    const countryInput = document.getElementById('q-country');
+    if (countryInput && !countryInput.value) {
+      const locale = navigator.language;
+      if (locale && locale.includes('-')) {
+        const countryCode = locale.split('-')[1];
+        const regionNames = new Intl.DisplayNames([locale], {type: 'region'});
+        countryInput.value = regionNames.of(countryCode) || '';
+      }
+    }
+  } catch(e) {}
+
+  // 2. Character Counter
+  if (msgInput && msgCounter) {
+    const updateCounter = () => {
+      const len = msgInput.value.length;
+      msgCounter.textContent = `${len} / 1000 characters`;
+      msgCounter.classList.toggle('warning', len > 900);
+    };
+    msgInput.addEventListener('input', updateCounter);
+    updateCounter();
+  }
+
+  // 3. Real-time validation
+  const validateForm = () => {
+    let allValid = true;
+    form.querySelectorAll('[required]').forEach(input => {
+      let ok = input.value.trim() !== '';
+      if (ok && input.type === 'email') {
+        ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value);
+      }
+      if (!ok) allValid = false;
+    });
+
+    // Also check cart
+    const localCart = JSON.parse(localStorage.getItem('dx-cart') || '[]');
+    if (localCart.length === 0) allValid = false;
+
+    if (submitBtn) submitBtn.disabled = !allValid;
+    if (readiness) {
+      if (allValid) {
+        readiness.textContent = 'Ready to submit.';
+        readiness.classList.add('ready');
+      } else {
+        readiness.textContent = 'Complete all required fields to continue.';
+        readiness.classList.remove('ready');
+      }
+    }
+    return allValid;
+  };
+
+  form.querySelectorAll('input, textarea, select').forEach(el => {
+    el.addEventListener('input', () => {
+      if (el.value.trim()) el.classList.remove('invalid');
+      validateForm();
+    });
+    el.addEventListener('blur', () => {
+      if (el.hasAttribute('required')) {
+        let ok = el.value.trim() !== '';
+        if (ok && el.type === 'email') {
+          ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value);
+        }
+        el.classList.toggle('invalid', !ok);
+      }
+      validateForm();
+    });
+  });
+
+  // Re-validate on cart change
+  const originalRenderCart = window.renderQuoteCartItems;
+  window.renderQuoteCartItems = function() {
+    originalRenderCart();
+    validateForm();
+  };
+
+  validateForm();
+
+  // 4. Submission
   form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    // Validate required fields
-    let valid = true;
-    form.querySelectorAll('[required]').forEach(input => {
-      const ok = input.value.trim() && !(input.type === 'email' && !/\S+@\S+\.\S+/.test(input.value));
-      input.classList.toggle('invalid', !ok);
-      if (!ok) valid = false;
-    });
+    if (!validateForm()) return;
 
     if (status) { status.className = 'form-status'; status.style.display = 'none'; }
 
+    const origText = submitBtn ? submitBtn.innerHTML : '';
+    if (submitBtn) { submitBtn.disabled = true; submitBtn.innerHTML = '⌛ Submitting…'; }
+
+    // Disable all inputs during submission
+    const inputs = form.querySelectorAll('input, textarea, select');
+    inputs.forEach(el => el.disabled = true);
+
     const localCart = JSON.parse(localStorage.getItem('dx-cart') || '[]');
-    if (localCart.length === 0) {
-      showStatus('❌ Your quote list is empty. Please add products first.', 'error');
-      return;
+
+    // 5. Phone Normalization
+    let rawPhone = document.getElementById('q-phone').value.trim();
+    let cleanPhone = rawPhone;
+    if (rawPhone) {
+      const isPlus = rawPhone.startsWith('+');
+      cleanPhone = rawPhone.replace(/\D/g, '');
+      if (isPlus) cleanPhone = '+' + cleanPhone;
     }
-
-    if (!valid) { showStatus('❌ Please fill in the required fields.', 'error'); return; }
-
-    const btn      = form.querySelector('button[type="submit"]');
-    const origText = btn ? btn.innerHTML : '';
-    if (btn) { btn.disabled = true; btn.innerHTML = '⌛ Submitting…'; }
 
     const payload = {
       name:         document.getElementById('q-name').value.trim(),
       email:        document.getElementById('q-email').value.trim(),
-      phone:        document.getElementById('q-phone').value.trim(),
+      phone:        cleanPhone,
       company:      document.getElementById('q-company').value.trim(),
       company_type: document.getElementById('q-company-type').value,
       country:      document.getElementById('q-country').value.trim(),
@@ -407,28 +492,35 @@ if (form) {
     })
     .then(r => r.json().then(d => ({ ok: r.ok, status: r.status, data: d })))
     .then(res => {
-      if (btn) { btn.disabled = false; btn.innerHTML = origText; }
       if (res.ok && res.data.success) {
-        showStatus('🎉 ' + res.data.message, 'success');
+        // 6. Success State
+        form.innerHTML = `
+          <div class="form-success-state">
+            <div class="success-icon-wrap">✓</div>
+            <h3 class="success-title">Thank you! Your quote request has been received.</h3>
+            <p class="success-desc">Our team will review your requirements and contact you within <strong>1–2 business days</strong>.<br><br>If your request is urgent, you may also contact us directly via email or WhatsApp.</p>
+            <button type="button" class="btn-secondary" onclick="window.location.reload()">Submit Another Request</button>
+          </div>
+        `;
         localStorage.removeItem('dx-cart');
         if (typeof window.renderCart === 'function') window.renderCart();
         if (typeof window.updateCartBadge === 'function') window.updateCartBadge();
-        renderQuoteCartItems();
-        form.reset();
-      } else if (res.status === 429) {
-        showStatus('⏳ Too many requests. Please wait a few minutes.', 'error');
+        originalRenderCart();
       } else {
-        showStatus('❌ ' + (res.data.message || 'Something went wrong. Email us at info@dxbiocode.com'), 'error');
+        inputs.forEach(el => el.disabled = false);
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.innerHTML = origText; }
+        if (res.status === 429) {
+          showStatus('⏳ Too many requests. Please wait a few minutes.', 'error');
+        } else {
+          showStatus('❌ ' + (res.data.message || 'Something went wrong. Email us at info@dxbiocode.com'), 'error');
+        }
       }
     })
     .catch(() => {
-      if (btn) { btn.disabled = false; btn.innerHTML = origText; }
+      inputs.forEach(el => el.disabled = false);
+      if (submitBtn) { submitBtn.disabled = false; submitBtn.innerHTML = origText; }
       showStatus('❌ Network error. Please email info@dxbiocode.com directly.', 'error');
     });
-  });
-
-  form.querySelectorAll('input, textarea, select').forEach(el => {
-    el.addEventListener('input', function() { if (this.value.trim()) this.classList.remove('invalid'); });
   });
 }
 

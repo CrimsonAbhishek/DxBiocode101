@@ -1180,3 +1180,84 @@ footer { background: #07102a; color: rgba(255,255,255,0.75); padding: 64px 24px 
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== FORM UX ENHANCEMENTS ===== */
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+  filter: grayscale(0.4);
+}
+
+.char-counter {
+  font-size: 11px;
+  color: var(--text-light);
+  text-align: right;
+  margin-top: 4px;
+  transition: color 0.2s;
+}
+.char-counter.warning {
+  color: var(--accent-pink);
+  font-weight: 600;
+}
+
+.form-readiness {
+  font-size: 12px;
+  color: var(--text-light);
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: -4px;
+  transition: color 0.2s;
+}
+.form-readiness.ready {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.form-success-state {
+  text-align: center;
+  padding: 40px 20px;
+  animation: fadeUpSuccess 0.5s ease forwards;
+}
+
+@keyframes fadeUpSuccess {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.success-icon-wrap {
+  width: 64px;
+  height: 64px;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: #10b981;
+  font-size: 32px;
+}
+
+.success-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.success-desc {
+  font-size: 15px;
+  color: var(--text-mid);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.error-msg {
+  animation: slideDownError 0.2s ease forwards;
+}
+
+@keyframes slideDownError {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}

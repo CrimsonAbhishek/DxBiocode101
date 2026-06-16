@@ -183,9 +183,9 @@ $csrf_token = csrf_token();
           </div>
           <div class="form-row">
             <div class="form-group">
-              <label for="form-name">Full Name *</label>
-              <input type="text" id="form-name" name="name" placeholder="Dr. John Doe" required autocomplete="name" />
-              <span class="error-msg">Please enter your name</span>
+              <label for="form-name">Full Name <span class="req">*</span></label>
+              <input type="text" id="form-name" name="name" placeholder="Dr. John Doe" required autocomplete="name" aria-describedby="name-error" />
+              <span class="error-msg" id="name-error">This field is required.</span>
             </div>
             <div class="form-group">
               <label for="form-phone">Phone Number</label>
@@ -193,9 +193,9 @@ $csrf_token = csrf_token();
             </div>
           </div>
           <div class="form-group">
-            <label for="form-email">Email Address *</label>
-            <input type="email" id="form-email" name="email" placeholder="john@hospital.com" required autocomplete="email" />
-            <span class="error-msg">Please enter a valid email</span>
+            <label for="form-email">Email Address <span class="req">*</span></label>
+            <input type="email" id="form-email" name="email" placeholder="john@hospital.com" required autocomplete="email" aria-describedby="email-error" />
+            <span class="error-msg" id="email-error">Please enter a valid email address.</span>
           </div>
           <div class="form-group">
             <label for="form-org">Organization / Clinic</label>
@@ -213,11 +213,13 @@ $csrf_token = csrf_token();
             </select>
           </div>
           <div class="form-group">
-            <label for="form-msg">Your Message *</label>
-            <textarea id="form-msg" name="message" rows="4" placeholder="I am interested in requesting a product demonstration..." required></textarea>
-            <span class="error-msg">Please enter your message</span>
+            <label for="form-msg">Your Message <span class="req">*</span></label>
+            <textarea id="form-msg" name="message" rows="4" placeholder="I am interested in requesting a product demonstration..." required maxlength="1000" aria-describedby="msg-error msg-counter"></textarea>
+            <span class="error-msg" id="msg-error">This field is required.</span>
+            <div class="char-counter" id="msg-counter">0 / 1000 characters</div>
           </div>
-          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;margin-top:10px;">
+          <div class="form-readiness" id="form-readiness">Complete all required fields to continue.</div>
+          <button type="submit" class="btn-primary" id="contact-submit-btn" disabled style="width:100%;justify-content:center;margin-top:10px;">
             ✉️ Send Message
           </button>
           <div class="form-status" id="form-status"></div>
