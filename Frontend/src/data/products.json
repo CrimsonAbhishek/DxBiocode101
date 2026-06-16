@@ -1,0 +1,2082 @@
+{
+  "products": [
+    {
+      "id": "dx-101",
+      "slug": "dx-101",
+      "name": "DX 101 Immunofluorescence Quantitative Analyzer",
+      "type": "analyzer",
+      "category": "Analyzers",
+      "shortDescription": "India's first portable and handheld multi-parameter POCT device. Compact, user-friendly, and built for rapid quantitative results.",
+      "image": "",
+      "features": [
+        "🏥 Point-of-Care Ready",
+        "⚡ Results in 3–15 min",
+        "📱 Android OS",
+        "☁️ Lims Connectivity HL7 interface",
+        "🔋 Long Battery Life",
+        "💾 50,000 Results Storage"
+      ],
+      "seoTitle": "DX 101 Immunofluorescence Analyzer | DX BIOCODE",
+      "seoDescription": "Portable point-of-care quantitative diagnostic analyzer for rapid results.",
+      "featured": true,
+      "status": "available"
+    },
+    {
+      "id": "hs-ctni",
+      "slug": "hs-ctni",
+      "name": "hs-cTnI Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cardiac Markers",
+      "shortDescription": "Quantitative determination of hs-cTnI using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of Cardiac Troponin I (cTnI) in human serum, plasma and whole blood samples. This test is used as an aid in the diagnosis of myocardial injury such as Acute Myocardial Infarction (AMI), Unstable Angina, Acute Myocarditis and Acute Coronary Syndrome (ACS). For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "hs-cTnI",
+        "Method": "Assay",
+        "Sample Type": "Serum/Plasma/Whole Blood",
+        "Detection Range": "0.010-50.000 ng/mL",
+        "Test Time": "10 min",
+        "Shelf Life": "",
+        "Storage Condition": "4-30℃",
+        "Cut-off Value": "0.040 ng/mL"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "hs-cTnI",
+        "Cardiac Markers",
+        "Assay",
+        "Myocardial Injury",
+        "Acute Myocardial Infarction",
+        "Unstable Angina",
+        "Acute Coronary Syndrome"
+      ],
+      "seoTitle": "hs-cTnI Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of Cardiac Troponin I (cTnI) in human serum, plasma and whole blood samples. This test is used as an aid in the d...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "ctni",
+      "slug": "ctni",
+      "name": "cTnI Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cardiac Markers",
+      "shortDescription": "Quantitative determination of cTnI using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of Cardiac Troponin I (cTnI) in human serum, plasma or whole blood samples. This test is used as an aid in the diagnosis of myocardial injury such as Acute Myocardial Infarction (AMI), Unstable Angina, Acute Myocarditis and Acute Coronary Syndrome (ACS).",
+      "specifications": {
+        "Product Name": "(Immunofluorescence Assay)",
+        "Test Item": "cTnI",
+        "Method": "Assay",
+        "Sample Type": "Serum/Plasma/Whole Blood",
+        "Detection Range": "0.10~50.00 ng/mL",
+        "Cut-off Value": "0.10 ng/mL",
+        "Test Time": "10 min",
+        "Certificate": "CE, NMPA",
+        "Storage Condition": "4-30℃",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "cTnI",
+        "Cardiac Markers",
+        "Assay",
+        "Myocardial Injury",
+        "Acute Myocardial Infarction",
+        "Unstable Angina",
+        "Acute Coronary Syndrome"
+      ],
+      "seoTitle": "cTnI Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of Cardiac Troponin I (cTnI) in human serum, plasma or whole blood samples. This test is used as an aid in the di...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "tnt",
+      "slug": "tnt",
+      "name": "TnT Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cardiac Markers",
+      "shortDescription": "Quantitative determination of TnT using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of TnT in serum, plasma or whole blood samples. The test is indicated to be used as an auxiliary diagnostic of acute myocardial infarction (AMl), heart failure, unstable angina pectoris, myocarditis and other myocardial injuries, it can also be used for the assessment of prognosis and risk stratification of acute pulmonary embolism and the monitoring of myocardial injury in thoracic surgery. For professional and laboratory use.",
+      "specifications": {
+        "Product Name": "TnT Fast Test Kit (Immunofluorescence Assay)",
+        "Test Item": "TnT",
+        "Method": "Assay",
+        "Sample Type": "Serum/Plasma/Whole Blood",
+        "Detection Range": "10.0~10000.0 pg/mL",
+        "Cut-off Value": "14.0 pg/mL",
+        "Test Time": "15 min",
+        "Certificate": "CE, NMPA",
+        "Storage Condition": "4-30℃",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "TnT",
+        "Cardiac Markers",
+        "Assay",
+        "Myocardial Injury",
+        "Acute Myocardial Infarction",
+        "Unstable Angina",
+        "Heart Failure"
+      ],
+      "seoTitle": "TnT Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of TnT in serum, plasma or whole blood samples. The test is indicated to be used as an auxiliary diagnostic of ac...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "bnp",
+      "slug": "bnp",
+      "name": "BNP Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cardiac Markers",
+      "shortDescription": "Quantitative determination of BNP using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of B-type natriuretic peptide (BNP) in human plasma and whole blood samples. This test is used as an aid in the diagnosis of congestive heart failure and for the risk stratification of patients with acute coronary syndromes (ACS).",
+      "specifications": {
+        "Product Name": "(Immunofluorescence Assay)",
+        "Test Item": "BNP",
+        "Method": "Assay",
+        "Sample Type": "Plasma/Whole Blood",
+        "Detection Range": "5.0~5000.0 pg/mL",
+        "Cut-off Value": "100.0 pg/mL",
+        "Test Time": "10 min",
+        "Certificate": "CE, NMPA",
+        "Storage Condition": "4-30℃",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "BNP",
+        "Cardiac Markers",
+        "Assay",
+        "Acute Coronary Syndrome",
+        "Heart Failure"
+      ],
+      "seoTitle": "BNP Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of B-type natriuretic peptide (BNP) in human plasma and whole blood samples. This test is used as an aid in the d...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "nt-probnp",
+      "slug": "nt-probnp",
+      "name": "NT-proBNP Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cardiac Markers",
+      "shortDescription": "Quantitative determination of NT-proBNP using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of N-terminal B-type natriuretic peptide precursor (NT-proBNP) in human serum, plasma or whole blood samples. This test is used as an aid in the clinical diagnosis, prognosis and evaluation of Heart Failure (HF).",
+      "specifications": {
+        "Product Name": "(Immunofluorescence Assay)",
+        "Test Item": "NT-proBNP",
+        "Method": "Assay",
+        "Sample Type": "Serum/Plasma/Whole Blood",
+        "Detection Range": "100~35000 pg/mL",
+        "Cut-off Value": "100.0 pg/mL",
+        "Test Time": "10 min",
+        "Certificate": "CE, NMPA",
+        "Storage Condition": "4-30℃",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "NT-proBNP",
+        "Cardiac Markers",
+        "Assay",
+        "Heart Failure"
+      ],
+      "seoTitle": "NT-proBNP Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of N-terminal B-type natriuretic peptide precursor (NT-proBNP) in human serum, plasma or whole blood samples. Thi...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "ck-mbctni",
+      "slug": "ck-mbctni",
+      "name": "CK-MB/cTnI Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cardiac Markers",
+      "shortDescription": "Quantitative determination of CK-MB/cTnI using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of CK-MB/cTnI in serum, plasma or whole blood sanples. This test is used as an aid in the clinical diagnosis, prognosis and evaluation of myocardial injury such as Acute Myocardial Infarction (AMI), Unstable Angina, Acute Myocarditis and Acute Coronary Syndrome (ACS).",
+      "specifications": {
+        "Test Item": "CK-MB/cTnI",
+        "Sample": "Serum/Plasma/Whole Blood",
+        "Detection Range": "cTnI: 0.1-50.0ng/ml",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "10 min",
+        "Cut-off Value": "cTnI: 0.1 ng/ml",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "CK-MB/cTnI",
+        "Cardiac Markers",
+        "Assay",
+        "Myocardial Injury",
+        "Acute Myocardial Infarction",
+        "Unstable Angina",
+        "Acute Coronary Syndrome"
+      ],
+      "seoTitle": "CK-MB/cTnI Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of CK-MB/cTnI in serum, plasma or whole blood sanples. This test is used as an aid in the clinical diagnosis, pro...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "ck-mbctnimyo",
+      "slug": "ck-mbctnimyo",
+      "name": "CK-MB/cTnI/Myo Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cardiac Markers",
+      "shortDescription": "Quantitative determination of CK-MB/cTnI/Myo using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "CK-MB/cTnI/Myo Fast Test Kit (Immunofluorescence Assay) is intended for in vitro quantitative determination of CK-MB/cTnI/Myo in serum, plasma or whole blood samples. This test is used as an aid in the clinical diagnosis, prognosis and evaluation of myocardial injury such as Acute Myocardial Infarction (AMI), Unstable Angina, Acute Myocarditis and Acute Coronary Syndrome (ACS).",
+      "specifications": {
+        "Test Item": "CK-MB/cTnI/Myo",
+        "Sample Type": "Serum/Plasma/Whole Blood",
+        "Method": "Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "Myo: 30.0-600.0 ng/ml",
+        "Test Time": "10 min",
+        "Cut-off Value": "Myo: 50.0 ng/ml70.0 ng/ml",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "CK-MB/cTnI/Myo",
+        "Cardiac Markers",
+        "Assay",
+        "Myocardial Injury",
+        "Acute Myocardial Infarction",
+        "Unstable Angina",
+        "Acute Coronary Syndrome"
+      ],
+      "seoTitle": "CK-MB/cTnI/Myo Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: CK-MB/cTnI/Myo Fast Test Kit (Immunofluorescence Assay) is intended for in vitro quantitative determination of CK-MB/cTnI/Myo in serum, plas...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "ck-mbctnih-fabp",
+      "slug": "ck-mbctnih-fabp",
+      "name": "CK-MB/cTnI/H-FABP Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cardiac Markers",
+      "shortDescription": "Quantitative determination of CK-MB/cTnI/H-FABP using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of CK-MB/cTnI/H-FABP in human serum, plasma or whole blood samples. This test is used as an aid in the clinical diagnosis, prognosis and evaluation of myocardial injury such as Acute Myocardial Infarction (AMI), Unstable Angina, Acute Myocarditis and Acute Coronary Syndrome (ACS).",
+      "specifications": {
+        "Test Item": "CK-MB/cTnI/H-FABP",
+        "Sample": "Serum/Plasma/Whole Blood",
+        "Detection Range": "H-FABP: 2.00-100.00 ng/mL",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "10 min",
+        "Cut-off Value": "H-FABP: 6.36 ng/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "CK-MB/cTnI/H-FABP",
+        "Cardiac Markers",
+        "Assay",
+        "Myocardial Injury",
+        "Acute Myocardial Infarction",
+        "Unstable Angina",
+        "Acute Coronary Syndrome"
+      ],
+      "seoTitle": "CK-MB/cTnI/H-FABP Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of CK-MB/cTnI/H-FABP in human serum, plasma or whole blood samples. This test is used as an aid in the clinical d...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "h-fabp",
+      "slug": "h-fabp",
+      "name": "H-FABP Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cardiac Markers",
+      "shortDescription": "Quantitative determination of H-FABP using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of Heart-type Fatty Acid Binding Protein (H-FABP) in human serum, plasma or whole blood samples. This test is used in the early diagnosis of AMI and pulmonary embolism, and monitoring of chronic heart failure.",
+      "specifications": {
+        "Test Item": "H-FABP",
+        "Sample": "Serum/Plasma/Whole Blood",
+        "Detection Range": "1.0-120.0 ng/mL",
+        "Storage Condition": "4-30℃",
+        "Method": "Immunofluorescence Assay",
+        "Test Time": "3 min",
+        "Cut-off Value": "6.36 ng/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "H-FABP",
+        "Cardiac Markers",
+        "Immunofluorescence Assay",
+        "Heart Failure"
+      ],
+      "seoTitle": "H-FABP Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of Heart-type Fatty Acid Binding Protein (H-FABP) in human serum, plasma or whole blood samples. This test is use...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "d-dimer",
+      "slug": "d-dimer",
+      "name": "D-Dimer Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cardiac Markers",
+      "shortDescription": "Quantitative determination of D-Dimer using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of D-Dimer in human plasma or whole blood samples. The test is used as an aid in the assessment and evaluation of patients suspected of deep-vein thrombosis or pulmonary embolism.",
+      "specifications": {
+        "Test Item": "D-Dimer",
+        "Sample": "Plasma/Whole Blood",
+        "Detection Range": "0.1-10.0 mg/L",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "10 min",
+        "Cut-off Value": "0.5 mg/L",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "D-Dimer",
+        "Cardiac Markers",
+        "Assay"
+      ],
+      "seoTitle": "D-Dimer Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of D-Dimer in human plasma or whole blood samples. The test is used as an aid in the assessment and evaluation of...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "st2",
+      "slug": "st2",
+      "name": "ST2 Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cardiac Markers",
+      "shortDescription": "Quantitative determination of ST2 using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of Growth Stimulation expressed gene2 (ST2) in serum, plasma or whole blood samples. The test is used as an aid in the diagnosis of acute myocardial infarction, chronic or acute heart failure. For professional and laboratory use only.",
+      "specifications": {
+        "Product Name": "ST2 Fast Test Kit (Immunofluorescence Assay)",
+        "Test Item": "ST2",
+        "Method": "Assay",
+        "Sample": "Serum/Plasma/Whole Blood",
+        "Detection Range": "3.0-200.0 ng/mL",
+        "Cut-off Value": "35.0 ng/mL",
+        "Test Time": "15 min",
+        "Certificate": "",
+        "Storage Condition": "4-30℃",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "ST2",
+        "Cardiac Markers",
+        "Assay",
+        "Acute Myocardial Infarction",
+        "Heart Failure"
+      ],
+      "seoTitle": "ST2 Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of Growth Stimulation expressed gene2 (ST2) in serum, plasma or whole blood samples. The test is used as an aid i...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "tsh",
+      "slug": "tsh",
+      "name": "TSH Fast Test Kit",
+      "type": "test-kit",
+      "category": "Thyroid Function",
+      "shortDescription": "Quantitative determination of TSH using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of thyroid-stimulating hormone (TSH) in human serum and plasma samples. This test is used in the screening, clinical diagnosis, prognosis and therapeutic effect evaluation of thyroid diseases. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "TSH",
+        "Sample": "Serum/Plasma",
+        "Method": "Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "0.10-50.00 ulU/mL",
+        "Test Time": "15 min",
+        "Cut-off Value": "0.27-4.20 ulU/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "TSH",
+        "Thyroid Function",
+        "Assay"
+      ],
+      "seoTitle": "TSH Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of thyroid-stimulating hormone (TSH) in human serum and plasma samples. This test is used in the screening, clini...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "t3",
+      "slug": "t3",
+      "name": "T3 Fast Test Kit",
+      "type": "test-kit",
+      "category": "Thyroid Function",
+      "shortDescription": "Quantitative determination of T3 using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of T3 in human serum and plasma samples. lt can be used in the monitoring of hyperthyroidism and hypothyroidism, and used as an aid in diagnosis of thyroid function. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "T3",
+        "Sample": "Serum/Plasma",
+        "Method": "Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "0.30-10.00 nmol/L",
+        "Test Time": "15 min",
+        "Cut-off Value": "1.30-3.10 nmol/L",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "T3",
+        "Thyroid Function",
+        "Assay"
+      ],
+      "seoTitle": "T3 Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of T3 in human serum and plasma samples. lt can be used in the monitoring of hyperthyroidism and hypothyroidism, ...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "t4",
+      "slug": "t4",
+      "name": "T4 Fast Test Kit",
+      "type": "test-kit",
+      "category": "Thyroid Function",
+      "shortDescription": "Quantitative determination of T4 using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of T4 in human serum and plasma samples. lt can be used in the monitoring of hyperthyroidism and hypothyroidism, and used as an aid in diagnosis of thyroid function. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "T4",
+        "Sample": "Serum/Plasma",
+        "Method": "Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "5.40-320.00 nmol/L",
+        "Test Time": "15 min",
+        "Cut-off Value": "59.00-154.00 nmol/L",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "T4",
+        "Thyroid Function",
+        "Assay"
+      ],
+      "seoTitle": "T4 Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of T4 in human serum and plasma samples. lt can be used in the monitoring of hyperthyroidism and hypothyroidism, ...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "ft3",
+      "slug": "ft3",
+      "name": "fT3 Fast Test Kit",
+      "type": "test-kit",
+      "category": "Thyroid Function",
+      "shortDescription": "Quantitative determination of fT3 using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of free triiodothyronine (fT3) in human serum, plasma and whole blood. lt is used as an aid in diagnosis of thyroid diseases. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "fT3",
+        "Sample": "Serum/Plasma/Whole Blood",
+        "Method": "Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "0.40-50.00 pmol/L",
+        "Test Time": "15 min",
+        "Cut-off Value": "3.10-6.80 pmol/L",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "fT3",
+        "Thyroid Function",
+        "Assay"
+      ],
+      "seoTitle": "fT3 Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of free triiodothyronine (fT3) in human serum, plasma and whole blood. lt is used as an aid in diagnosis of thyro...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "ft4",
+      "slug": "ft4",
+      "name": "fT4 Fast Test Kit",
+      "type": "test-kit",
+      "category": "Thyroid Function",
+      "shortDescription": "Quantitative determination of fT4 using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of free T4 in human serum, plasma and whole blood samples. This test can be used as an aid in the assessment of thyroid status.",
+      "specifications": {
+        "Test Item": "fT4",
+        "Sample": "Serum/Plasma/Whole Blood",
+        "Method": "Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "0.30-100.00 pmol/L",
+        "Test Time": "15 min",
+        "Cut-off Value": "12.00-22.00 pmol/L",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "fT4",
+        "Thyroid Function",
+        "Assay"
+      ],
+      "seoTitle": "fT4 Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of free T4 in human serum, plasma and whole blood samples. This test can be used as an aid in the assessment of t...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "hcg-plusbeta",
+      "slug": "hcg-plusbeta",
+      "name": "HCG+β Fast Test Kit",
+      "type": "test-kit",
+      "category": "Fertility",
+      "shortDescription": "Quantitative determination of HCG+β using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of human chorionic gonadotropin (HCG) in human serum or plasma. This test is used as an aid in pregnancy test. For professional and laboratory use. This test can NOT be used to guide the diagnosis of pair trisomy 21.",
+      "specifications": {
+        "Test Item": "HCG+β",
+        "Sample": "Serum/Plasma",
+        "Method": "Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "5.0-100000.0 mlU/ml",
+        "Test Time": "10 min",
+        "Cut-off Value": "Refer to User Manual",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "HCG+β",
+        "Fertility",
+        "Assay",
+        "Pregnancy Test"
+      ],
+      "seoTitle": "HCG+β Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of human chorionic gonadotropin (HCG) in human serum or plasma. This test is used as an aid in pregnancy test. Fo...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "lh",
+      "slug": "lh",
+      "name": "LH Fast Test Kit",
+      "type": "test-kit",
+      "category": "Fertility",
+      "shortDescription": "Quantitative determination of LH using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of LH in human serum and plasma. This test is used to determine menopause, pinpoint ovulation and monitor endocrine therapy. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "LH",
+        "Sample": "Serum/Plasma",
+        "Method": "Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "0.20-150.00 mIU/mL",
+        "Test Time": "15 min",
+        "Cut-off Value": "Refer to User Manual",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "LH",
+        "Fertility",
+        "Assay"
+      ],
+      "seoTitle": "LH Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of LH in human serum and plasma. This test is used to determine menopause, pinpoint ovulation and monitor endocri...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "fsh",
+      "slug": "fsh",
+      "name": "FSH Fast Test Kit",
+      "type": "test-kit",
+      "category": "Fertility",
+      "shortDescription": "Quantitative determination of FSH using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of FSH in human serum and plasma. The test is used as an auxiliary diagnosis for evaluating pituitary endocrine function and ovarian diseases. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "FSH",
+        "Sample Types": "Serum/Plasma",
+        "Methodology": "Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "0.2-150.0 mIU/mL",
+        "Test Time": "15 min",
+        "Cut-off Value": "Refer to User Manual",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "FSH",
+        "Fertility",
+        "Immunofluorescence Assay"
+      ],
+      "seoTitle": "FSH Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of FSH in human serum and plasma. The test is used as an auxiliary diagnosis for evaluating pituitary endocrine f...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "prog",
+      "slug": "prog",
+      "name": "Prog Fast Test Kit",
+      "type": "test-kit",
+      "category": "Fertility",
+      "shortDescription": "Quantitative determination of Prog using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of progesterone in human serum and plasma samples. The test is used clinically as an aid in the diagnosis of diseases related to abnormal progesterone levels, such as threatened miscarriage and luteal phase defect. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "Prog",
+        "Sample": "Serum/Plasma",
+        "Method": "Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "0.10-40.00 ng/mL",
+        "Test Time": "15 min",
+        "Cut-off Value": "Refer to User Manual",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "Prog",
+        "Fertility",
+        "Assay"
+      ],
+      "seoTitle": "Prog Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of progesterone in human serum and plasma samples. The test is used clinically as an aid in the diagnosis of dise...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "prl",
+      "slug": "prl",
+      "name": "PRL Fast Test Kit",
+      "type": "test-kit",
+      "category": "Fertility",
+      "shortDescription": "Quantitative determination of PRL using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of prolactin (PRL) in serum or plasma samples. This test can be used as an aid in the diagnosis of male and female infertility and pituitary dysfunction, as well as for monitoring male and female gonadal disorders and managing amenorrhea and galactorrhea. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "PRL",
+        "Sample Types": "Serum/Plasma",
+        "Methodology": "Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "0.5-200 ng/mL",
+        "Test Time": "15 min",
+        "Cut-off Value": "Refer to User Manual",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "PRL",
+        "Fertility",
+        "Immunofluorescence Assay",
+        "Infertility"
+      ],
+      "seoTitle": "PRL Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of prolactin (PRL) in serum or plasma samples. This test can be used as an aid in the diagnosis of male and femal...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "amh",
+      "slug": "amh",
+      "name": "AMH Fast Test Kit",
+      "type": "test-kit",
+      "category": "Fertility",
+      "shortDescription": "Quantitative determination of AMH using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of AMH in human serum and plasma samples. This test can be used as an aid in indicating ovarian functional reserve, and also help to diagnose menstrual disorders or to monitor the health of women. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "AMH",
+        "Sample": "Serum/Plasma",
+        "Method": "Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "0.10-20.00 ng/mL",
+        "Test Time": "15 min",
+        "Cut-off Value": "Refer to User Manual",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "AMH",
+        "Fertility",
+        "Assay"
+      ],
+      "seoTitle": "AMH Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of AMH in human serum and plasma samples. This test can be used as an aid in indicating ovarian functional reserv...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "estradiol",
+      "slug": "estradiol",
+      "name": "Estradiol Fast Test Kit",
+      "type": "test-kit",
+      "category": "Fertility",
+      "shortDescription": "Quantitative determination of Estradiol using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of estradiol in human serum and plasma. Estradiol tests are used to measure ovarian function. For professional and laboratory use. Specification",
+      "specifications": {
+        "Test Item": "Estradiol",
+        "Sample Type": "Serum/Plasma",
+        "Method": "Immunofluorescence",
+        "Storage Condition": "4-30°C",
+        "Test Time": "15 min",
+        "Detection Range": "40.0-4800.0 pg/mL",
+        "Cut-off Value": "Refer to user manual",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "Estradiol",
+        "Fertility",
+        "Immunofluorescence Assay"
+      ],
+      "seoTitle": "Estradiol Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of estradiol in human serum and plasma. Estradiol tests are used to measure ovarian function. For professional an...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "tpsa",
+      "slug": "tpsa",
+      "name": "tPSA Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cancer Markers",
+      "shortDescription": "Quantitative determination of tPSA using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of tPSA in human serum and plasma samples. lt can be used as an aid in the diagnosis and management of patients with prostate cancer. For professional and laboratory use.",
+      "specifications": {
+        "Test Item": "tPSA",
+        "Sample": "Serum/Plasma",
+        "Detection Range": "0.50-100.00 ng/mL",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Cut-off Value": "4.0 ng/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "tPSA",
+        "Cancer Markers",
+        "Assay",
+        "Cancer Diagnostics"
+      ],
+      "seoTitle": "tPSA Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of tPSA in human serum and plasma samples. lt can be used as an aid in the diagnosis and management of patients w...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "fpsa",
+      "slug": "fpsa",
+      "name": "fPSA Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cancer Markers",
+      "shortDescription": "Quantitative determination of fPSA using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of free PSA in human serum and plasma samples. lt is mainly used for dynamic monitoring of patients with malignant tumors to assist in judging the disease process or treatment effect. It cannot be used as a basis for early diagnosis of malignant tumors, and is not suitable for tumor screening in the general population. This assay is intended to be used in conjunction with the Getein total PSA test as an aid in distinguishing prostate cancer from benign prostatic conditions in men age 50 years or older who have a digital rectal examination (DRE) that is not suspicious for prostate cancer and the Getein total PSA value between 4 ng/mL and 10 ng/mL.",
+      "specifications": {
+        "Test Item": "fPSA",
+        "Sample": "Serum/Plasma",
+        "Detection Range": "ng/mL",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "10 min",
+        "Cut-off Value": "1.00 ng/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "fPSA",
+        "Cancer Markers",
+        "Assay",
+        "Tumor Marker",
+        "Cancer Diagnostics"
+      ],
+      "seoTitle": "fPSA Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of free PSA in human serum and plasma samples. lt is mainly used for dynamic monitoring of patients with malignan...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "cea",
+      "slug": "cea",
+      "name": "CEA Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cancer Markers",
+      "shortDescription": "Quantitative determination of CEA using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of carcinoembryonic antigen (CEA) in serum or plasma samples. The test is used dinically as an aid in the diagnosis and management of cancer patients. For professional and laboratory use only. This test can NOT be used to guide the diagnosis of pair trisomy 21.",
+      "specifications": {
+        "Test Item": "CEA",
+        "Sample": "Serum/Plasma",
+        "Detection Range": "2.0-500.0 ng/mL",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Cut-off Value": "4.7 ng/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "CEA",
+        "Cancer Markers",
+        "Assay",
+        "Cancer Diagnostics"
+      ],
+      "seoTitle": "CEA Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of carcinoembryonic antigen (CEA) in serum or plasma samples. The test is used dinically as an aid in the diagnos...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "afp",
+      "slug": "afp",
+      "name": "AFP Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cancer Markers",
+      "shortDescription": "Quantitative determination of AFP using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of AFP in human serum or plasma samples. This test can be used as an aid in the diagnosis and monitoring of primary liver cancer. For professional and laboratory use only. This test can NOT be used to guide the diagnosis of pair trisomy 21.",
+      "specifications": {
+        "Test Item": "AFP",
+        "Sample": "Serum/Plasma",
+        "Detection Range": "2.0-500.0 ng/mL",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Cut-off Value": "7.0 ng/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "AFP",
+        "Cancer Markers",
+        "Assay",
+        "Cancer Diagnostics"
+      ],
+      "seoTitle": "AFP Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of AFP in human serum or plasma samples. This test can be used as an aid in the diagnosis and monitoring of prima...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "ca125",
+      "slug": "ca125",
+      "name": "CA125 Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cancer Markers",
+      "shortDescription": "Quantitative determination of CA125 using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of Cancer Antigen 125 (CA125) in serum, plasma or whole blood samples. The test is indicated for use as an aid in the detection of ovarian carcinoma. For professional and laboratory use.",
+      "specifications": {
+        "Test Item": "CA125",
+        "Sample": "Serum/Plasma/Whole Blood",
+        "Detection Range": "2.0-500.0 U/mL",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Cut-off Value": "35.0 U/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "CA125",
+        "Cancer Markers",
+        "Assay",
+        "Cancer Diagnostics"
+      ],
+      "seoTitle": "CA125 Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of Cancer Antigen 125 (CA125) in serum, plasma or whole blood samples. The test is indicated for use as an aid in...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "ca15-3",
+      "slug": "ca15-3",
+      "name": "CA15-3 Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cancer Markers",
+      "shortDescription": "Quantitative determination of CA15-3 using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of Cancer Antigen 15-3 (CA15-3) in serum or plasma samples. This test is utilized for the adjunctive diagnosis of breast cancer patients. For professional and laboratory use.",
+      "specifications": {
+        "Test Item": "CA15-3",
+        "Sample": "Serum/Plasma",
+        "Detection Range": "1.5-300.0 U/mL",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "10 min",
+        "Cut-off Value": "26.2 U/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "CA15-3",
+        "Cancer Markers",
+        "Assay",
+        "Cancer Diagnostics"
+      ],
+      "seoTitle": "CA15-3 Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of Cancer Antigen 15-3 (CA15-3) in serum or plasma samples. This test is utilized for the adjunctive diagnosis of...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "ca19-9",
+      "slug": "ca19-9",
+      "name": "CA19-9 Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cancer Markers",
+      "shortDescription": "Quantitative determination of CA19-9 using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of Cancer Antigen 19-9 (CA19-9) in serum, plasma or whole blood. The test is utilized for the adjunctive diagnosis of pancreatic cancer. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "CA19-9",
+        "Sample": "/Whole Blood",
+        "Detection Range": "2.0-1000.0 U/mL",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Cut-off Value": "27.0 U/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "CA19-9",
+        "Cancer Markers",
+        "Assay",
+        "Cancer Diagnostics"
+      ],
+      "seoTitle": "CA19-9 Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of Cancer Antigen 19-9 (CA19-9) in serum, plasma or whole blood. The test is utilized for the adjunctive diagnosi...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "fob",
+      "slug": "fob",
+      "name": "FOB Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cancer Markers",
+      "shortDescription": "Quantitative determination of FOB using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative detection of hemoglobin in human fecal sample. lt is used as an adjunctive diagnosis of hemorrhagic lesions. For professional and laboratory use.",
+      "specifications": {
+        "Test Item": "FOB",
+        "Sample": "Fecal",
+        "Detection Range": "25-1000 ng/mL",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "10 min",
+        "Cut-off Value": "50 ng/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "FOB",
+        "Cancer Markers",
+        "Assay"
+      ],
+      "seoTitle": "FOB Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative detection of hemoglobin in human fecal sample. lt is used as an adjunctive diagnosis of hemorrhagic lesions. For professional a...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "pg-ipg-ii",
+      "slug": "pg-ipg-ii",
+      "name": "PG I/PG II Fast Test Kit",
+      "type": "test-kit",
+      "category": "Cancer Markers",
+      "shortDescription": "Quantitative determination of PG I/PG II using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of Pepsinogen I (PG I)/Pepsinogen II (PG II) in human serum, plasma samples. This test is used as an auxiliary diagnosis of the degree of gastric mucosal atrophy. For professional and laboratory use.",
+      "specifications": {
+        "Test Item": "PG I/PG II",
+        "Sample": "Serum/Plasma",
+        "Detection Range": "PG II: 1.0-100.0 ng/mL",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Cut-off Value": "PG I/PG II: ＜3.0 ng/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "PG I/PG II",
+        "Cancer Markers",
+        "Assay"
+      ],
+      "seoTitle": "PG I/PG II Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of Pepsinogen I (PG I)/Pepsinogen II (PG II) in human serum, plasma samples. This test is used as an auxiliary di...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "hba1c",
+      "slug": "hba1c",
+      "name": "HbA1c Fast Test Kit",
+      "type": "test-kit",
+      "category": "Diabetes",
+      "shortDescription": "Quantitative determination of HbA1c using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "HbA1c",
+        "Sample": "Whole Blood",
+        "Method": "Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "2.00-14.00%",
+        "Test Time": "5 min",
+        "Cut-off Value": "3.80-5.80%",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "HbA1c",
+        "Diabetes",
+        "Assay"
+      ],
+      "seoTitle": "HbA1c Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: For professional and laboratory use only....",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "insulin",
+      "slug": "insulin",
+      "name": "Insulin Fast Test Kit",
+      "type": "test-kit",
+      "category": "Metabolism",
+      "shortDescription": "Quantitative determination of Insulin using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of insulin in human serum and plasma samples. This test is used to aid in the diagnosis of glucose metabolism disorders and the evaluation of pancreatic islet function. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "Insulin",
+        "Sample": "Serum/Plasma",
+        "Detection Range": "1.0-300.0 μU/mL",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "12-15 min",
+        "Cut-off Value": "≤1.0 μU/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "Insulin",
+        "Metabolism",
+        "Assay"
+      ],
+      "seoTitle": "Insulin Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of insulin in human serum and plasma samples. This test is used to aid in the diagnosis of glucose metabolism dis...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "osteocalcin",
+      "slug": "osteocalcin",
+      "name": "Osteocalcin Fast Test Kit",
+      "type": "test-kit",
+      "category": "Metabolism",
+      "shortDescription": "Quantitative determination of Osteocalcin using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of Osteocalcin in serum or plasma samples. This test is mainly used for the auxiliary diagnosis of various osteoporosis and early bone synthesis after bone injury. For professional and laboratory use.",
+      "specifications": {
+        "Test Item": "Osteocalcin",
+        "Sample": "Serum/Plasma",
+        "Method": "Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "1.5-300.0 ng/mL",
+        "Test Time": "15 min",
+        "Cut-off Value": "Female: 11-48 ng/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "Osteocalcin",
+        "Metabolism",
+        "Assay"
+      ],
+      "seoTitle": "Osteocalcin Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of Osteocalcin in serum or plasma samples. This test is mainly used for the auxiliary diagnosis of various osteop...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "hbsag",
+      "slug": "hbsag",
+      "name": "HBsAg Fast Test Kit",
+      "type": "test-kit",
+      "category": "Infectious Disease",
+      "shortDescription": "Quantitative determination of HBsAg using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of hepatitis B surface antigen (HBsAg) in human serum and plasma samples. The test is used clinically as suitable for blood supply screening and clinical diagnosis of hepatitis B virus infection. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "HBsAg",
+        "Sample": "Serum/Plasma",
+        "Detection Range": "1~100 IU/mL",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Cut-off Value": "<1.00 IU/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "HBsAg",
+        "Infectious Disease",
+        "Assay",
+        "Infection Diagnosis"
+      ],
+      "seoTitle": "HBsAg Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of hepatitis B surface antigen (HBsAg) in human serum and plasma samples. The test is used clinically as suitable...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "anti-hbs",
+      "slug": "anti-hbs",
+      "name": "Anti-HBs Fast Test Kit",
+      "type": "test-kit",
+      "category": "Infectious Disease",
+      "shortDescription": "Quantitative determination of Anti-HBs using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of hepatitis B surface antibody (Anti-HBs) in human serum, plasma and whole blood samples. The test can aid to monitor the recovery of patients with hepatitis B virus (HBV) and evaluate the efficacy of hepatitis B vaccine.",
+      "specifications": {
+        "Test Item": "Anti-HBs",
+        "Sample Type": "Serum/Plasma/Whole Blood",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "10.00-1000.00 mlU/mL",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Shelf Life": "24 months",
+        "Cut-off Value": "10.00 mlU/mL"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "Anti-HBs",
+        "Infectious Disease",
+        "Assay"
+      ],
+      "seoTitle": "Anti-HBs Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of hepatitis B surface antibody (Anti-HBs) in human serum, plasma and whole blood samples. The test can aid to mo...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "anti-hcv",
+      "slug": "anti-hcv",
+      "name": "Anti-HCV Fast Test Kit",
+      "type": "test-kit",
+      "category": "Infectious Disease",
+      "shortDescription": "Quantitative determination of Anti-HCV using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "qualitative determination of hepatitis C virus (HCV) antibody in serum or plasma samples. This test can be clinically used for the auxiliary diagnosis of hepatitis C. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "Anti-HCV",
+        "Sample": "Serum/Plasma",
+        "Detection Range": "1.00-20.00 S/CO",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Cut-off Value": "<1.00 S/CO",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "Anti-HCV",
+        "Infectious Disease",
+        "Assay"
+      ],
+      "seoTitle": "Anti-HCV Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: qualitative determination of hepatitis C virus (HCV) antibody in serum or plasma samples. This test can be clinically used for the auxiliary...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "anti-hiv",
+      "slug": "anti-hiv",
+      "name": "Anti-HIV Fast Test Kit",
+      "type": "test-kit",
+      "category": "Infectious Disease",
+      "shortDescription": "Quantitative determination of Anti-HIV using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "qualitative determination of human immunodeficiency virus (HlV) antibody in serum or plasma samples. This test can be cinically used for the auxiliary diagnosis of acquired immunodeficiency syndrome (AlDS). For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "Anti-HIV",
+        "Sample": "Serum/Plasma",
+        "Sample Volume": "100 µL",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Detection Range": "1.00-1000.00 S/CO",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "Anti-HIV",
+        "Infectious Disease",
+        "Assay"
+      ],
+      "seoTitle": "Anti-HIV Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: qualitative determination of human immunodeficiency virus (HlV) antibody in serum or plasma samples. This test can be cinically used for the...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "anti-tp",
+      "slug": "anti-tp",
+      "name": "Anti-TP Fast Test Kit",
+      "type": "test-kit",
+      "category": "Infectious Disease",
+      "shortDescription": "Quantitative determination of Anti-TP using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "qualitative determination of treponema pallidum (TP) antibody in serum or plasma samples. This test is suitable for the auxiliary diagnosis and management of syphilis. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "Anti-TP",
+        "Sample": "Serum/Plasma",
+        "Detection Range": "1-50 S/CO",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Cut-off Value": "<1.00 S/CO",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "Anti-TP",
+        "Infectious Disease",
+        "Assay"
+      ],
+      "seoTitle": "Anti-TP Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: qualitative determination of treponema pallidum (TP) antibody in serum or plasma samples. This test is suitable for the auxiliary diagnosis ...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "antigen",
+      "slug": "antigen",
+      "name": "Antigen Fast Test Kit",
+      "type": "test-kit",
+      "category": "Other Test Reagents",
+      "shortDescription": "Quantitative determination of Antigen using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative detection of H. pylori antigen in human stool specimen. It is a useful aid in the diagnosis of a number of gastrointestinal disorders. For professional and laboratory use.",
+      "specifications": {
+        "Test Item": "Antigen",
+        "Sample Type": "Stool",
+        "Detection Range": "1.0-200.0 ng/mL",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "10 min",
+        "Cut-off Value": "5.0 ng/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "Antigen",
+        "Other Test Reagents",
+        "Assay"
+      ],
+      "seoTitle": "Antigen Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative detection of H. pylori antigen in human stool specimen. It is a useful aid in the diagnosis of a number of gastrointestinal dis...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "dengue-ns1-ag",
+      "slug": "dengue-ns1-ag",
+      "name": "Dengue NS1 Ag Fast Test Kit",
+      "type": "test-kit",
+      "category": "Infectious Disease",
+      "shortDescription": "Quantitative determination of Dengue NS1 Ag using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "Dengue NS1 Ag Rapid Test (Immunofluorescence Assay) is intended for the quantitative detection of dengue NS1 antigen in human serum, plasma or whole blood. It is used as an aid in the early clinical assessment of Dengue virus infection. Specification",
+      "specifications": {
+        "Test Item": "Dengue NS1 Ag",
+        "Sample Type": "Serum/Plasma/Whole Blood",
+        "Storage Condition": "4-30 °C",
+        "Detection Range": "1.00-50.00 S/CO",
+        "Test Time": "15 min",
+        "Method": "Immunofluorescence Assay",
+        "Shelf Life": "24 Months",
+        "Cut-off Value": "1.00 S/CO"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "Dengue NS1 Ag",
+        "Infectious Disease",
+        "Immunofluorescence Assay",
+        "Infection Diagnosis"
+      ],
+      "seoTitle": "Dengue NS1 Ag Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: Dengue NS1 Ag Rapid Test (Immunofluorescence Assay) is intended for the quantitative detection of dengue NS1 antigen in human serum, plasma ...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "h-pylori",
+      "slug": "h-pylori",
+      "name": "H. pylori Fast Test Kit",
+      "type": "test-kit",
+      "category": "Infectious Disease",
+      "shortDescription": "Quantitative determination of H. pylori using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative detection of H. pylori specific antigen in human stool specimen. It is a useful aid in the diagnosis of a number of gastrointestinal disorders. For professional and laboratory use only. About H. pylori infection in the gastrointestinal tract can be used as an auxiliary diagnosis for gastritis, gastric ulcer, and gastric cancer. Contents For Getein1100 Package specifications: 10 tests/box, 25 tests/box test card in a sealed pouch with desiccant 2) Sample diluent 3) User Manual:1 piece/box 4) SD card: 1 piece/box Note: Do not mix or interchange different batches of kits.",
+      "specifications": {
+        "Test Item": "H. pylori",
+        "Sample": "Stool specimen",
+        "Detection Range": "1.0 ng/mL~200.0 ng/mL",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "10 min",
+        "Cut-off Value": "5.0 ng/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "H. pylori",
+        "Infectious Disease",
+        "Assay",
+        "Infection Diagnosis",
+        "Cancer Diagnostics"
+      ],
+      "seoTitle": "H. pylori Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative detection of H. pylori specific antigen in human stool specimen. It is a useful aid in the diagnosis of a number of gastrointes...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "lnfluenza-ab",
+      "slug": "lnfluenza-ab",
+      "name": "lnfluenza A/B Fast Test Kit",
+      "type": "test-kit",
+      "category": "Infectious Disease",
+      "shortDescription": "Quantitative determination of lnfluenza A/B Antigen using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "lnfluenza A/B Fast Test Kit (lmmunofluorescence Assay) is intended for the qualitative detection of nucleocapsid protein antigen from influenza A and influenza B in human nasal swab samples from individuals suspected of respiratory viral infection consistent with influenza A and influenza B by their healthcare provider. This test is intended for professional and laboratory use. lnfluenza A/B Fast Test Kit (lmmunofluorescence Assay) is an aid in the differentiate of patients with suspected influenza A and influenza B virus infection in conjunction with clinical symptoms and result of other diagnostic methods. Results from the test should not be used as the sole basis for diagnosis and exclusion of influenza A and influenza B infection.",
+      "specifications": {
+        "Test Item": "lnfluenza A/B Antigen",
+        "Sample Type": "Nasal Swab",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "lnfluenza A/B Antigen",
+        "Infectious Disease",
+        "Assay",
+        "Infection Diagnosis"
+      ],
+      "seoTitle": "lnfluenza A/B Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: lnfluenza A/B Fast Test Kit (lmmunofluorescence Assay) is intended for the qualitative detection of nucleocapsid protein antigen from influe...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "rsvinfluenza-ab",
+      "slug": "rsvinfluenza-ab",
+      "name": "RSV/Influenza A/B Fast Test Kit",
+      "type": "test-kit",
+      "category": "Infectious Disease",
+      "shortDescription": "Quantitative determination of RSV/Influenza A/B using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "qualitative detection of influenza A and influenza B antigens and respiratory syncytial virus (RSV) antigen in human nasal swab. The test is indicated to be used as an auxiliary diagnostic of influenza virus and respiratory syncytial virus infections in conjunction with clinical and epidemiological risk factors. For professional and laboratory use.",
+      "specifications": {
+        "Test Item": "RSV/Influenza A/B",
+        "Sample Type": "Nasal Swab",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "/",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Shelf Life": "24 months",
+        "Cut-off Value": "COI＜1.00"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "RSV/Influenza A/B",
+        "Infectious Disease",
+        "Assay",
+        "Infection Diagnosis"
+      ],
+      "seoTitle": "RSV/Influenza A/B Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: qualitative detection of influenza A and influenza B antigens and respiratory syncytial virus (RSV) antigen in human nasal swab. The test is...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "hs-crp-pluscrp",
+      "slug": "hs-crp-pluscrp",
+      "name": "hs-CRP+CRP Fast Test Kit",
+      "type": "test-kit",
+      "category": "Inflammation",
+      "shortDescription": "Quantitative determination of hs-CRP+CRP using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of C-reactive protein (CRP) in serum, plasma, whole blood or fingertip blood samples. Measurement of CRP is useful for the detection and evaluation of infection, tissue injury and inflammatory disorders. Measurement of high sensitivity CRP (hs-CRP), when used in conjunction with traditional clinical laboratory evaluation of acute coronary syndromes (ACS), may be useful as an independent marker of prognosis for recurrent events in patients with stable coronary disease or ACS. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "hs-CRP+CRP",
+        "Sample": "Serum/Plasma/Whole Blood/Fingertip Blood",
+        "Detection Range": "0.5-200 mg/L",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "3 min",
+        "Cut-off Value": "3.0 mg/L",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "hs-CRP+CRP",
+        "Inflammation",
+        "Assay",
+        "Acute Coronary Syndrome",
+        "Infection Diagnosis"
+      ],
+      "seoTitle": "hs-CRP+CRP Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of C-reactive protein (CRP) in serum, plasma, whole blood or fingertip blood samples. Measurement of CRP is usefu...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "pct",
+      "slug": "pct",
+      "name": "PCT Fast Test Kit",
+      "type": "test-kit",
+      "category": "Inflammation",
+      "shortDescription": "Quantitative determination of PCT using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of Procalcitonin (PCT) in human serum, plasma or whole blood samples. The test is used as an aid in the assessment and evaluation of patients suspected of bacterial infection, trauma or shock.",
+      "specifications": {
+        "Test Item": "PCT",
+        "Sample": "Serum/Plasma/Whole Blood",
+        "Detection Range": "0.05-50.00 ng/ml",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Cut-off Value": "0.10 ng/ml",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "PCT",
+        "Inflammation",
+        "Assay",
+        "Infection Diagnosis"
+      ],
+      "seoTitle": "PCT Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of Procalcitonin (PCT) in human serum, plasma or whole blood samples. The test is used as an aid in the assessmen...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "saa",
+      "slug": "saa",
+      "name": "SAA Fast Test Kit",
+      "type": "test-kit",
+      "category": "Inflammation",
+      "shortDescription": "Quantitative determination of SAA using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of SAA in human serum, plasma, whole blood, and fingertip blood samples. lt can be used as a sensitive index in the diagnosis of infection and inflammation. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "SAA",
+        "Sample": "Serum/Plasma/Whole Blood/peripheral blood",
+        "Detection Range": "5.0-200.0 mg/L",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "5 min",
+        "Cut-off Value": "10.0 mg/L",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "SAA",
+        "Inflammation",
+        "Assay",
+        "Infection Diagnosis",
+        "Inflammation Marker"
+      ],
+      "seoTitle": "SAA Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of SAA in human serum, plasma, whole blood, and fingertip blood samples. lt can be used as a sensitive index in t...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "il-6",
+      "slug": "il-6",
+      "name": "IL-6 Fast Test Kit",
+      "type": "test-kit",
+      "category": "Inflammation",
+      "shortDescription": "Quantitative determination of IL-6 using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of interleukin 6 (IL-6) in human serum, plasma, whole blood and fingertip blood samples. IL-6 is an early marker in acute inflammation and this test can be used as an aid in the inflammatory diseases. For professional and laboratory use.",
+      "specifications": {
+        "Test Item": "IL-6",
+        "Sample": "Serum/Plasma/Whole Blood/peripheral blood",
+        "Detection Range": "1.5-4000.0 pg/mL",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Cut-off Value": "7.0 pg/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "IL-6",
+        "Inflammation",
+        "Assay",
+        "Inflammation Marker"
+      ],
+      "seoTitle": "IL-6 Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of interleukin 6 (IL-6) in human serum, plasma, whole blood and fingertip blood samples. IL-6 is an early marker ...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "calprotectin",
+      "slug": "calprotectin",
+      "name": "Calprotectin Fast Test Kit",
+      "type": "test-kit",
+      "category": "Inflammation",
+      "shortDescription": "Quantitative determination of Calprotectin using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of calprotectin in human fecal sample. The test is used as an aid in the adjunctive diagnosis of inflammatory bowel diseases. For professional and laboratory use.",
+      "specifications": {
+        "Test Item": "Calprotectin",
+        "Sample": "Fecal",
+        "Detection Range": "10.0-600.0 μg/g",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Cut-off Value": "＜50.0 μg/g",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "Calprotectin",
+        "Inflammation",
+        "Assay"
+      ],
+      "seoTitle": "Calprotectin Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of calprotectin in human fecal sample. The test is used as an aid in the adjunctive diagnosis of inflammatory bow...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "pctcrp",
+      "slug": "pctcrp",
+      "name": "PCT/CRP Fast Test Kit",
+      "type": "test-kit",
+      "category": "Inflammation",
+      "shortDescription": "Quantitative determination of PCT/CRP using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of Procalcitonin (PCT) and C-reactive protein (CRP) in serum, plasma or whole blood. The combination of CRP and PCT will be more accurately to determine the degree of infection and inflammation. It helps to identify systemic or local infection, bacterial infection or virus infection, determine the severity of infection and instruct clinical use of antibiotics. Therefore, the combination of PCT and CRP, when using a wider range of applications, more convenient and more accurate diagnosis.",
+      "specifications": {
+        "Test Item": "PCT/CRP",
+        "Sample": "Serum/Plasma/Whole Blood",
+        "Detection Range": "CRP: 0.5-200.0 mg/L",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Cut-off Value": "CRP: 3.0 mg/L",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "PCT/CRP",
+        "Inflammation",
+        "Assay",
+        "Infection Diagnosis",
+        "Inflammation Marker"
+      ],
+      "seoTitle": "PCT/CRP Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of Procalcitonin (PCT) and C-reactive protein (CRP) in serum, plasma or whole blood. The combination of CRP and P...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "saacrp",
+      "slug": "saacrp",
+      "name": "SAA/CRP Fast Test Kit",
+      "type": "test-kit",
+      "category": "Inflammation",
+      "shortDescription": "Quantitative determination of SAA/CRP using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of serum amyloid A（SAA）and C-reactive protein (CRP) in serum, plasma, whole blood and fingertip blood samples. This test can be used as a sensitive index in the diagnosis of infection and inflammation. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "SAA/CRP",
+        "Sample": "Serum/Plasma/Whole Blood/peripheral blood",
+        "Detection Range": "CRP: 0.5-200.0 mg/L",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "5 min",
+        "Cut-off Value": "CRP: 10.0 mg/L",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "SAA/CRP",
+        "Inflammation",
+        "Assay",
+        "Infection Diagnosis",
+        "Inflammation Marker"
+      ],
+      "seoTitle": "SAA/CRP Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of serum amyloid A（SAA）and C-reactive protein (CRP) in serum, plasma, whole blood and fingertip blood samples. Th...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "mg",
+      "slug": "mg",
+      "name": "-MG Fast Test Kit",
+      "type": "test-kit",
+      "category": "Renal Function",
+      "shortDescription": "Quantitative determination of -MG using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "-MG is useful for the detection and evaluation of glomerular filtration rate, renal transplantation and renal function. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "-MG",
+        "Sample": "Serum/Plasma/Whole Blood",
+        "Method": "Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "0.5-20.0 mg/L",
+        "Test Time": "3 min",
+        "Cut-off Value": "0.8-3.0 mg/L",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "-MG",
+        "Renal Function",
+        "Assay",
+        "Renal Function Assessment"
+      ],
+      "seoTitle": "-MG Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: -MG is useful for the detection and evaluation of glomerular filtration rate, renal transplantation and renal function. For professional and...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "cysc",
+      "slug": "cysc",
+      "name": "CysC Fast Test Kit",
+      "type": "test-kit",
+      "category": "Renal Function",
+      "shortDescription": "Quantitative determination of CysC using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of Cystatin C (CysC) in human serum, plasma or whole blood samples. The test result is used as an aid in the assessment and evaluation of index of glomerular filtration rate, and has important application value in renal function, kidney damage and renal transplantation. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "CysC",
+        "Sample": "Serum/Plasma/Whole Blood",
+        "Method": "Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "0.5-10.0 mg/L",
+        "Test Time": "3 min",
+        "Cut-off Value": "0.51-1.09 mg/L",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "CysC",
+        "Renal Function",
+        "Assay",
+        "Renal Function Assessment",
+        "Kidney Injury"
+      ],
+      "seoTitle": "CysC Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of Cystatin C (CysC) in human serum, plasma or whole blood samples. The test result is used as an aid in the asse...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "malb",
+      "slug": "malb",
+      "name": "mAlb Fast Test Kit",
+      "type": "test-kit",
+      "category": "Renal Function",
+      "shortDescription": "Quantitative determination of mAlb using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of microalbuminuria (mAlb) in human urine samples. An elevated mAlb concentration below the proteinuric level has long been recognized as a marker of kidney disease and increased cardiovascular risk in diabetic nephropathy.",
+      "specifications": {
+        "Test Item": "mAlb",
+        "Sample": "Urine",
+        "Method": "Assay",
+        "Storage Con dition": "4-30℃",
+        "Detection Range": "10.0-200.0 mg/L",
+        "Test Time": "3 min",
+        "Cut-off Value": "20.0 mg/L",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "mAlb",
+        "Renal Function",
+        "Assay",
+        "Kidney Injury"
+      ],
+      "seoTitle": "mAlb Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of microalbuminuria (mAlb) in human urine samples. An elevated mAlb concentration below the proteinuric level has...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "ngal",
+      "slug": "ngal",
+      "name": "NGAL Fast Test Kit",
+      "type": "test-kit",
+      "category": "Renal Function",
+      "shortDescription": "Quantitative determination of NGAL using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of neutrophils gelatinase associated lipocalin (NGAL) in human serum and urine samples. This test is used as an aid in the early diagnosis of acute kidney injury (AKl), risk classification and treatment monitoring. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "NGAL",
+        "Sample": "Serum/Urine",
+        "Method": "Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "50.0-5000.0 ng/mL",
+        "Test Time": "10 min",
+        "Cut-off Value": "100.0 ng/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "NGAL",
+        "Renal Function",
+        "Assay",
+        "Kidney Injury"
+      ],
+      "seoTitle": "NGAL Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of neutrophils gelatinase associated lipocalin (NGAL) in human serum and urine samples. This test is used as an a...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "anti-ccp",
+      "slug": "anti-ccp",
+      "name": "Anti-CCP Fast Test Kit",
+      "type": "test-kit",
+      "category": "Rheumatism",
+      "shortDescription": "Quantitative determination of Anti-CCP using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of anti-CCP in serum, plasma or whole blood samples. The test is designed to aid in the diagnosis of autoimmune diseases, such as rheumatoid arthritis (RA). For professional and laboratory use only. Specification",
+      "specifications": {
+        "Test Item": "Anti-CCP",
+        "Sample Type": "Serum/Plasma/Whole Blood",
+        "Method": "Immunofluorescence Assay",
+        "Storage Condition": "4-30°C",
+        "Detection Range": "10.0-400.0 U/mL",
+        "Test Time": "15 min",
+        "Cut-off Value": "25.0 U/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "Anti-CCP",
+        "Rheumatism",
+        "Immunofluorescence Assay",
+        "Rheumatoid Arthritis"
+      ],
+      "seoTitle": "Anti-CCP Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of anti-CCP in serum, plasma or whole blood samples. The test is designed to aid in the diagnosis of autoimmune d...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "aso",
+      "slug": "aso",
+      "name": "ASO Fast Test Kit",
+      "type": "test-kit",
+      "category": "Rheumatism",
+      "shortDescription": "Quantitative determination of ASO using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of anti streptolysin \"O\" antibody (ASO) in serum, plasma or whole blood samples. ASO is a very valuable marker for the diagnosis of group A streptococcal infection, its titer can reflect the severity of infection. Some diseases will lead to a significant increase in ASO titer, such as acute rheumatic fever. For professional and laboratory use. Specification",
+      "specifications": {
+        "Test Item": "ASO",
+        "Sample Type": "Serum/Plasma/Whole Blood",
+        "Method": "Immunofluorescence Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "60.0-1370.0 IU/mL",
+        "Test Time": "10 min",
+        "Cut-off Value": "400.0 IU/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "ASO",
+        "Rheumatism",
+        "Immunofluorescence Assay",
+        "Infection Diagnosis"
+      ],
+      "seoTitle": "ASO Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of anti streptolysin \"O\" antibody (ASO) in serum, plasma or whole blood samples. ASO is a very valuable marker fo...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "rf",
+      "slug": "rf",
+      "name": "RF Fast Test Kit",
+      "type": "test-kit",
+      "category": "Rheumatism",
+      "shortDescription": "Quantitative determination of RF using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of rheumatoid factor (RF) in serum, plasma or whole blood samples. The test is designed to aid in the diagnosis of autoimmune diseases, such as rheumatoid arthritis (RA). For professional and laboratory use only. Specification",
+      "specifications": {
+        "Test Item": "RF",
+        "Sample Type": "Serum/Plasma/Whole Blood",
+        "Method": "Immunofluorescence Assay",
+        "Storage Condition": "4-30℃",
+        "Detection Range": "10.0-640.0 IU/mL",
+        "Test Time": "10 min",
+        "Cut-off Value": "15.9 IU/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "RF",
+        "Rheumatism",
+        "Immunofluorescence Assay",
+        "Rheumatoid Arthritis"
+      ],
+      "seoTitle": "RF Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of rheumatoid factor (RF) in serum, plasma or whole blood samples. The test is designed to aid in the diagnosis o...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "cortisol",
+      "slug": "cortisol",
+      "name": "Cortisol Fast Test Kit",
+      "type": "test-kit",
+      "category": "Other Test Reagents",
+      "shortDescription": "Quantitative determination of Cortisol using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of cortisol in human serum and plasma samples. lt is mainly used for auxiliary evaluation of Adrenal cortex function. For professional and laboratory use.",
+      "specifications": {
+        "Test Item": "Cortisol",
+        "Sample": "Serum/Plasma",
+        "Detection Range": "11-1655 nmol/L",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Cut-off Value": "Refer to User Manual",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "Cortisol",
+        "Other Test Reagents",
+        "Assay",
+        "Renal Function Assessment"
+      ],
+      "seoTitle": "Cortisol Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of cortisol in human serum and plasma samples. lt is mainly used for auxiliary evaluation of Adrenal cortex funct...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "total-ige",
+      "slug": "total-ige",
+      "name": "Total IgE Fast Test Kit",
+      "type": "test-kit",
+      "category": "Other Test Reagents",
+      "shortDescription": "Quantitative determination of Total IgE using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of circulating total IgE antibodies in human serum, plasma and whole blood samples. This test can be used as an aid in the clinical diagnosis of lgE mediated allergic disorders in conjunction with other clinical findings.",
+      "specifications": {
+        "Test Item": "Total IgE",
+        "Sample Types": "Serum/Plasma",
+        "Detection Range": "1.00-2000.00 IU/mL",
+        "Storage Condition": "4-30℃",
+        "Methodology": "Assay",
+        "Test Time": "15 min",
+        "Cut-off Value": "1.00-165.00 IU/mL",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "Total IgE",
+        "Other Test Reagents",
+        "Immunofluorescence Assay"
+      ],
+      "seoTitle": "Total IgE Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of circulating total IgE antibodies in human serum, plasma and whole blood samples. This test can be used as an a...",
+      "featured": false,
+      "status": "available"
+    },
+    {
+      "id": "ferritin",
+      "slug": "ferritin",
+      "name": "Ferritin Fast Test Kit",
+      "type": "test-kit",
+      "category": "Other Test Reagents",
+      "shortDescription": "Quantitative determination of Ferritin using the DX 101 Immunofluorescence Quantitative Analyzer.",
+      "image": "",
+      "intendedUse": "quantitative determination of ferritin in human serum, plasma and whole blood samples. lt can be used as an aid in the diagnosis of iron deficiency anemia or iron overload related diseases. For professional and laboratory use only.",
+      "specifications": {
+        "Test Item": "Ferritin",
+        "Sample": "Serum/Plasma",
+        "Detection Range": "0.50-1000.00 ng/mL",
+        "Storage Condition": "4-30℃",
+        "Method": "Assay",
+        "Test Time": "15 min",
+        "Cut-off Value": "Refer to User Manual",
+        "Shelf Life": "24 months"
+      },
+      "applicableDevice": [
+        "dx-101"
+      ],
+      "tags": [
+        "Ferritin",
+        "Other Test Reagents",
+        "Assay"
+      ],
+      "seoTitle": "Ferritin Fast Test Kit | DX BIOCODE",
+      "seoDescription": "Intended Use: quantitative determination of ferritin in human serum, plasma and whole blood samples. lt can be used as an aid in the diagnosis of iron def...",
+      "featured": false,
+      "status": "available"
+    }
+  ]
+}

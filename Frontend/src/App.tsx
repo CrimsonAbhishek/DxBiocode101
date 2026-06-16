@@ -17,6 +17,9 @@ import { Quote } from './pages/Quote';
 import { TestKitsCatalog } from './pages/TestKitsCatalog';
 import { TestKitCategory } from './pages/TestKitCategory';
 import { TestKitDetail } from './pages/TestKitDetail';
+import { TagProductsPage } from './pages/TagProductsPage';
+
+import { SEOSchema } from './components/SEOSchema';
 
 // Scroll to top helper
 const ScrollToTop: React.FC = () => {
@@ -34,6 +37,8 @@ const ScrollToTop: React.FC = () => {
 function App() {
   return (
     <Router>
+      <SEOSchema type="WebSite" data={{}} />
+      <SEOSchema type="Organization" data={{}} />
       <ScrollToTop />
       <ScrollProgressBar />
       <TopBar />
@@ -45,7 +50,8 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/products/test-kits" element={<TestKitsCatalog />} />
         <Route path="/products/test-kits/:category" element={<TestKitCategory />} />
-        <Route path="/products/test-kits/:category/:kitId" element={<TestKitDetail />} />
+        <Route path="/products/:slug" element={<TestKitDetail />} />
+        <Route path="/tag/:tagSlug" element={<TagProductsPage />} />
         <Route path="/service" element={<Service />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />

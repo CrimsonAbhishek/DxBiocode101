@@ -1,0 +1,72 @@
+=========================================
+EXTRACTION AUDIT REPORT
+=========================================
+Total Products = 63
+
+Product Names List:
+   1. DX 101 Immunofluorescence Quantitative Analyzer
+   2. hs-cTnI Fast Test Kit
+   3. cTnI Fast Test Kit
+   4. TnT Fast Test Kit
+   5. BNP Fast Test Kit
+   6. NT-proBNP Fast Test Kit
+   7. CK-MB/cTnI Fast Test Kit
+   8. CK-MB/cTnI/Myo Fast Test Kit
+   9. CK-MB/cTnI/H-FABP Fast Test Kit
+  10. H-FABP Fast Test Kit
+  11. D-Dimer Fast Test Kit
+  12. ST2 Fast Test Kit
+  13. TSH Fast Test Kit
+  14. T3 Fast Test Kit
+  15. T4 Fast Test Kit
+  16. fT3 Fast Test Kit
+  17. fT4 Fast Test Kit
+  18. HCG+β Fast Test Kit
+  19. LH Fast Test Kit
+  20. FSH Fast Test Kit
+  21. Prog Fast Test Kit
+  22. PRL Fast Test Kit
+  23. AMH Fast Test Kit
+  24. Estradiol Fast Test Kit
+  25. tPSA Fast Test Kit
+  26. fPSA Fast Test Kit
+  27. CEA Fast Test Kit
+  28. AFP Fast Test Kit
+  29. CA125 Fast Test Kit
+  30. CA15-3 Fast Test Kit
+  31. CA19-9 Fast Test Kit
+  32. FOB Fast Test Kit
+  33. PG I/PG II Fast Test Kit
+  34. HbA1c Fast Test Kit
+  35. Insulin Fast Test Kit
+  36. Osteocalcin Fast Test Kit
+  37. HBsAg Fast Test Kit
+  38. Anti-HBs Fast Test Kit
+  39. Anti-HCV Fast Test Kit
+  40. Anti-HIV Fast Test Kit
+  41. Anti-TP Fast Test Kit
+  42. Antigen Fast Test Kit
+  43. Dengue NS1 Ag Fast Test Kit
+  44. H. pylori Fast Test Kit
+  45. lnfluenza A/B Fast Test Kit
+  46. RSV/Influenza A/B Fast Test Kit
+  47. hs-CRP+CRP Fast Test Kit
+  48. PCT Fast Test Kit
+  49. SAA Fast Test Kit
+  50. IL-6 Fast Test Kit
+  51. Calprotectin Fast Test Kit
+  52. PCT/CRP Fast Test Kit
+  53. SAA/CRP Fast Test Kit
+  54. -MG Fast Test Kit
+  55. CysC Fast Test Kit
+  56. mAlb Fast Test Kit
+  57. NGAL Fast Test Kit
+  58. Anti-CCP Fast Test Kit
+  59. ASO Fast Test Kit
+  60. RF Fast Test Kit
+  61. Cortisol Fast Test Kit
+  62. Total IgE Fast Test Kit
+  63. Ferritin Fast Test Kit
+
+Duplicate Products = 0
+Missing Products = 0
