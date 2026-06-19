@@ -79,6 +79,14 @@ export default function QuotePageClient() {
         <h3 style={{ fontSize: 20, fontWeight: 800, color: '#0f172a', marginBottom: 6 }}>Quote Details</h3>
         <p style={{ fontSize: 13.5, color: '#6b7280', marginBottom: 24 }}>Please complete the form below to receive pricing details</p>
         <form className="contact-form" onSubmit={handleSubmit} noValidate>
+          {/* Honeypot Field */}
+          <input
+            type="text"
+            name="website"
+            tabIndex={-1}
+            autoComplete="off"
+            style={{ display: 'none' }}
+          />
           <div className="form-row">
             <div className="form-group">
               <label htmlFor="form-name">Full Name *</label>

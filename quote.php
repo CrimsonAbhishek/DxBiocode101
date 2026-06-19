@@ -202,9 +202,7 @@ $csrf_token = csrf_token();
         <form class="contact-form" id="dx-quote-form" novalidate>
 
           <!-- Honeypot -->
-          <div style="display:none;" aria-hidden="true">
-            <input type="text" id="q-bot" name="bot-check" tabindex="-1" autocomplete="off" />
-          </div>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none;">
 
           <!-- Name + Email (required) -->
           <div class="form-row-2">
@@ -255,8 +253,8 @@ $csrf_token = csrf_token();
           <!-- Message -->
           <div class="form-group">
             <label for="q-msg">Message / Requirements</label>
-            <textarea id="q-msg" rows="4" placeholder="Specify panels, volumes, or any special requirements…" maxlength="1000" aria-describedby="q-msg-counter"></textarea>
-            <div class="char-counter" id="q-msg-counter">0 / 1000 characters</div>
+            <textarea id="q-msg" rows="4" placeholder="Specify panels, volumes, or any special requirements…" maxlength="2000" aria-describedby="q-msg-counter"></textarea>
+            <div class="char-counter" id="q-msg-counter">0 / 2000 characters</div>
           </div>
 
           <div class="form-readiness" id="quote-form-readiness">Complete all required fields to continue.</div>
@@ -385,8 +383,8 @@ if (form) {
   if (msgInput && msgCounter) {
     const updateCounter = () => {
       const len = msgInput.value.length;
-      msgCounter.textContent = `${len} / 1000 characters`;
-      msgCounter.classList.toggle('warning', len > 900);
+      msgCounter.textContent = `${len} / 2000 characters`;
+      msgCounter.classList.toggle('warning', len > 1800);
     };
     msgInput.addEventListener('input', updateCounter);
     updateCounter();
@@ -473,19 +471,19 @@ if (form) {
     }
 
     const payload = {
-      name:         document.getElementById('q-name').value.trim(),
-      email:        document.getElementById('q-email').value.trim(),
-      phone:        cleanPhone,
-      company:      document.getElementById('q-company').value.trim(),
-      company_type: document.getElementById('q-company-type').value,
-      country:      document.getElementById('q-country').value.trim(),
-      message:      document.getElementById('q-msg').value.trim(),
-      products:     localCart.map(item => ({ product: item.name, quantity: item.quantity || 1 })),
-      csrf_token:   document.querySelector('meta[name="csrf-token"]').content,
-      _bot_check:   document.getElementById('q-bot').value,
+      name:          document.getElementById('q-name').value.trim(),
+      email:         document.getElementById('q-email').value.trim(),
+      phone:         cleanPhone,
+      organization:  document.getElementById('q-company').value.trim(),
+      designation:   '',
+      facility_type: document.getElementById('q-company-type').value,
+      timeline:      '',
+      message:       (document.getElementById('q-country').value.trim() ? "Country: " + document.getElementById('q-country').value.trim() + "\n" : "") + document.getElementById('q-msg').value.trim(),
+      items:         localCart.map(item => ({ product_name: item.name, quantity: item.quantity || 1 })),
+      _bot_check:    document.querySelector('input[name="website"]')?.value || '',
     };
 
-    fetch('/api/submit-quote.php', {
+    fetch('/api/quotes', {
       method:  'POST',
       headers: { 'Content-Type': 'application/json' },
       body:    JSON.stringify(payload),
@@ -512,7 +510,14 @@ if (form) {
         if (res.status === 429) {
           showStatus('⏳ Too many requests. Please wait a few minutes.', 'error');
         } else {
-          showStatus('❌ ' + (res.data.message || 'Something went wrong. Email us at info@dxbiocode.com'), 'error');
+          let errMsg = 'Something went wrong. Email us at info@dxbiocode.com';
+          if (res.data) {
+            if (typeof res.data.message === 'string') errMsg = res.data.message;
+            else if (res.data.message && typeof res.data.message === 'object' && res.data.message.message) errMsg = res.data.message.message;
+            else if (typeof res.data.error === 'string') errMsg = res.data.error;
+            else if (res.data.error && typeof res.data.error === 'object' && res.data.error.message) errMsg = res.data.error.message;
+          }
+          showStatus('❌ ' + errMsg, 'error');
         }
       }
     })

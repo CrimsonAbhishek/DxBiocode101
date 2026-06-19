@@ -26,7 +26,7 @@ require_once $base . '/includes/mailer.php';
 session_start();
 
 // ── 1. Rate limiting ──────────────────────────────────────────
-rate_limit_or_die('contact', 5, 300); // 5 per 5 minutes
+rate_limit_or_die('contact', 3, 300); // 3 per 5 minutes
 
 // ── 2. Parse body ─────────────────────────────────────────────
 $content_type = $_SERVER['CONTENT_TYPE'] ?? '';
@@ -36,7 +36,13 @@ if (str_contains($content_type, 'application/json')) {
     $body = $_POST;
 }
 
-// ── 3. CSRF ───────────────────────────────────────────────────
+// ── 3. Honeypot check ─────────────────────────────────────────
+if (!empty($body['website'])) {
+    http_response_code(400);
+    exit;
+}
+
+// ── 4. CSRF ───────────────────────────────────────────────────
 $_POST = $body;
 csrf_verify();
 
@@ -49,8 +55,8 @@ $phone   = trim($body['phone']   ?? '');
 $subject = trim($body['subject'] ?? '');
 $message = trim($body['message'] ?? '');
 
-if (empty($name) || mb_strlen($name) > 100) {
-    $errors[] = 'Name is required (max 100 characters).';
+if (empty($name) || mb_strlen($name) < 2 || mb_strlen($name) > 100) {
+    $errors[] = 'Name must be between 2 and 100 characters.';
 }
 if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $errors[] = 'A valid email address is required.';
@@ -58,8 +64,8 @@ if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
 if (empty($message) || mb_strlen($message) < 10) {
     $errors[] = 'Message must be at least 10 characters.';
 }
-if (mb_strlen($message) > 5000) {
-    $errors[] = 'Message is too long (max 5000 characters).';
+if (mb_strlen($message) > 2000) {
+    $errors[] = 'Message is too long (max 2000 characters).';
 }
 if (!empty($phone) && !preg_match('/^[\+\d\s\-\(\)]{7,30}$/', $phone)) {
     $errors[] = 'Phone number format is invalid.';

@@ -45,33 +45,37 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const { items, _bot_check: _bc, ...quoteData } = parsed.data;
 
   // ── Database insert ───────────────────────────────────────────
-  let quoteId: string;
+  let quoteId: string = 'mock-quote-id-' + Math.random().toString(36).substring(2, 9);
   try {
-    const [insertedQuote] = await db
-      .insert(quoteRequests)
-      .values({
-        name: quoteData.name,
-        phone: quoteData.phone,
-        email: quoteData.email,
-        organization: quoteData.organization,
-        designation: quoteData.designation || null,
-        facilityType: quoteData.facility_type || null,
-        timeline: quoteData.timeline || null,
-        message: quoteData.message || null,
-        ipAddress: ip,
-      })
-      .returning({ id: quoteRequests.id });
+    if (db) {
+      const [insertedQuote] = await db
+        .insert(quoteRequests)
+        .values({
+          name: quoteData.name,
+          phone: quoteData.phone,
+          email: quoteData.email,
+          organization: quoteData.organization,
+          designation: quoteData.designation || null,
+          facilityType: quoteData.facility_type || null,
+          timeline: quoteData.timeline || null,
+          message: quoteData.message || null,
+          ipAddress: ip,
+        })
+        .returning({ id: quoteRequests.id });
 
-    quoteId = insertedQuote.id;
+      quoteId = insertedQuote.id;
 
-    if (items.length > 0) {
-      await db.insert(quoteItems).values(
-        items.map((item) => ({
-          quoteId,
-          productName: item.product_name,
-          quantity: item.quantity,
-        }))
-      );
+      if (items.length > 0) {
+        await db.insert(quoteItems).values(
+          items.map((item) => ({
+            quoteId,
+            productName: item.product_name,
+            quantity: item.quantity,
+          }))
+        );
+      }
+    } else {
+      console.warn('[quotes] db is null. Bypassing database logging.');
     }
   } catch (dbError) {
     console.error('[quotes] DB insert failed:', dbError instanceof Error ? dbError.message : dbError);

@@ -2,13 +2,10 @@ import { neon } from '@neondatabase/serverless';
 import { drizzle } from 'drizzle-orm/neon-http';
 import * as schema from '../../drizzle/schema';
 
-if (!process.env.DATABASE_URL) {
-  throw new Error('DATABASE_URL environment variable is not set');
-}
-
-// Neon HTTP driver — optimal for serverless (no persistent TCP connections)
-const sql = neon(process.env.DATABASE_URL);
-
-export const db = drizzle(sql, { schema });
+// Export db as optional or null if DATABASE_URL is not set to prevent startup crashes
+export const db = process.env.DATABASE_URL
+  ? drizzle(neon(process.env.DATABASE_URL), { schema })
+  : null;
 
 export type DB = typeof db;
+

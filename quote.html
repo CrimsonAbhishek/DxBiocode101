@@ -191,10 +191,7 @@
         <p style="font-size:13.5px;color:#6b7280;margin-bottom:24px;">Please complete the form below to receive pricing details</p>
         <form class="contact-form" id="dx-quote-form" novalidate>
           <!-- Honeypot Field for anti-spam (invisible to users) -->
-          <div style="display:none;" aria-hidden="true">
-            <label for="form-bot-check">Leave this field blank</label>
-            <input type="text" id="form-bot-check" name="bot-check" tabindex="-1" autocomplete="off" />
-          </div>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none;">
           
           <div class="form-row">
             <div class="form-group">
@@ -343,16 +340,53 @@
     quoteEmptyContainer.style.display = 'none';
     if (submitBtn) submitBtn.disabled = false;
     
-    quoteItemsContainer.innerHTML = localCart.map((item, idx) => `
-      <div class="q-item">
-        <img src="${item.img}" alt="${item.name}" />
-        <div class="q-item-info">
-          <div class="q-item-name">${item.name}</div>
-          <div class="q-item-price">${item.price}</div>
-        </div>
-        <button class="q-item-remove" onclick="removeQuotePageItem(${idx})" title="Remove item">✕</button>
-      </div>
-    `).join('');
+    // HTML escape helper for XSS protection
+    function escapeHtml(str) {
+      if (str == null) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    quoteItemsContainer.innerHTML = '';
+    localCart.forEach((item, idx) => {
+      const qItem = document.createElement('div');
+      qItem.className = 'q-item';
+
+      const img = document.createElement('img');
+      img.src = item.img || '/placeholder.svg';
+      img.alt = item.name || '';
+      qItem.appendChild(img);
+
+      const info = document.createElement('div');
+      info.className = 'q-item-info';
+
+      const nameDiv = document.createElement('div');
+      nameDiv.className = 'q-item-name';
+      nameDiv.textContent = item.name || '';
+      info.appendChild(nameDiv);
+
+      const priceDiv = document.createElement('div');
+      priceDiv.className = 'q-item-price';
+      priceDiv.textContent = item.price || '';
+      info.appendChild(priceDiv);
+
+      qItem.appendChild(info);
+
+      const removeBtn = document.createElement('button');
+      removeBtn.className = 'q-item-remove';
+      removeBtn.textContent = '✕';
+      removeBtn.title = 'Remove item';
+      removeBtn.onclick = function() {
+        removeQuotePageItem(idx);
+      };
+      qItem.appendChild(removeBtn);
+
+      quoteItemsContainer.appendChild(qItem);
+    });
   }
 
   // Remove helper specific to this page
@@ -399,27 +433,22 @@
         const origText = btn ? btn.innerHTML : '';
         if (btn) { btn.disabled = true; btn.innerHTML = '⌛ Submitting Request...'; }
 
-        const csrfToken = document.querySelector('meta[name="csrf-token"]')?.content || '';
-
         const payload = {
-          name:        document.getElementById('form-name').value.trim(),
-          phone:       document.getElementById('form-phone').value.trim(),
-          email:       document.getElementById('form-email').value.trim(),
-          company:     document.getElementById('form-org').value.trim(),
-          country:     document.getElementById('form-facility').value || '',
-          message:     [
-            document.getElementById('form-designation').value.trim(),
-            document.getElementById('form-timeline').value,
-            document.getElementById('form-msg').value.trim()
-          ].filter(Boolean).join(' | '),
-          products:    localCart.map(function(item) {
-            return { product: item.name, quantity: item.quantity || 1 };
+          name:          document.getElementById('form-name').value.trim(),
+          phone:         document.getElementById('form-phone').value.trim(),
+          email:         document.getElementById('form-email').value.trim(),
+          organization:  document.getElementById('form-org').value.trim(),
+          designation:   document.getElementById('form-designation').value.trim(),
+          facility_type: document.getElementById('form-facility').value || '',
+          timeline:      document.getElementById('form-timeline').value || '',
+          message:       document.getElementById('form-msg').value.trim(),
+          items:         localCart.map(function(item) {
+            return { product_name: item.name, quantity: item.quantity || 1 };
           }),
-          csrf_token:  csrfToken,
-          _bot_check:  document.getElementById('form-bot-check')?.value || '',
+          _bot_check:    document.getElementById('form-bot-check')?.value || '',
         };
 
-        fetch('/api/submit-quote.php', {
+        fetch('/api/quotes', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload),
@@ -441,7 +470,13 @@
             } else if (res.status === 429) {
               if (status) { status.textContent = '⏳ Too many requests. Please try again later.'; status.className = 'form-status error'; status.style.display = 'block'; }
             } else {
-              const errMsg = (res.data && res.data.error) ? res.data.error : 'Something went wrong.';
+              let errMsg = 'Something went wrong.';
+              if (res.data) {
+                if (typeof res.data.error === 'string') errMsg = res.data.error;
+                else if (res.data.error && typeof res.data.error === 'object' && res.data.error.message) errMsg = res.data.error.message;
+                else if (typeof res.data.message === 'string') errMsg = res.data.message;
+                else if (res.data.message && typeof res.data.message === 'object' && res.data.message.message) errMsg = res.data.message.message;
+              }
               if (status) { status.textContent = '❌ ' + errMsg + ' Please email info@dxbiocode.com.'; status.className = 'form-status error'; status.style.display = 'block'; }
             }
           })

@@ -12,13 +12,9 @@ import ContactConfirmationEmail from '@emails/ContactConfirmation';
 import TrainingInternalEmail from '@emails/TrainingInternal';
 import TrainingConfirmationEmail from '@emails/TrainingConfirmation';
 
-if (!process.env.RESEND_API_KEY) {
-  throw new Error('RESEND_API_KEY environment variable is not set');
-}
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
-const FROM = process.env.RESEND_FROM_EMAIL ?? 'DX BIOCODE <noreply@dxbiocode.com>';
+const FROM = process.env.RESEND_FROM_EMAIL ?? 'DX BIOCODE <info@dxbiocode.com>';
 const TO_INTERNAL = process.env.RESEND_TO_EMAIL ?? 'crimsonabhishek@gmail.com';
 
 // Re-export types so callers can import from either location
@@ -35,6 +31,10 @@ async function send(args: {
   subject: string;
   html: string;
 }): Promise<void> {
+  if (!resend) {
+    console.warn(`[email] RESEND_API_KEY is not set. Bypassing email to ${maskEmail(args.to)}: "${args.subject}"`);
+    return;
+  }
   const { error } = await resend.emails.send({
     from: FROM,
     to: args.to,

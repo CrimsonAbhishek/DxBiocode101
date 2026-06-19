@@ -38,6 +38,14 @@ export default function ContactForm() {
       <h3 style={{ fontSize: 20, fontWeight: 800, color: '#0f172a', marginBottom: 6 }}>Send Us a Message</h3>
       <p style={{ fontSize: 13.5, color: '#6b7280', marginBottom: 24 }}>We&apos;ll get back to you within 1 business day</p>
       <form className="contact-form" onSubmit={handleSubmit} noValidate>
+        {/* Honeypot Field */}
+        <input
+          type="text"
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+          style={{ display: 'none' }}
+        />
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="form-name">Full Name *</label>

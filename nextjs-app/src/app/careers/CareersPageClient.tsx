@@ -86,6 +86,14 @@ export default function CareersPageClient() {
             <h3>Upload Your Resume</h3>
             <p>Fill in your details and attach your CV / resume</p>
             <form className="resume-form" onSubmit={handleSubmit} noValidate>
+              {/* Honeypot Field */}
+              <input
+                type="text"
+                name="website"
+                tabIndex={-1}
+                autoComplete="off"
+                style={{ display: 'none' }}
+              />
               <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="r-fname">First Name *</label>

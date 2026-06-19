@@ -5,6 +5,23 @@ import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { useCartStore } from '@/lib/CartStore';
 
+function sanitizeHref(href: string): string {
+  if (href.startsWith('/') && !href.startsWith('//')) {
+    return href;
+  }
+  return '#';
+}
+
+function getStaticHref(id: string): string {
+  if (id === '1') return '/products#dx101';
+  if (id === '2') return '/products#test-menu';
+  if (id === '3') return '/products#test-menu';
+  if (id === '4') return '/products#test-menu';
+  if (id === '5') return '/products#test-menu';
+  if (id === '6') return '/products#test-menu';
+  return '/';
+}
+
 const PRODUCTS_DB = [
   { id: '1', name: 'DX 101 Immunofluorescence Quantitative Analyzer', category: 'POCT Analyzer', img: '/hero.webp', href: '/products#dx101' },
   { id: '2', name: 'Cardiac Markers Test Panel', category: 'Test Consumables', img: '/hero.webp', href: '/products#test-menu' },
@@ -96,19 +113,24 @@ export default function Navbar() {
                   value={searchQuery}
                   onChange={e => setSearchQuery(e.target.value)}
                 />
-                <div className="search-results-dropdown">
-                  {searchResults.length === 0 ? (
-                    <div className="search-no-results">No results found</div>
-                  ) : searchResults.map(r => (
-                    <Link key={r.id} href={r.href} className="search-result-item" onClick={() => setSearchOpen(false)}>
-                      <Image src={r.img} alt={r.name} width={40} height={40} style={{ objectFit: 'cover', borderRadius: 8 }} />
-                      <div>
-                        <div className="sri-name">{r.name}</div>
-                        <div className="sri-cat">{r.category}</div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
+                {searchOpen && (
+                  <div className="search-results-dropdown">
+                    {searchResults.length === 0 ? (
+                      <div className="search-no-results">No results found</div>
+                    ) : searchResults.map(r => {
+                      const safeHref = getStaticHref(r.id);
+                      return (
+                        <Link key={r.id} href={safeHref} className="search-result-item" onClick={() => setSearchOpen(false)}>
+                          <Image src={r.img} alt={r.name} width={40} height={40} style={{ objectFit: 'cover', borderRadius: 8 }} />
+                          <div>
+                            <div className="sri-name">{r.name}</div>
+                            <div className="sri-cat">{r.category}</div>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
             </div>
 

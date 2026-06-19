@@ -336,10 +336,7 @@
         <p>Fill in your details and attach your CV / resume</p>
         <form class="resume-form" id="resume-form" novalidate>
           <!-- Honeypot Field for anti-spam (invisible to users) -->
-          <div style="display:none;" aria-hidden="true">
-            <label for="form-bot-check-careers">Leave this field blank</label>
-            <input type="text" id="form-bot-check-careers" name="bot-check" tabindex="-1" autocomplete="off" />
-          </div>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none;">
           <div class="form-row">
             <div class="form-group">
               <label for="r-fname">First Name *</label>
@@ -558,7 +555,7 @@
             resume_base64: base64,
             resume_filename: file.name,
             resume_type: file.type,
-            _bot_check: document.getElementById('form-bot-check-careers').value,
+            _bot_check: document.querySelector('input[name="website"]')?.value || '',
           };
 
           const response = await fetch('/api/careers', {
@@ -581,7 +578,13 @@
           } else if (response.status === 429) {
             if (status) { status.textContent = '⏳ Too many submissions. Please try again later.'; status.classList.add('error'); status.style.display = 'block'; }
           } else {
-            const errMsg = result.error || 'Something went wrong.';
+            let errMsg = 'Something went wrong.';
+            if (result) {
+              if (typeof result.error === 'string') errMsg = result.error;
+              else if (result.error && typeof result.error === 'object' && result.error.message) errMsg = result.error.message;
+              else if (typeof result.message === 'string') errMsg = result.message;
+              else if (result.message && typeof result.message === 'object' && result.message.message) errMsg = result.message.message;
+            }
             if (status) { status.textContent = `❌ ${errMsg} Please email info@dxbiocode.com.`; status.classList.add('error'); status.style.display = 'block'; }
           }
         } catch (_err) {

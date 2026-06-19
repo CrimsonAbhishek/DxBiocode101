@@ -19,7 +19,7 @@ export const quoteSchema = z.object({
   designation: z.string().max(255).optional().default(''),
   facility_type: z.string().max(100).optional().default(''),
   timeline: z.string().max(100).optional().default(''),
-  message: z.string().max(5000).optional().default(''),
+  message: z.string().max(2000).optional().default(''),
   items: z
     .array(
       z.object({
@@ -40,7 +40,7 @@ export const contactSchema = z.object({
   email,
   organization: z.string().max(255).optional().default(''),
   enquiry_type: z.string().max(100).optional().default(''),
-  message: z.string().min(5, 'Message is required').max(5000),
+  message: z.string().min(5, 'Message is required').max(2000),
   _bot_check: botCheck,
 });
 
@@ -54,7 +54,7 @@ export const trainingSchema = z.object({
   organization: z.string().min(2, 'Organization is required').max(255),
   location: z.string().max(255).optional().default(''),
   training_category: z.string().max(100).optional().default(''),
-  message: z.string().max(5000).optional().default(''),
+  message: z.string().max(2000).optional().default(''),
   _bot_check: botCheck,
 });
 

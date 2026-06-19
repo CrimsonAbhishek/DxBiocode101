@@ -12,19 +12,20 @@ const schema = z.object({
   enquiry_type: z.string().optional(),
   message: z.string().min(5),
   _bot_check: z.string().optional(),
+  website: z.string().optional(),
 });
 
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    if (body._bot_check) return NextResponse.json({ error: 'Invalid submission.' }, { status: 400 });
+    if (body._bot_check || body.website) return NextResponse.json({ error: 'Invalid submission.' }, { status: 400 });
 
     const parsed = schema.safeParse(body);
     if (!parsed.success) return NextResponse.json({ error: 'Invalid form data.' }, { status: 400 });
     const data = parsed.data;
 
     await resend.emails.send({
-      from: 'DX BIOCODE Website <noreply@dxbiocode.com>',
+      from: 'DX BIOCODE Website <info@dxbiocode.com>',
       to: ['crimsonabhishek@gmail.com'],
       replyTo: data.email,
       subject: `✉️ Contact Form: ${data.enquiry_type || 'General Enquiry'} — ${data.name}`,
@@ -40,7 +41,7 @@ export async function POST(req: NextRequest) {
     });
 
     await resend.emails.send({
-      from: 'DX BIOCODE <noreply@dxbiocode.com>',
+      from: 'DX BIOCODE <info@dxbiocode.com>',
       to: [data.email],
       subject: 'We received your message — DX BIOCODE',
       html: `<h2>Thank you, ${data.name}!</h2><p>We received your message and will get back to you within 1 business day.</p><br/><p>Best,<br/>DX BIOCODE Team</p>`,

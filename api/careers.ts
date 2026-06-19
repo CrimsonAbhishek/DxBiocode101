@@ -56,25 +56,29 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   // ── Database insert ───────────────────────────────────────────
-  let applicationId: string;
+  let applicationId: string = 'mock-app-id-' + Math.random().toString(36).substring(2, 9);
   try {
-    const [row] = await db
-      .insert(applicants)
-      .values({
-        firstName: appData.first_name,
-        lastName: appData.last_name,
-        email: appData.email,
-        phone: appData.phone,
-        position: appData.position,
-        experience: appData.experience || null,
-        resumeUrl,
-        resumeFilename: resume_filename,
-        coverLetter: appData.cover_letter || null,
-        ipAddress: ip,
-      })
-      .returning({ id: applicants.id });
+    if (db) {
+      const [row] = await db
+        .insert(applicants)
+        .values({
+          firstName: appData.first_name,
+          lastName: appData.last_name,
+          email: appData.email,
+          phone: appData.phone,
+          position: appData.position,
+          experience: appData.experience || null,
+          resumeUrl,
+          resumeFilename: resume_filename,
+          coverLetter: appData.cover_letter || null,
+          ipAddress: ip,
+        })
+        .returning({ id: applicants.id });
 
-    applicationId = row.id;
+      applicationId = row.id;
+    } else {
+      console.warn('[careers] db is null. Bypassing database logging.');
+    }
   } catch (dbError) {
     console.error('[careers] DB insert failed:', dbError instanceof Error ? dbError.message : dbError);
     return res.status(500).json(fail('Unable to save your application. Please try again.', 'SERVER_ERROR'));

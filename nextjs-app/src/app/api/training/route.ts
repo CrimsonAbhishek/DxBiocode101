@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
     const data = parsed.data;
 
     await resend.emails.send({
-      from: 'DX BIOCODE Website <noreply@dxbiocode.com>',
+      from: 'DX BIOCODE Website <info@dxbiocode.com>',
       to: ['crimsonabhishek@gmail.com'],
       replyTo: data.email,
       subject: `📅 Training Request: ${data.training_category || 'General'} — ${data.name}`,
@@ -40,7 +40,7 @@ export async function POST(req: NextRequest) {
     });
 
     await resend.emails.send({
-      from: 'DX BIOCODE <noreply@dxbiocode.com>',
+      from: 'DX BIOCODE <info@dxbiocode.com>',
       to: [data.email],
       subject: 'Training request received — DX BIOCODE',
       html: `<h2>Thank you, ${data.name}!</h2><p>We received your training session request and will get back to you within 24 hours to schedule your training.</p><br/><p>Best,<br/>DX BIOCODE Training Team</p>`,

@@ -45,22 +45,26 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const { _bot_check: _bc, ...data } = parsed.data;
 
   // ── Database insert ───────────────────────────────────────────
-  let submissionId: string;
+  let submissionId: string = 'mock-sub-id-' + Math.random().toString(36).substring(2, 9);
   try {
-    const [row] = await db
-      .insert(contactSubmissions)
-      .values({
-        name: data.name,
-        phone: data.phone,
-        email: data.email,
-        organization: data.organization || null,
-        enquiryType: data.enquiry_type || null,
-        message: data.message,
-        ipAddress: ip,
-      })
-      .returning({ id: contactSubmissions.id });
+    if (db) {
+      const [row] = await db
+        .insert(contactSubmissions)
+        .values({
+          name: data.name,
+          phone: data.phone,
+          email: data.email,
+          organization: data.organization || null,
+          enquiryType: data.enquiry_type || null,
+          message: data.message,
+          ipAddress: ip,
+        })
+        .returning({ id: contactSubmissions.id });
 
-    submissionId = row.id;
+      submissionId = row.id;
+    } else {
+      console.warn('[contact] db is null. Bypassing database logging.');
+    }
   } catch (dbError) {
     console.error('[contact] DB insert failed:', dbError instanceof Error ? dbError.message : dbError);
     return res.status(500).json(fail('Unable to save your message. Please try again.', 'SERVER_ERROR'));

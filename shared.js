@@ -1,6 +1,17 @@
 /* shared.js — DX BIOCODE Shared JavaScript */
 'use strict';
 
+/* ====== HTML ESCAPE HELPER (XSS Protection) ====== */
+function escapeHtml(str) {
+  if (str == null) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 /* ====== SCROLL PROGRESS BAR ====== */
 const progressBar = document.createElement('div');
 progressBar.className = 'scroll-progress';
@@ -52,7 +63,9 @@ if (hamburger) {
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('open');
     mobileNav.classList.toggle('open');
-    document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+    const isOpen = mobileNav.classList.contains('open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
   });
 }
 if (navOverlay) navOverlay.addEventListener('click', closeMobileNav);
@@ -60,9 +73,9 @@ document.querySelectorAll('.mob-link, .mob-cta').forEach(a => a.addEventListener
 
 /* ====== SEARCH ====== */
 const searchBtn = document.getElementById('nav-search-btn');
-const searchBox = document.getElementById('nav-search-box');
-const searchInput = document.getElementById('nav-search-input');
-const searchResults = document.getElementById('search-results-dropdown');
+let searchBox = document.getElementById('nav-search-box');
+let searchInput = document.getElementById('nav-search-input');
+let searchResults = document.getElementById('search-results-dropdown');
 
 let PRODUCTS_DB = [
   { name: 'DX 101 Immunofluorescence Quantitative Analyzer', category: 'POCT Analyzer', img: '/hero.webp', href: '/products.html#dx101' },
@@ -96,32 +109,86 @@ fetch('/data/index.json')
 
 
 if (searchBtn && searchBox) {
-  searchBtn.addEventListener('click', (e) => {
+  // Upgrade to Global Search Modal (Phase 2)
+  document.body.appendChild(searchBox);
+  
+  searchBox.innerHTML = `
+    <div class="search-modal-content" onclick="event.stopPropagation()">
+      <div class="search-modal-header">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2" style="margin-left: 12px;"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="search" id="nav-search-input" placeholder="Search for test kits, analyzers, or categories..." autocomplete="off" />
+        <button class="search-close-btn" id="search-close-btn">ESC</button>
+      </div>
+      <div class="search-results-dropdown" id="search-results-dropdown"></div>
+    </div>
+  `;
+  
+  searchInput = document.getElementById('nav-search-input');
+  searchResults = document.getElementById('search-results-dropdown');
+  const searchCloseBtn = document.getElementById('search-close-btn');
+
+  const closeSearch = () => {
+    searchBox.classList.remove('open');
+    searchBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  };
+
+  const openSearch = (e) => {
     e.stopPropagation();
-    searchBox.classList.toggle('open');
-    if (searchBox.classList.contains('open')) searchInput.focus();
-  });
-  document.addEventListener('click', (e) => {
-    if (!searchBox.contains(e.target) && e.target !== searchBtn) {
-      searchBox.classList.remove('open');
+    searchBox.classList.add('open');
+    searchBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => searchInput.focus(), 100);
+  };
+
+  searchBtn.addEventListener('click', openSearch);
+  searchBox.addEventListener('click', closeSearch);
+  if (searchCloseBtn) searchCloseBtn.addEventListener('click', closeSearch);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && searchBox.classList.contains('open')) {
+      closeSearch();
     }
   });
+
   searchInput && searchInput.addEventListener('input', () => {
     const q = searchInput.value.trim().toLowerCase();
     if (!q) { searchResults.innerHTML = ''; return; }
     const matches = PRODUCTS_DB.filter(p => p.name.toLowerCase().includes(q) || p.category.toLowerCase().includes(q));
     if (!matches.length) {
-      searchResults.innerHTML = '<div class="search-no-results">No products found</div>';
+      searchResults.innerHTML = '';
+      const noResults = document.createElement('div');
+      noResults.className = 'search-no-results';
+      noResults.textContent = 'No products found for "' + q + '"';
+      searchResults.appendChild(noResults);
       return;
     }
-    searchResults.innerHTML = matches.map(p => `
-      <a href="${p.href}" class="search-result-item">
-        <img src="${p.img}" alt="${p.name}" />
-        <div>
-          <div class="sri-name">${p.name}</div>
-          <div class="sri-cat">${p.category}</div>
-        </div>
-      </a>`).join('');
+    searchResults.innerHTML = '';
+    matches.forEach(p => {
+      const a = document.createElement('a');
+      a.href = p.href || '#';
+      a.className = 'search-result-item';
+
+      const img = document.createElement('img');
+      img.src = p.img || '/placeholder.svg';
+      img.alt = p.name || '';
+      a.appendChild(img);
+
+      const infoDiv = document.createElement('div');
+
+      const nameDiv = document.createElement('div');
+      nameDiv.className = 'sri-name';
+      nameDiv.textContent = p.name || '';
+      infoDiv.appendChild(nameDiv);
+
+      const catDiv = document.createElement('div');
+      catDiv.className = 'sri-cat';
+      catDiv.textContent = p.category || '';
+      infoDiv.appendChild(catDiv);
+
+      a.appendChild(infoDiv);
+      searchResults.appendChild(a);
+    });
   });
 }
 
@@ -327,17 +394,17 @@ function renderCart() {
         <div class="quote-summary-title">Quote Summary</div>
         <div class="quote-summary-row">
           <span class="quote-summary-label">📦 Products Selected</span>
-          <span class="quote-summary-value">${totalProducts}</span>
+          <span class="quote-summary-value">${escapeHtml(String(totalProducts))}</span>
         </div>
         <div class="quote-summary-row">
           <span class="quote-summary-label">🏷️ Categories Covered</span>
-          <span class="quote-summary-value">${totalCategories}</span>
+          <span class="quote-summary-value">${escapeHtml(String(totalCategories))}</span>
         </div>
         <div class="quote-summary-note">Custom pricing available based on volume and region.</div>
       </div>
 
       <!-- Primary CTA -->
-      <a href="${quotePath}" class="quote-cta-btn">Request Official Quotation →</a>
+      <a href="${escapeHtml(quotePath)}" class="quote-cta-btn">Request Official Quotation →</a>
     `;
   }
 }
@@ -418,11 +485,15 @@ window.addAnalyzerRecommendation = function () {
 
 function openCart() {
   const panel = document.getElementById('cart-panel');
-  if (panel) { panel.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  const btn = document.getElementById('cart-btn');
+  if (panel) { panel.classList.add('open'); panel.setAttribute('aria-hidden', 'false'); document.body.style.overflow = 'hidden'; }
+  if (btn) btn.setAttribute('aria-expanded', 'true');
 }
 function closeCart() {
   const panel = document.getElementById('cart-panel');
-  if (panel) { panel.classList.remove('open'); document.body.style.overflow = ''; }
+  const btn = document.getElementById('cart-btn');
+  if (panel) { panel.classList.remove('open'); panel.setAttribute('aria-hidden', 'true'); document.body.style.overflow = ''; }
+  if (btn) btn.setAttribute('aria-expanded', 'false');
 }
 
 const cartBtn = document.getElementById('cart-btn');
@@ -524,8 +595,8 @@ window.initContactForm = function (formId, statusId, endpoint, csrfToken = '') {
   if (msgInput && msgCounter) {
     const updateCounter = () => {
       const len = msgInput.value.length;
-      msgCounter.textContent = `${len} / 1000 characters`;
-      msgCounter.classList.toggle('warning', len > 900);
+      msgCounter.textContent = `${len} / 2000 characters`;
+      msgCounter.classList.toggle('warning', len > 1800);
     };
     msgInput.addEventListener('input', updateCounter);
     updateCounter();
@@ -593,9 +664,7 @@ window.initContactForm = function (formId, statusId, endpoint, csrfToken = '') {
       try {
         const payload = {};
         form.querySelectorAll('input:not([type="file"]), textarea, select').forEach(el => {
-          if (el.name === 'bot-check') {
-            payload['_bot_check'] = el.value;
-          } else if (el.name === 'phone') {
+          if (el.name === 'phone') {
             // 5. Phone Normalization
             let rawPhone = el.value.trim();
             let cleanPhone = rawPhone;
@@ -623,11 +692,11 @@ window.initContactForm = function (formId, statusId, endpoint, csrfToken = '') {
         if (response.ok && result.success) {
           // 6. Success State
           form.innerHTML = `
-            <div class="form-success-state">
-              <div class="success-icon-wrap">✓</div>
-              <h3 class="success-title">Thank you! Your contact request has been received.</h3>
-              <p class="success-desc">Our team will review your message and contact you within <strong>1–2 business days</strong>.<br><br>If your request is urgent, you may also contact us directly via email or WhatsApp.</p>
-              <button type="button" class="btn-secondary" onclick="window.location.reload()">Submit Another Request</button>
+            <div class="form-success-state" style="text-align: center; padding: 40px 20px;">
+              <div class="success-icon-wrap" style="width: 64px; height: 64px; background: #eff6ff; color: #2563eb; font-size: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin: 0 auto 24px;">✓</div>
+              <h3 class="success-title" style="font-size: 24px; color: #0f172a; margin-bottom: 12px; font-weight: 800;">Message Sent Successfully!</h3>
+              <p class="success-desc" style="font-size: 15px; color: #475569; margin-bottom: 32px; line-height: 1.6;">Thank you for getting in touch. Our team has received your message and will contact you within <strong>1–2 business days</strong>.<br><br>For urgent matters, please use WhatsApp.</p>
+              <button type="button" class="btn-primary" style="display: inline-flex;" onclick="window.location.reload()">Submit Another Message</button>
             </div>
           `;
         } else {
@@ -641,7 +710,13 @@ window.initContactForm = function (formId, statusId, endpoint, csrfToken = '') {
               status.style.display = 'block';
             }
           } else {
-            const errMsg = result.error || 'Something went wrong.';
+            let errMsg = 'Something went wrong.';
+            if (result) {
+              if (typeof result.error === 'string') errMsg = result.error;
+              else if (result.error && typeof result.error === 'object' && result.error.message) errMsg = result.error.message;
+              else if (typeof result.message === 'string') errMsg = result.message;
+              else if (result.message && typeof result.message === 'object' && result.message.message) errMsg = result.message.message;
+            }
             if (status) {
               status.textContent = `❌ ${errMsg} Please email info@dxbiocode.com directly.`;
               status.classList.add('error');
@@ -662,11 +737,11 @@ window.initContactForm = function (formId, statusId, endpoint, csrfToken = '') {
       // ── Mock submission (no endpoint provided) ───────────────
       setTimeout(() => {
         form.innerHTML = `
-          <div class="form-success-state">
-            <div class="success-icon-wrap">✓</div>
-            <h3 class="success-title">Thank you! Your request has been received.</h3>
-            <p class="success-desc">Our team will review your message and contact you within <strong>1–2 business days</strong>.<br><br>If your request is urgent, you may also contact us directly via email or WhatsApp.</p>
-            <button type="button" class="btn-secondary" onclick="window.location.reload()">Submit Another Request</button>
+          <div class="form-success-state" style="text-align: center; padding: 40px 20px;">
+            <div class="success-icon-wrap" style="width: 64px; height: 64px; background: #eff6ff; color: #2563eb; font-size: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin: 0 auto 24px;">✓</div>
+            <h3 class="success-title" style="font-size: 24px; color: #0f172a; margin-bottom: 12px; font-weight: 800;">Message Sent Successfully!</h3>
+            <p class="success-desc" style="font-size: 15px; color: #475569; margin-bottom: 32px; line-height: 1.6;">Thank you for getting in touch. Our team has received your message and will contact you within <strong>1–2 business days</strong>.<br><br>For urgent matters, please use WhatsApp.</p>
+            <button type="button" class="btn-primary" style="display: inline-flex;" onclick="window.location.reload()">Submit Another Message</button>
           </div>
         `;
       }, 1200);
@@ -783,44 +858,93 @@ if (tabButtons.length > 0 && tabPanels.length > 0) {
 
     function renderCatalog(kits) {
       if (kits.length === 0) {
-        catalogGrid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; color: var(--text-light); padding: 40px; font-weight: 500;">No test kits match your search criteria.</div>';
+        catalogGrid.innerHTML = '';
+        const emptyDiv = document.createElement('div');
+        emptyDiv.style.cssText = 'grid-column: 1/-1; text-align: center; color: var(--text-light); padding: 40px; font-weight: 500;';
+        emptyDiv.textContent = 'No test kits match your search criteria.';
+        catalogGrid.appendChild(emptyDiv);
         return;
       }
 
-      catalogGrid.innerHTML = kits.map(kit => {
+      catalogGrid.innerHTML = '';
+      kits.forEach(kit => {
         const style = getCategoryStyle(kit.category);
         const specs = kit.specifications || {};
         const sampleType = specs['Sample Type'] || specs['Sample'] || specs['Sample Types'] || 'Serum/Plasma/Whole Blood';
         const testTime = specs['Test Time'] || '15 min';
 
-        return `
-          <a href="/products/${kit.slug}/" class="related-card" style="display: flex; flex-direction: column; height: 100%; border: 1px solid var(--border); border-radius: var(--radius-md); text-decoration: none; overflow: hidden; background: white; padding: 0;">
-            <div class="related-card-img-wrap" style="aspect-ratio: 1.6; background: var(--section-bg); border-bottom: 1px solid var(--border); overflow: hidden; display: flex; align-items: center; justify-content: center; position: relative;">
-              <img src="/placeholder.svg" alt="${kit.name}" class="related-card-img" style="width: 100%; height: 100%; object-fit: cover;" />
-            </div>
-            
-            <div class="related-card-content" style="padding: 24px; display: flex; flex-direction: column; gap: 14px; flex-grow: 1;">
-              <h4 class="related-card-title" style="font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 700; color: var(--text-dark); margin: 0; line-height: 1.35; letter-spacing: -0.3px;">${kit.name}</h4>
-              <span class="kit-badge" style="background: ${style.bg}; border: 1px solid ${style.border}; color: ${style.color}; padding: 4px 10px; border-radius: 50px; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; align-self: flex-start;">${kit.category}</span>
-              
-              <!-- Dynamic Metadata details (Task 3) -->
-              <div class="card-details" style="display: flex; flex-direction: column; gap: 8px; margin: 4px 0; border-top: 1px solid #f1f5f9; border-bottom: 1px solid #f1f5f9; padding: 12px 0;">
-                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 12.5px;">
-                  <span style="color: var(--text-light); font-weight: 500;">🩸 Sample Type</span>
-                  <span style="color: var(--text-dark); font-weight: 600; text-align: right; max-width: 65%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${sampleType}</span>
-                </div>
-                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 12.5px;">
-                  <span style="color: var(--text-light); font-weight: 500;">⏱️ Test Time</span>
-                  <span style="color: var(--text-dark); font-weight: 600;">${testTime}</span>
-                </div>
-              </div>
-              
-              <!-- CTA Button replacement (Task 5) -->
-              <span class="card-cta-btn" style="display: inline-flex; align-items: center; justify-content: center; background: var(--brand-gradient); color: white; padding: 10px 16px; border-radius: var(--radius-sm); font-size: 12.5px; font-weight: 700; transition: all 0.25s ease; margin-top: auto; text-align: center; box-shadow: 0 2px 8px rgba(155, 47, 200, 0.15); width: 100%;">View Details →</span>
-            </div>
-          </a>
-        `;
-      }).join('');
+        const a = document.createElement('a');
+        a.href = `/products/${kit.slug}/`;
+        a.className = 'related-card';
+        a.style.cssText = 'display: flex; flex-direction: column; height: 100%; border: 1px solid var(--border); border-radius: var(--radius-md); text-decoration: none; overflow: hidden; background: white; padding: 0;';
+
+        const imgWrap = document.createElement('div');
+        imgWrap.className = 'related-card-img-wrap';
+        imgWrap.style.cssText = 'aspect-ratio: 1.6; background: var(--section-bg); border-bottom: 1px solid var(--border); overflow: hidden; display: flex; align-items: center; justify-content: center; position: relative;';
+
+        const img = document.createElement('img');
+        img.src = '/placeholder.svg';
+        img.alt = kit.name || '';
+        img.className = 'related-card-img';
+        img.style.cssText = 'width: 100%; height: 100%; object-fit: cover;';
+        imgWrap.appendChild(img);
+        a.appendChild(imgWrap);
+
+        const content = document.createElement('div');
+        content.className = 'related-card-content';
+        content.style.cssText = 'padding: 24px; display: flex; flex-direction: column; gap: 14px; flex-grow: 1;';
+
+        const h4 = document.createElement('h4');
+        h4.className = 'related-card-title';
+        h4.style.cssText = "font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 700; color: var(--text-dark); margin: 0; line-height: 1.35; letter-spacing: -0.3px;";
+        h4.textContent = kit.name || '';
+        content.appendChild(h4);
+
+        const badge = document.createElement('span');
+        badge.className = 'kit-badge';
+        badge.style.cssText = `background: ${style.bg}; border: 1px solid ${style.border}; color: ${style.color}; padding: 4px 10px; border-radius: 50px; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; align-self: flex-start;`;
+        badge.textContent = kit.category || '';
+        content.appendChild(badge);
+
+        const details = document.createElement('div');
+        details.className = 'card-details';
+        details.style.cssText = 'display: flex; flex-direction: column; gap: 8px; margin: 4px 0; border-top: 1px solid #f1f5f9; border-bottom: 1px solid #f1f5f9; padding: 12px 0;';
+
+        const row1 = document.createElement('div');
+        row1.style.cssText = 'display: flex; justify-content: space-between; align-items: center; font-size: 12.5px;';
+        const label1 = document.createElement('span');
+        label1.style.cssText = 'color: var(--text-light); font-weight: 500;';
+        label1.textContent = '🩸 Sample Type';
+        const val1 = document.createElement('span');
+        val1.style.cssText = 'color: var(--text-dark); font-weight: 600; text-align: right; max-width: 65%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;';
+        val1.textContent = sampleType;
+        row1.appendChild(label1);
+        row1.appendChild(val1);
+        details.appendChild(row1);
+
+        const row2 = document.createElement('div');
+        row2.style.cssText = 'display: flex; justify-content: space-between; align-items: center; font-size: 12.5px;';
+        const label2 = document.createElement('span');
+        label2.style.cssText = 'color: var(--text-light); font-weight: 500;';
+        label2.textContent = '⏱️ Test Time';
+        const val2 = document.createElement('span');
+        val2.style.cssText = 'color: var(--text-dark); font-weight: 600;';
+        val2.textContent = testTime;
+        row2.appendChild(label2);
+        row2.appendChild(val2);
+        details.appendChild(row2);
+
+        content.appendChild(details);
+
+        const ctaBtn = document.createElement('span');
+        ctaBtn.className = 'card-cta-btn';
+        ctaBtn.style.cssText = 'display: inline-flex; align-items: center; justify-content: center; background: var(--brand-gradient); color: white; padding: 10px 16px; border-radius: var(--radius-sm); font-size: 12.5px; font-weight: 700; transition: all 0.25s ease; margin-top: auto; text-align: center; box-shadow: 0 2px 8px rgba(155, 47, 200, 0.15); width: 100%;';
+        ctaBtn.textContent = 'View Details →';
+        content.appendChild(ctaBtn);
+
+        a.appendChild(content);
+        catalogGrid.appendChild(a);
+      });
     }
 
     function filterCatalog() {
@@ -840,8 +964,12 @@ if (tabButtons.length > 0 && tabPanels.length > 0) {
 
     pillButtons.forEach(btn => {
       btn.addEventListener('click', () => {
-        pillButtons.forEach(b => b.classList.remove('active'));
+        pillButtons.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-pressed', 'false');
+        });
         btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
         activeCategory = btn.getAttribute('data-category');
         filterCatalog();
       });
@@ -849,6 +977,62 @@ if (tabButtons.length > 0 && tabPanels.length > 0) {
 
     catalogSearch.addEventListener('input', filterCatalog);
   }
+})();
+
+
+/* ====== AUTOMATED JSON-LD GENERATION (Phase 2) ====== */
+(function generateJSONLD() {
+  if (document.querySelector('script[type="application/ld+json"]')) return; // Already exists
+  
+  const isProductPage = window.location.pathname.includes('/products/');
+  const title = document.title || 'DX BIOCODE';
+  const desc = document.querySelector('meta[name="description"]')?.content || '';
+  const url = window.location.href;
+  const image = document.querySelector('meta[property="og:image"]')?.content || 'https://dxbiocode.com/hero.webp';
+
+  const schemas = [];
+
+  schemas.push({
+    "@context": "https://schema.org",
+    "@type": "MedicalOrganization",
+    "name": "DX BIOCODE",
+    "url": "https://dxbiocode.com",
+    "logo": "https://dxbiocode.com/logo.svg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-8080885059",
+      "contactType": "customer service",
+      "email": "info@dxbiocode.com"
+    }
+  });
+
+  if (isProductPage) {
+    let productName = title.replace(' | DX BIOCODE', '').trim();
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": productName,
+      "description": desc,
+      "image": image,
+      "brand": {
+        "@type": "Brand",
+        "name": "DX BIOCODE"
+      }
+    });
+  } else {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": title,
+      "description": desc,
+      "url": url
+    });
+  }
+
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.text = JSON.stringify(schemas);
+  document.head.appendChild(script);
 })();
 
 

@@ -178,9 +178,7 @@ $csrf_token = csrf_token();
         <p style="font-size:13.5px;color:#6b7280;margin-bottom:24px;">We'll get back to you within 1 business day</p>
         <form class="contact-form" id="dx-contact-form" novalidate>
           <!-- Honeypot -->
-          <div style="display:none;" aria-hidden="true">
-            <input type="text" id="form-bot-check" name="bot-check" tabindex="-1" autocomplete="off" />
-          </div>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none;">
           <div class="form-row">
             <div class="form-group">
               <label for="form-name">Full Name <span class="req">*</span></label>
@@ -214,9 +212,9 @@ $csrf_token = csrf_token();
           </div>
           <div class="form-group">
             <label for="form-msg">Your Message <span class="req">*</span></label>
-            <textarea id="form-msg" name="message" rows="4" placeholder="I am interested in requesting a product demonstration..." required maxlength="1000" aria-describedby="msg-error msg-counter"></textarea>
+            <textarea id="form-msg" name="message" rows="4" placeholder="I am interested in requesting a product demonstration..." required maxlength="2000" aria-describedby="msg-error msg-counter"></textarea>
             <span class="error-msg" id="msg-error">This field is required.</span>
-            <div class="char-counter" id="msg-counter">0 / 1000 characters</div>
+            <div class="char-counter" id="msg-counter">0 / 2000 characters</div>
           </div>
           <div class="form-readiness" id="form-readiness">Complete all required fields to continue.</div>
           <button type="submit" class="btn-primary" id="contact-submit-btn" disabled style="width:100%;justify-content:center;margin-top:10px;">
@@ -280,7 +278,7 @@ $csrf_token = csrf_token();
 <script>
   // Pass CSRF token to the contact form handler
   const csrfToken = document.querySelector('meta[name="csrf-token"]').content;
-  initContactForm('dx-contact-form', 'form-status', '/api/submit-contact.php', csrfToken);
+  initContactForm('dx-contact-form', 'form-status', '/api/contact', csrfToken);
 </script>
 </body>
 </html>

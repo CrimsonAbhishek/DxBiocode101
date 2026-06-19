@@ -20,4 +20,4 @@ define('COMPANY_WEBSITE', 'https://dxbiocode.com');
 
 // Sender identity
 define('MAIL_FROM_NAME',  'DX BIOCODE');
-define('MAIL_FROM_ADDR',  'noreply@dxbiocode.com');
+define('MAIL_FROM_ADDR',  'info@dxbiocode.com');

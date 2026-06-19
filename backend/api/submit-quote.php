@@ -37,9 +37,9 @@ if (str_contains($content_type, 'application/json')) {
 }
 
 // ── 3. Honeypot check ─────────────────────────────────────────
-if (!empty($body['_bot_check'])) {
-    // Silently succeed to confuse bots
-    die(json_encode(['success' => true, 'message' => 'Thank you!']));
+if (!empty($body['website'])) {
+    http_response_code(400);
+    exit;
 }
 
 // ── 4. CSRF verification ─────────────────────────────────────
@@ -60,8 +60,8 @@ $products_raw = $body['products']          ?? [];
 
 $valid_company_types = ['Hospital', 'Clinic', 'Laboratory', 'Distributor', 'Research Center', 'Other'];
 
-if (empty($name) || mb_strlen($name) > 100) {
-    $errors[] = 'Name is required (max 100 characters).';
+if (empty($name) || mb_strlen($name) < 2 || mb_strlen($name) > 100) {
+    $errors[] = 'Name must be between 2 and 100 characters.';
 }
 if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL) || mb_strlen($email) > 150) {
     $errors[] = 'A valid email address is required.';
@@ -73,7 +73,7 @@ if (!empty($company_type) && !in_array($company_type, $valid_company_types)) {
     $company_type = ''; // Silently reset invalid enum values
 }
 if (mb_strlen($company) > 200)  $errors[] = 'Company name is too long.';
-if (mb_strlen($message) > 5000) $errors[] = 'Message is too long (max 5000 characters).';
+if (mb_strlen($message) > 2000) $errors[] = 'Message is too long (max 2000 characters).';
 
 // Sanitize products
 $products      = [];

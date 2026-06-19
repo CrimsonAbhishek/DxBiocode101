@@ -203,10 +203,7 @@
         <p style="font-size:13.5px;color:#6b7280;margin-bottom:24px;">We'll get back to you within 1 business day</p>
         <form class="contact-form" id="dx-contact-form" novalidate>
           <!-- Honeypot Field for anti-spam (invisible to users) -->
-          <div style="display:none;" aria-hidden="true">
-            <label for="form-bot-check">Leave this field blank</label>
-            <input type="text" id="form-bot-check" name="bot-check" tabindex="-1" autocomplete="off" />
-          </div>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none;">
           <div class="form-row">
             <div class="form-group">
               <label for="form-name">Full Name *</label>
@@ -307,7 +304,7 @@
 
 <script src="shared.js"></script>
 <script>
-  initContactForm('dx-contact-form', 'form-status', '/api/submit-contact.php');
+  initContactForm('dx-contact-form', 'form-status', '/api/contact');
 </script>
 </body>
 </html>

@@ -45,23 +45,27 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const { _bot_check: _bc, ...data } = parsed.data;
 
   // ── Database insert ───────────────────────────────────────────
-  let bookingId: string;
+  let bookingId: string = 'mock-book-id-' + Math.random().toString(36).substring(2, 9);
   try {
-    const [row] = await db
-      .insert(trainingBookings)
-      .values({
-        name: data.name,
-        email: data.email,
-        phone: data.phone,
-        organization: data.organization,
-        location: data.location || null,
-        trainingCategory: data.training_category || null,
-        message: data.message || null,
-        ipAddress: ip,
-      })
-      .returning({ id: trainingBookings.id });
+    if (db) {
+      const [row] = await db
+        .insert(trainingBookings)
+        .values({
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          organization: data.organization,
+          location: data.location || null,
+          trainingCategory: data.training_category || null,
+          message: data.message || null,
+          ipAddress: ip,
+        })
+        .returning({ id: trainingBookings.id });
 
-    bookingId = row.id;
+      bookingId = row.id;
+    } else {
+      console.warn('[training] db is null. Bypassing database logging.');
+    }
   } catch (dbError) {
     console.error('[training] DB insert failed:', dbError instanceof Error ? dbError.message : dbError);
     return res.status(500).json(fail('Unable to save your booking. Please try again.', 'SERVER_ERROR'));

@@ -68,7 +68,7 @@ include __DIR__ . '/partials/sidebar.php';
       <span class="breadcrumb"><?= number_format($total) ?> total submissions</span>
     </div>
     <div style="display:flex; gap:10px;">
-      <a href="/dxb-ops/export-contacts.php<?= $export_qs ?>" class="btn btn-primary btn-sm">📥 Export Filtered CSV</a>
+      <a href="/dxb-ops/export-contacts.php<?= htmlspecialchars($export_qs, ENT_QUOTES, 'UTF-8') ?>" class="btn btn-primary btn-sm">📥 Export Filtered CSV</a>
       <a href="/dxb-ops/export-contacts.php" class="btn btn-outline btn-sm">📥 Export All</a>
     </div>
   </div>
@@ -137,14 +137,14 @@ include __DIR__ . '/partials/sidebar.php';
       <div class="pagination">
         <span class="page-info">Page <?= $page ?> of <?= $total_pages ?></span>
         <?php if ($page > 1): ?>
-          <a href="?p=<?= $page - 1 ?><?= $qs_with_p ?>" class="page-link">← Prev</a>
+          <a href="?p=<?= $page - 1 ?><?= htmlspecialchars($qs_with_p, ENT_QUOTES, 'UTF-8') ?>" class="page-link">← Prev</a>
         <?php endif; ?>
         <?php for ($i = max(1, $page - 2); $i <= min($total_pages, $page + 2); $i++): ?>
-          <a href="?p=<?= $i ?><?= $qs_with_p ?>"
+          <a href="?p=<?= $i ?><?= htmlspecialchars($qs_with_p, ENT_QUOTES, 'UTF-8') ?>"
              class="page-link <?= $i === $page ? 'active' : '' ?>"><?= $i ?></a>
         <?php endfor; ?>
         <?php if ($page < $total_pages): ?>
-          <a href="?p=<?= $page + 1 ?><?= $qs_with_p ?>" class="page-link">Next →</a>
+          <a href="?p=<?= $page + 1 ?><?= htmlspecialchars($qs_with_p, ENT_QUOTES, 'UTF-8') ?>" class="page-link">Next →</a>
         <?php endif; ?>
       </div>
       <?php endif; ?>

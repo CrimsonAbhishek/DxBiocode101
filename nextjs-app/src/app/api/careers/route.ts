@@ -17,12 +17,13 @@ const schema = z.object({
   resume_filename: z.string().min(1),
   resume_type: z.string(),
   _bot_check: z.string().optional(),
+  website: z.string().optional(),
 });
 
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    if (body._bot_check) return NextResponse.json({ error: 'Invalid submission.' }, { status: 400 });
+    if (body._bot_check || body.website) return NextResponse.json({ error: 'Invalid submission.' }, { status: 400 });
 
     const parsed = schema.safeParse(body);
     if (!parsed.success) return NextResponse.json({ error: 'Invalid form data.' }, { status: 400 });
@@ -42,7 +43,7 @@ export async function POST(req: NextRequest) {
     const name = `${data.first_name} ${data.last_name}`;
 
     await resend.emails.send({
-      from: 'DX BIOCODE Careers <noreply@dxbiocode.com>',
+      from: 'DX BIOCODE Careers <info@dxbiocode.com>',
       to: ['crimsonabhishek@gmail.com'],
       replyTo: data.email,
       subject: `🚀 New Job Application: ${data.position} — ${name}`,
@@ -66,7 +67,7 @@ export async function POST(req: NextRequest) {
 
     // Confirmation
     await resend.emails.send({
-      from: 'DX BIOCODE <noreply@dxbiocode.com>',
+      from: 'DX BIOCODE <info@dxbiocode.com>',
       to: [data.email],
       subject: 'Application received — DX BIOCODE',
       html: `
