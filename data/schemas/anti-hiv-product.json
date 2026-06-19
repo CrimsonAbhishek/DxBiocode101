@@ -2,7 +2,7 @@
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "Anti-HIV Fast Test Kit",
-  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "image": "https://dxbiocode.com/placeholder.svg",
   "description": "qualitative determination of human immunodeficiency virus (HlV) antibody in serum or plasma samples. This test can be cinically used for the auxiliary diagnosis of acquired immunodeficiency syndrome (AlDS). For professional and laboratory use only.",
   "category": "Infectious Disease",
   "brand": {
@@ -16,6 +16,6 @@
     "priceValidUntil": "2027-12-31",
     "itemCondition": "https://schema.org/NewCondition",
     "availability": "https://schema.org/InStock",
-    "url": "https://dx-biocode-101.vercel.app/products/anti-hiv/"
+    "url": "https://dxbiocode.com/products/anti-hiv/"
   }
 }

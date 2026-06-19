@@ -2,421 +2,421 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core Static Pages -->
   <url>
-    <loc>https://dx-biocode-101.vercel.app/</loc>
+    <loc>https://dxbiocode.com/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products.html</loc>
+    <loc>https://dxbiocode.com/products.html</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/service.html</loc>
+    <loc>https://dxbiocode.com/service.html</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/about.html</loc>
+    <loc>https://dxbiocode.com/about.html</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/contact.html</loc>
+    <loc>https://dxbiocode.com/contact.html</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/careers.html</loc>
+    <loc>https://dxbiocode.com/careers.html</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/quote.html</loc>
+    <loc>https://dxbiocode.com/quote.html</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/dx-101/</loc>
+    <loc>https://dxbiocode.com/products/dx-101/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/hs-ctni/</loc>
+    <loc>https://dxbiocode.com/products/hs-ctni/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/ctni/</loc>
+    <loc>https://dxbiocode.com/products/ctni/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/tnt/</loc>
+    <loc>https://dxbiocode.com/products/tnt/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/bnp/</loc>
+    <loc>https://dxbiocode.com/products/bnp/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/nt-probnp/</loc>
+    <loc>https://dxbiocode.com/products/nt-probnp/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/ck-mbctni/</loc>
+    <loc>https://dxbiocode.com/products/ck-mbctni/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/ck-mbctnimyo/</loc>
+    <loc>https://dxbiocode.com/products/ck-mbctnimyo/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/ck-mbctnih-fabp/</loc>
+    <loc>https://dxbiocode.com/products/ck-mbctnih-fabp/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/h-fabp/</loc>
+    <loc>https://dxbiocode.com/products/h-fabp/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/d-dimer/</loc>
+    <loc>https://dxbiocode.com/products/d-dimer/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/st2/</loc>
+    <loc>https://dxbiocode.com/products/st2/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/tsh/</loc>
+    <loc>https://dxbiocode.com/products/tsh/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/t3/</loc>
+    <loc>https://dxbiocode.com/products/t3/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/t4/</loc>
+    <loc>https://dxbiocode.com/products/t4/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/ft3/</loc>
+    <loc>https://dxbiocode.com/products/ft3/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/ft4/</loc>
+    <loc>https://dxbiocode.com/products/ft4/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/hcg-plusbeta/</loc>
+    <loc>https://dxbiocode.com/products/hcg-plusbeta/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/lh/</loc>
+    <loc>https://dxbiocode.com/products/lh/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/fsh/</loc>
+    <loc>https://dxbiocode.com/products/fsh/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/prog/</loc>
+    <loc>https://dxbiocode.com/products/prog/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/prl/</loc>
+    <loc>https://dxbiocode.com/products/prl/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/amh/</loc>
+    <loc>https://dxbiocode.com/products/amh/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/estradiol/</loc>
+    <loc>https://dxbiocode.com/products/estradiol/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/tpsa/</loc>
+    <loc>https://dxbiocode.com/products/tpsa/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/fpsa/</loc>
+    <loc>https://dxbiocode.com/products/fpsa/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/cea/</loc>
+    <loc>https://dxbiocode.com/products/cea/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/afp/</loc>
+    <loc>https://dxbiocode.com/products/afp/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/ca125/</loc>
+    <loc>https://dxbiocode.com/products/ca125/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/ca15-3/</loc>
+    <loc>https://dxbiocode.com/products/ca15-3/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/ca19-9/</loc>
+    <loc>https://dxbiocode.com/products/ca19-9/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/fob/</loc>
+    <loc>https://dxbiocode.com/products/fob/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/pg-ipg-ii/</loc>
+    <loc>https://dxbiocode.com/products/pg-ipg-ii/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/hba1c/</loc>
+    <loc>https://dxbiocode.com/products/hba1c/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/insulin/</loc>
+    <loc>https://dxbiocode.com/products/insulin/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/osteocalcin/</loc>
+    <loc>https://dxbiocode.com/products/osteocalcin/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/hbsag/</loc>
+    <loc>https://dxbiocode.com/products/hbsag/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/anti-hbs/</loc>
+    <loc>https://dxbiocode.com/products/anti-hbs/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/anti-hcv/</loc>
+    <loc>https://dxbiocode.com/products/anti-hcv/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/anti-hiv/</loc>
+    <loc>https://dxbiocode.com/products/anti-hiv/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/anti-tp/</loc>
+    <loc>https://dxbiocode.com/products/anti-tp/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/antigen/</loc>
+    <loc>https://dxbiocode.com/products/antigen/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/dengue-ns1-ag/</loc>
+    <loc>https://dxbiocode.com/products/dengue-ns1-ag/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/h-pylori/</loc>
+    <loc>https://dxbiocode.com/products/h-pylori/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/lnfluenza-ab/</loc>
+    <loc>https://dxbiocode.com/products/lnfluenza-ab/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/rsvinfluenza-ab/</loc>
+    <loc>https://dxbiocode.com/products/rsvinfluenza-ab/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/hs-crp-pluscrp/</loc>
+    <loc>https://dxbiocode.com/products/hs-crp-pluscrp/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/pct/</loc>
+    <loc>https://dxbiocode.com/products/pct/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/saa/</loc>
+    <loc>https://dxbiocode.com/products/saa/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/il-6/</loc>
+    <loc>https://dxbiocode.com/products/il-6/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/calprotectin/</loc>
+    <loc>https://dxbiocode.com/products/calprotectin/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/pctcrp/</loc>
+    <loc>https://dxbiocode.com/products/pctcrp/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/saacrp/</loc>
+    <loc>https://dxbiocode.com/products/saacrp/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/mg/</loc>
+    <loc>https://dxbiocode.com/products/mg/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/cysc/</loc>
+    <loc>https://dxbiocode.com/products/cysc/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/malb/</loc>
+    <loc>https://dxbiocode.com/products/malb/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/ngal/</loc>
+    <loc>https://dxbiocode.com/products/ngal/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/anti-ccp/</loc>
+    <loc>https://dxbiocode.com/products/anti-ccp/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/aso/</loc>
+    <loc>https://dxbiocode.com/products/aso/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/rf/</loc>
+    <loc>https://dxbiocode.com/products/rf/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/cortisol/</loc>
+    <loc>https://dxbiocode.com/products/cortisol/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/total-ige/</loc>
+    <loc>https://dxbiocode.com/products/total-ige/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dx-biocode-101.vercel.app/products/ferritin/</loc>
+    <loc>https://dxbiocode.com/products/ferritin/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

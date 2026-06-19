@@ -2,7 +2,7 @@
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "TnT Fast Test Kit",
-  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "image": "https://dxbiocode.com/placeholder.svg",
   "description": "quantitative determination of TnT in serum, plasma or whole blood samples. The test is indicated to be used as an auxiliary diagnostic of acute myocardial infarction (AMl), heart failure, unstable angina pectoris, myocarditis and other myocardial injuries, it can also be used for the assessment of prognosis and risk stratification of acute pulmonary embolism and the monitoring of myocardial injury in thoracic surgery. For professional and laboratory use.",
   "category": "Cardiac Markers",
   "brand": {
@@ -16,6 +16,6 @@
     "priceValidUntil": "2027-12-31",
     "itemCondition": "https://schema.org/NewCondition",
     "availability": "https://schema.org/InStock",
-    "url": "https://dx-biocode-101.vercel.app/products/tnt/"
+    "url": "https://dxbiocode.com/products/tnt/"
   }
 }

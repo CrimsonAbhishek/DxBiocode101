@@ -2,7 +2,7 @@
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "ASO Fast Test Kit",
-  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "image": "https://dxbiocode.com/placeholder.svg",
   "description": "quantitative determination of anti streptolysin \"O\" antibody (ASO) in serum, plasma or whole blood samples. ASO is a very valuable marker for the diagnosis of group A streptococcal infection, its titer can reflect the severity of infection. Some diseases will lead to a significant increase in ASO titer, such as acute rheumatic fever. For professional and laboratory use. Specification",
   "category": "Rheumatism",
   "brand": {
@@ -16,6 +16,6 @@
     "priceValidUntil": "2027-12-31",
     "itemCondition": "https://schema.org/NewCondition",
     "availability": "https://schema.org/InStock",
-    "url": "https://dx-biocode-101.vercel.app/products/aso/"
+    "url": "https://dxbiocode.com/products/aso/"
   }
 }

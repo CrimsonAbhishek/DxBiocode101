@@ -2,7 +2,7 @@
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "DX 101 Immunofluorescence Quantitative Analyzer",
-  "image": "https://dx-biocode-101.vercel.app/hero.webp",
+  "image": "https://dxbiocode.com/hero.webp",
   "description": "India's first portable and handheld multi-parameter POCT device. Compact, user-friendly, and built for rapid quantitative results.",
   "category": "Analyzers",
   "brand": {
@@ -16,6 +16,6 @@
     "priceValidUntil": "2027-12-31",
     "itemCondition": "https://schema.org/NewCondition",
     "availability": "https://schema.org/InStock",
-    "url": "https://dx-biocode-101.vercel.app/products/dx-101/"
+    "url": "https://dxbiocode.com/products/dx-101/"
   }
 }

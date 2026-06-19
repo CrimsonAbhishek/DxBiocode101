@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dx-biocode-101.vercel.app/sitemap.xml
+# Block staging domain crawling (applied via Vercel headers)
+# Canonical production domain: https://dxbiocode.com
+
+Sitemap: https://dxbiocode.com/sitemap.xml

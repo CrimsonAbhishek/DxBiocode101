@@ -2,7 +2,7 @@
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "CK-MB/cTnI/H-FABP Fast Test Kit",
-  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "image": "https://dxbiocode.com/placeholder.svg",
   "description": "quantitative determination of CK-MB/cTnI/H-FABP in human serum, plasma or whole blood samples. This test is used as an aid in the clinical diagnosis, prognosis and evaluation of myocardial injury such as Acute Myocardial Infarction (AMI), Unstable Angina, Acute Myocarditis and Acute Coronary Syndrome (ACS).",
   "category": "Cardiac Markers",
   "brand": {
@@ -16,6 +16,6 @@
     "priceValidUntil": "2027-12-31",
     "itemCondition": "https://schema.org/NewCondition",
     "availability": "https://schema.org/InStock",
-    "url": "https://dx-biocode-101.vercel.app/products/ck-mbctnih-fabp/"
+    "url": "https://dxbiocode.com/products/ck-mbctnih-fabp/"
   }
 }

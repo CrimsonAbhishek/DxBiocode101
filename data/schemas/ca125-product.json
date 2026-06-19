@@ -2,7 +2,7 @@
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "CA125 Fast Test Kit",
-  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "image": "https://dxbiocode.com/placeholder.svg",
   "description": "quantitative determination of Cancer Antigen 125 (CA125) in serum, plasma or whole blood samples. The test is indicated for use as an aid in the detection of ovarian carcinoma. For professional and laboratory use.",
   "category": "Cancer Markers",
   "brand": {
@@ -16,6 +16,6 @@
     "priceValidUntil": "2027-12-31",
     "itemCondition": "https://schema.org/NewCondition",
     "availability": "https://schema.org/InStock",
-    "url": "https://dx-biocode-101.vercel.app/products/ca125/"
+    "url": "https://dxbiocode.com/products/ca125/"
   }
 }

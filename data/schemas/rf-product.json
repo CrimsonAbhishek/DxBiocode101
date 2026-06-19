@@ -2,7 +2,7 @@
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "RF Fast Test Kit",
-  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "image": "https://dxbiocode.com/placeholder.svg",
   "description": "quantitative determination of rheumatoid factor (RF) in serum, plasma or whole blood samples. The test is designed to aid in the diagnosis of autoimmune diseases, such as rheumatoid arthritis (RA). For professional and laboratory use only. Specification",
   "category": "Rheumatism",
   "brand": {
@@ -16,6 +16,6 @@
     "priceValidUntil": "2027-12-31",
     "itemCondition": "https://schema.org/NewCondition",
     "availability": "https://schema.org/InStock",
-    "url": "https://dx-biocode-101.vercel.app/products/rf/"
+    "url": "https://dxbiocode.com/products/rf/"
   }
 }

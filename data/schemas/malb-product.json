@@ -2,7 +2,7 @@
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "mAlb Fast Test Kit",
-  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "image": "https://dxbiocode.com/placeholder.svg",
   "description": "quantitative determination of microalbuminuria (mAlb) in human urine samples. An elevated mAlb concentration below the proteinuric level has long been recognized as a marker of kidney disease and increased cardiovascular risk in diabetic nephropathy.",
   "category": "Renal Function",
   "brand": {
@@ -16,6 +16,6 @@
     "priceValidUntil": "2027-12-31",
     "itemCondition": "https://schema.org/NewCondition",
     "availability": "https://schema.org/InStock",
-    "url": "https://dx-biocode-101.vercel.app/products/malb/"
+    "url": "https://dxbiocode.com/products/malb/"
   }
 }

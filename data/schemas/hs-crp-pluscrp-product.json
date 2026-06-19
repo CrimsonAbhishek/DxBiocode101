@@ -2,7 +2,7 @@
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "hs-CRP+CRP Fast Test Kit",
-  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "image": "https://dxbiocode.com/placeholder.svg",
   "description": "quantitative determination of C-reactive protein (CRP) in serum, plasma, whole blood or fingertip blood samples. Measurement of CRP is useful for the detection and evaluation of infection, tissue injury and inflammatory disorders. Measurement of high sensitivity CRP (hs-CRP), when used in conjunction with traditional clinical laboratory evaluation of acute coronary syndromes (ACS), may be useful as an independent marker of prognosis for recurrent events in patients with stable coronary disease or ACS. For professional and laboratory use only.",
   "category": "Inflammation",
   "brand": {
@@ -16,6 +16,6 @@
     "priceValidUntil": "2027-12-31",
     "itemCondition": "https://schema.org/NewCondition",
     "availability": "https://schema.org/InStock",
-    "url": "https://dx-biocode-101.vercel.app/products/hs-crp-pluscrp/"
+    "url": "https://dxbiocode.com/products/hs-crp-pluscrp/"
   }
 }

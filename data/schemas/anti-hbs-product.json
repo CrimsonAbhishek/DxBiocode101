@@ -2,7 +2,7 @@
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "Anti-HBs Fast Test Kit",
-  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "image": "https://dxbiocode.com/placeholder.svg",
   "description": "quantitative determination of hepatitis B surface antibody (Anti-HBs) in human serum, plasma and whole blood samples. The test can aid to monitor the recovery of patients with hepatitis B virus (HBV) and evaluate the efficacy of hepatitis B vaccine.",
   "category": "Infectious Disease",
   "brand": {
@@ -16,6 +16,6 @@
     "priceValidUntil": "2027-12-31",
     "itemCondition": "https://schema.org/NewCondition",
     "availability": "https://schema.org/InStock",
-    "url": "https://dx-biocode-101.vercel.app/products/anti-hbs/"
+    "url": "https://dxbiocode.com/products/anti-hbs/"
   }
 }

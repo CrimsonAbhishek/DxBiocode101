@@ -2,7 +2,7 @@
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "Osteocalcin Fast Test Kit",
-  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "image": "https://dxbiocode.com/placeholder.svg",
   "description": "quantitative determination of Osteocalcin in serum or plasma samples. This test is mainly used for the auxiliary diagnosis of various osteoporosis and early bone synthesis after bone injury. For professional and laboratory use.",
   "category": "Metabolism",
   "brand": {
@@ -16,6 +16,6 @@
     "priceValidUntil": "2027-12-31",
     "itemCondition": "https://schema.org/NewCondition",
     "availability": "https://schema.org/InStock",
-    "url": "https://dx-biocode-101.vercel.app/products/osteocalcin/"
+    "url": "https://dxbiocode.com/products/osteocalcin/"
   }
 }

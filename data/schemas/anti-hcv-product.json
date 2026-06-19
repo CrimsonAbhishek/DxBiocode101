@@ -2,7 +2,7 @@
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "Anti-HCV Fast Test Kit",
-  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "image": "https://dxbiocode.com/placeholder.svg",
   "description": "qualitative determination of hepatitis C virus (HCV) antibody in serum or plasma samples. This test can be clinically used for the auxiliary diagnosis of hepatitis C. For professional and laboratory use only.",
   "category": "Infectious Disease",
   "brand": {
@@ -16,6 +16,6 @@
     "priceValidUntil": "2027-12-31",
     "itemCondition": "https://schema.org/NewCondition",
     "availability": "https://schema.org/InStock",
-    "url": "https://dx-biocode-101.vercel.app/products/anti-hcv/"
+    "url": "https://dxbiocode.com/products/anti-hcv/"
   }
 }

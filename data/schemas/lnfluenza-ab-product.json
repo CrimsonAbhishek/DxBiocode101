@@ -2,7 +2,7 @@
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "lnfluenza A/B Fast Test Kit",
-  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "image": "https://dxbiocode.com/placeholder.svg",
   "description": "lnfluenza A/B Fast Test Kit (lmmunofluorescence Assay) is intended for the qualitative detection of nucleocapsid protein antigen from influenza A and influenza B in human nasal swab samples from individuals suspected of respiratory viral infection consistent with influenza A and influenza B by their healthcare provider. This test is intended for professional and laboratory use. lnfluenza A/B Fast Test Kit (lmmunofluorescence Assay) is an aid in the differentiate of patients with suspected influenza A and influenza B virus infection in conjunction with clinical symptoms and result of other diagnostic methods. Results from the test should not be used as the sole basis for diagnosis and exclusion of influenza A and influenza B infection.",
   "category": "Infectious Disease",
   "brand": {
@@ -16,6 +16,6 @@
     "priceValidUntil": "2027-12-31",
     "itemCondition": "https://schema.org/NewCondition",
     "availability": "https://schema.org/InStock",
-    "url": "https://dx-biocode-101.vercel.app/products/lnfluenza-ab/"
+    "url": "https://dxbiocode.com/products/lnfluenza-ab/"
   }
 }

@@ -2,7 +2,7 @@
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "SAA Fast Test Kit",
-  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "image": "https://dxbiocode.com/placeholder.svg",
   "description": "quantitative determination of SAA in human serum, plasma, whole blood, and fingertip blood samples. lt can be used as a sensitive index in the diagnosis of infection and inflammation. For professional and laboratory use only.",
   "category": "Inflammation",
   "brand": {
@@ -16,6 +16,6 @@
     "priceValidUntil": "2027-12-31",
     "itemCondition": "https://schema.org/NewCondition",
     "availability": "https://schema.org/InStock",
-    "url": "https://dx-biocode-101.vercel.app/products/saa/"
+    "url": "https://dxbiocode.com/products/saa/"
   }
 }

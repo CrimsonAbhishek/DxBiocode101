@@ -2,7 +2,7 @@
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "H. pylori Fast Test Kit",
-  "image": "https://dx-biocode-101.vercel.app/placeholder.svg",
+  "image": "https://dxbiocode.com/placeholder.svg",
   "description": "quantitative detection of H. pylori specific antigen in human stool specimen. It is a useful aid in the diagnosis of a number of gastrointestinal disorders. For professional and laboratory use only. About H. pylori infection in the gastrointestinal tract can be used as an auxiliary diagnosis for gastritis, gastric ulcer, and gastric cancer. Contents For Getein1100 Package specifications: 10 tests/box, 25 tests/box test card in a sealed pouch with desiccant 2) Sample diluent 3) User Manual:1 piece/box 4) SD card: 1 piece/box Note: Do not mix or interchange different batches of kits.",
   "category": "Infectious Disease",
   "brand": {
@@ -16,6 +16,6 @@
     "priceValidUntil": "2027-12-31",
     "itemCondition": "https://schema.org/NewCondition",
     "availability": "https://schema.org/InStock",
-    "url": "https://dx-biocode-101.vercel.app/products/h-pylori/"
+    "url": "https://dxbiocode.com/products/h-pylori/"
   }
 }
