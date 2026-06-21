@@ -6,11 +6,11 @@
 // Create a dedicated email: noreply@dxbiocode.com
 // ================================================================
 
-define('SMTP_HOST',       'smtp.hostinger.com');    // Hostinger SMTP host
-define('SMTP_PORT',       465);                      // 465 = SSL | 587 = TLS
-define('SMTP_ENCRYPTION', 'ssl');                    // 'ssl' or 'tls'
-define('SMTP_USERNAME',   'noreply@dxbiocode.com'); // your Hostinger email
-define('SMTP_PASSWORD',   'your_email_password');    // email account password
+define('SMTP_HOST',       getenv('SMTP_HOST') ?: 'smtp.hostinger.com');
+define('SMTP_PORT',       getenv('SMTP_PORT') ?: 465);
+define('SMTP_ENCRYPTION', getenv('SMTP_ENCRYPTION') ?: 'ssl');
+define('SMTP_USERNAME',   getenv('SMTP_USERNAME') ?: 'noreply@dxbiocode.com');
+define('SMTP_PASSWORD',   getenv('SMTP_PASSWORD') ?: '');
 
 // Company contact details
 define('COMPANY_NAME',    'DX BIOCODE');

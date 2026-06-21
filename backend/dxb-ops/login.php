@@ -25,8 +25,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     csrf_verify();
 
     // Rate limit login attempts
-    if (!rate_limit_check('admin_login', 5, 300)) {
-        $error = 'Too many login attempts. Please wait 5 minutes.';
+    if (!rate_limit_check('admin_login', 5, 900)) {
+        $error = 'Too many login attempts. Please wait 15 minutes.';
     } else {
         $username = trim($_POST['username'] ?? '');
         $password = $_POST['password'] ?? '';

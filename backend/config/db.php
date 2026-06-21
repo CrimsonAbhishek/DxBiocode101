@@ -6,10 +6,10 @@
 // On Hostinger: cPanel → MySQL Databases → get credentials.
 // ================================================================
 
-define('DB_HOST', 'localhost');           // Hostinger: usually localhost
-define('DB_NAME', 'your_db_name');        // e.g. u123456789_dxbiocode
-define('DB_USER', 'your_db_user');        // e.g. u123456789_admin
-define('DB_PASS', 'your_db_password');    // set a strong password
+define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
+define('DB_NAME', getenv('DB_NAME') ?: '');
+define('DB_USER', getenv('DB_USER') ?: '');
+define('DB_PASS', getenv('DB_PASS') ?: '');
 define('DB_CHARSET', 'utf8mb4');
 
 function get_db(): PDO {
