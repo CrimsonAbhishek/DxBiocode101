@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://dxbiocode.com',
+    url: 'https://www.dxbiocode.com',
     siteName: 'DX BIOCODE',
   },
 };

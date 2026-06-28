@@ -43,7 +43,7 @@ body {
   --brand-gradient-soft: linear-gradient(135deg, rgba(58,123,213,0.12) 0%, rgba(155,47,200,0.10) 50%, rgba(233,30,140,0.08) 100%);
   --glass-bg:     rgba(255,255,255,0.7);
   --glass-border: rgba(255,255,255,0.4);
-  --neon-glow:    0 0 20px rgba(155,47,200,0.4), 0 0 60px rgba(58,123,213,0.2);
+  --neon-glow:    0 4px 14px rgba(0,0,0,0.1);
 }
 
 /* ===== TOP BAR ===== */

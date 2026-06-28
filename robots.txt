@@ -2,6 +2,6 @@ User-agent: *
 Allow: /
 
 # Block staging domain crawling (applied via Vercel headers)
-# Canonical production domain: https://dxbiocode.com
+# Canonical production domain: https://www.dxbiocode.com
 
-Sitemap: https://dxbiocode.com/sitemap.xml
+Sitemap: https://www.dxbiocode.com/sitemap.xml

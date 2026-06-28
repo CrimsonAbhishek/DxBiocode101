@@ -3,7 +3,7 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 /* ─── Allowed CORS origins ────────────────────────────────────── */
 const ALLOWED_ORIGINS = [
   'https://dx-biocode-101.vercel.app',
-  'https://dxbiocode.com',
+  'https://www.dxbiocode.com',
   'https://www.dxbiocode.com',
   // local dev
   'http://localhost:3000',

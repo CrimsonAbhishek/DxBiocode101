@@ -240,10 +240,10 @@ function renderCart() {
 
   if (!cart.length) {
     list.innerHTML = `<div class="cart-empty" id="cart-empty" style="text-align:center; padding:56px 24px;">
-      <div style="width:60px; height:60px; background:var(--brand-gradient-soft); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 16px; font-size:28px; border:1px solid var(--border-subtle);">📋</div>
-      <p style="font-size:14px; font-weight:600; color:var(--text-dark); margin-bottom:4px;">No products selected yet</p>
+      <div style="width:60px; height:60px; background:var(--brand-gradient-soft); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 16px; font-size:28px; border:1px solid var(--border-subtle);">📄</div>
+      <p style="font-size:14px; font-weight:600; color:var(--text-dark); margin-bottom:4px;">Your Request for Quotation (RFQ) list is empty.</p>
       <p style="font-size:12.5px; color:var(--text-light); margin-bottom:20px;">Add diagnostic test kits to build your quote</p>
-      <a href="/products.html" class="btn-primary" style="font-size:13px; padding:10px 20px; text-decoration:none; display:inline-flex; justify-content:center;">Browse Products →</a>
+      <a href="/products.html" class="btn-primary" style="font-size:13px; padding:10px 20px; text-decoration:none; display:inline-flex; justify-content:center;">View Catalog →</a>
     </div>`;
     if (footerEl) footerEl.style.display = 'none';
     return;
@@ -988,7 +988,7 @@ if (tabButtons.length > 0 && tabPanels.length > 0) {
   const title = document.title || 'DX BIOCODE';
   const desc = document.querySelector('meta[name="description"]')?.content || '';
   const url = window.location.href;
-  const image = document.querySelector('meta[property="og:image"]')?.content || 'https://dxbiocode.com/hero.webp';
+  const image = document.querySelector('meta[property="og:image"]')?.content || 'https://www.dxbiocode.com/hero.webp';
 
   const schemas = [];
 
@@ -996,8 +996,8 @@ if (tabButtons.length > 0 && tabPanels.length > 0) {
     "@context": "https://schema.org",
     "@type": "MedicalOrganization",
     "name": "DX BIOCODE",
-    "url": "https://dxbiocode.com",
-    "logo": "https://dxbiocode.com/logo.svg",
+    "url": "https://www.dxbiocode.com",
+    "logo": "https://www.dxbiocode.com/logo.svg",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+91-8080885059",

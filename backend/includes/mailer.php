@@ -114,7 +114,7 @@ function email_shell(string $content): string {
               <td style="background:#f8fafc;border-top:1px solid #e5e7eb;padding:20px 32px;text-align:center;">
                 <p style="margin:0;font-size:11.5px;color:#94a3b8;">
                   DX BIOCODE &nbsp;|&nbsp; <a href="mailto:info@dxbiocode.com" style="color:#3a7bd5;text-decoration:none;">info@dxbiocode.com</a>
-                  &nbsp;|&nbsp; <a href="https://dxbiocode.com" style="color:#3a7bd5;text-decoration:none;">dxbiocode.com</a>
+                  &nbsp;|&nbsp; <a href="https://www.dxbiocode.com" style="color:#3a7bd5;text-decoration:none;">dxbiocode.com</a>
                 </p>
                 <p style="margin:6px 0 0;font-size:10.5px;color:#cbd5e1;">
                   CE &amp; EU-IVD Approved &nbsp;·&nbsp; +91 8080885059
@@ -195,7 +195,7 @@ function email_quote_company(array $data, array $products): string {
 
     {$message ? "<h3 style='margin:0 0 8px;font-size:14px;font-weight:700;color:#0f172a;'>Message</h3><p style='margin:0 0 24px;font-size:13.5px;color:#374151;line-height:1.7;background:#f8fafc;padding:16px;border-radius:8px;border-left:3px solid #3a7bd5;'>{$message}</p>" : ''}
 
-    <a href="https://dxbiocode.com/dxb-ops/quotes.php" style="display:inline-block;background:linear-gradient(135deg,#3a7bd5,#9b2fc8);color:#fff;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:700;font-size:13.5px;">View in Admin Panel →</a>
+    <a href="https://www.dxbiocode.com/dxb-ops/quotes.php" style="display:inline-block;background:linear-gradient(135deg,#3a7bd5,#9b2fc8);color:#fff;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:700;font-size:13.5px;">View in Admin Panel →</a>
     HTML;
 
     return email_shell($content);
@@ -229,7 +229,7 @@ function email_quote_customer(array $data): string {
       <a href="mailto:info@dxbiocode.com" style="color:#3a7bd5;font-weight:700;text-decoration:none;">✉️ info@dxbiocode.com</a>
     </p>
 
-    <a href="https://dxbiocode.com/products.html" style="display:inline-block;background:linear-gradient(135deg,#3a7bd5,#9b2fc8);color:#fff;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:700;font-size:13.5px;">Browse More Products →</a>
+    <a href="https://www.dxbiocode.com/products.html" style="display:inline-block;background:linear-gradient(135deg,#3a7bd5,#9b2fc8);color:#fff;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:700;font-size:13.5px;">Browse More Products →</a>
     HTML;
 
     return email_shell($content);
@@ -272,7 +272,7 @@ function email_contact_company(array $data): string {
     <h3 style="margin:0 0 8px;font-size:14px;font-weight:700;color:#0f172a;">Message</h3>
     <p style="margin:0 0 24px;font-size:13.5px;color:#374151;line-height:1.7;background:#f8fafc;padding:16px;border-radius:8px;border-left:3px solid #3a7bd5;">{$message}</p>
 
-    <a href="https://dxbiocode.com/dxb-ops/contacts.php" style="display:inline-block;background:linear-gradient(135deg,#3a7bd5,#9b2fc8);color:#fff;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:700;font-size:13.5px;">View in Admin Panel →</a>
+    <a href="https://www.dxbiocode.com/dxb-ops/contacts.php" style="display:inline-block;background:linear-gradient(135deg,#3a7bd5,#9b2fc8);color:#fff;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:700;font-size:13.5px;">View in Admin Panel →</a>
     HTML;
 
     return email_shell($content);
@@ -303,7 +303,7 @@ function email_contact_customer(array $data): string {
       <a href="mailto:info@dxbiocode.com" style="color:#3a7bd5;font-weight:700;text-decoration:none;">✉️ info@dxbiocode.com</a>
     </p>
 
-    <a href="https://dxbiocode.com" style="display:inline-block;background:linear-gradient(135deg,#3a7bd5,#9b2fc8);color:#fff;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:700;font-size:13.5px;">Visit DX BIOCODE →</a>
+    <a href="https://www.dxbiocode.com" style="display:inline-block;background:linear-gradient(135deg,#3a7bd5,#9b2fc8);color:#fff;text-decoration:none;padding:12px 24px;border-radius:8px;font-weight:700;font-size:13.5px;">Visit DX BIOCODE →</a>
     HTML;
 
     return email_shell($content);

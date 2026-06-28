@@ -110,7 +110,7 @@ Use **hPanel File Manager** or **FTP** (FileZilla).
 
 ## Step 6 — Create the Admin Account
 
-1. Visit: `https://dxbiocode.com/setup/create-admin.php`
+1. Visit: `https://www.dxbiocode.com/setup/create-admin.php`
 2. Enter:
    - Username (e.g. `admin`)
    - Password (minimum 10 characters, use a password manager)
@@ -124,10 +124,10 @@ Use **hPanel File Manager** or **FTP** (FileZilla).
 ## Step 7 — Verify Everything Works
 
 ### Test the admin login
-Visit `https://dxbiocode.com/admin/login.php` and sign in.
+Visit `https://www.dxbiocode.com/admin/login.php` and sign in.
 
 ### Test the quote form
-1. Go to `https://dxbiocode.com/products.html`
+1. Go to `https://www.dxbiocode.com/products.html`
 2. Add a test kit to the quote
 3. Click "Request Official Quotation →"
 4. Fill in the form and submit
@@ -137,7 +137,7 @@ Visit `https://dxbiocode.com/admin/login.php` and sign in.
    - Your test email address received confirmation
 
 ### Test the contact form
-1. Go to `https://dxbiocode.com/contact.html`
+1. Go to `https://www.dxbiocode.com/contact.html`
 2. Fill in and submit the form
 3. Check: database row + both emails received
 

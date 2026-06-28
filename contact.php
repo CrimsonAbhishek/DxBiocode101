@@ -14,7 +14,7 @@ $csrf_token = csrf_token();
   <meta property="og:title" content="Contact Us | DX BIOCODE" />
   <meta property="og:description" content="Contact DX BIOCODE — request a product demo, get a quote, or reach our technical support team." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://dxbiocode.com/contact.php" />
+  <meta property="og:url" content="https://www.dxbiocode.com/contact.php" />
   <title>Contact Us | DX BIOCODE</title>
   <meta name="csrf-token" content="<?= htmlspecialchars($csrf_token) ?>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -54,7 +54,7 @@ $csrf_token = csrf_token();
       <span>✉️ <a href="mailto:info@dxbiocode.com">info@dxbiocode.com</a></span>
     </div>
     <div style="display:flex;align-items:center;gap:10px;">
-      <span class="ce-strip">✔ CE &amp; EU-IVD Approved</span>
+      <span class="ce-strip">✔ ISO 13485 • CE • EU-IVD Approved</span>
       <span class="top-bar-badge">India's First Handheld Multi-Parameter POCT</span>
     </div>
   </div>
@@ -95,7 +95,7 @@ $csrf_token = csrf_token();
         </div>
       </div>
       <button class="cart-btn" id="cart-btn" aria-label="Quote cart">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 8 9"></polyline></svg>
         <span class="cart-badge" id="cart-badge">0</span>
       </button>
       <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
@@ -258,18 +258,14 @@ $csrf_token = csrf_token();
       <div class="footer-col">
         <h4>Certifications</h4>
         <div style="display:flex;flex-direction:column;gap:8px;">
-          <span class="ce-strip" style="font-size:12px;">✔ CE Certified</span>
+          <span class="ce-strip" style="font-size:12px;">✔ ISO 13485 Certified</span>
           <span class="ce-strip" style="font-size:12px;">✔ EU-IVD Compliant</span>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2024 DX BIOCODE Pvt. Ltd. All rights reserved.</span>
-      <div class="footer-social">
-        <a href="https://www.linkedin.com/company/dxbiocode" class="social-btn" target="_blank" rel="noopener">in</a>
-        <a href="https://x.com" class="social-btn" target="_blank" rel="noopener">𝕏</a>
-        <a href="https://www.youtube.com" class="social-btn" target="_blank" rel="noopener">▶</a>
-      </div>
+      
     </div>
   </div>
 </footer>

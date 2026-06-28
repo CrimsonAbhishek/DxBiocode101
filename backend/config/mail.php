@@ -16,7 +16,7 @@ define('SMTP_PASSWORD',   getenv('SMTP_PASSWORD') ?: '');
 define('COMPANY_NAME',    'DX BIOCODE');
 define('COMPANY_EMAIL',   'info@dxbiocode.com');     // where to receive leads
 define('COMPANY_PHONE',   '+91 8080885059');
-define('COMPANY_WEBSITE', 'https://dxbiocode.com');
+define('COMPANY_WEBSITE', 'https://www.dxbiocode.com');
 
 // Sender identity
 define('MAIL_FROM_NAME',  'DX BIOCODE');
