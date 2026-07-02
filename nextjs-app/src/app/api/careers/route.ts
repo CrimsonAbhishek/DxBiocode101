@@ -15,7 +15,7 @@ const schema = z.object({
   cover_letter: z.string().optional(),
   resume_base64: z.string().min(1),
   resume_filename: z.string().min(1),
-  resume_type: z.string(),
+  resume_type: z.enum(['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document']),
   _bot_check: z.string().optional(),
   website: z.string().optional(),
 });
@@ -29,9 +29,21 @@ export async function POST(req: NextRequest) {
     if (!parsed.success) return NextResponse.json({ error: 'Invalid form data.' }, { status: 400 });
     const data = parsed.data;
 
-    // Upload resume to Cloudflare R2
+    // Upload security validations
     const resumeBuffer = Buffer.from(data.resume_base64, 'base64');
-    const key = `resumes/${Date.now()}-${data.first_name}-${data.last_name}-${data.resume_filename}`;
+    if (resumeBuffer.length > 5 * 1024 * 1024) {
+      return NextResponse.json({ error: 'File too large (max 5MB).' }, { status: 400 });
+    }
+
+    const hex = resumeBuffer.toString('hex', 0, 4).toUpperCase();
+    // 25504446 is PDF, D0CF11E0 is DOC, 504B0304 is DOCX/ZIP
+    if (!hex.startsWith('25504446') && !hex.startsWith('D0CF11E0') && !hex.startsWith('504B0304')) {
+      return NextResponse.json({ error: 'Invalid file signature.' }, { status: 400 });
+    }
+
+    const safeFilename = data.resume_filename.replace(/[^a-zA-Z0-9.-]/g, '_').substring(0, 100);
+    const key = `resumes/${crypto.randomUUID()}-${safeFilename}`;
+    
     let resumeUrl = '';
     try {
       resumeUrl = await uploadToR2(key, resumeBuffer, data.resume_type);

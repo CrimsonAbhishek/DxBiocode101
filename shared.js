@@ -12,22 +12,39 @@ function escapeHtml(str) {
     .replace(/'/g, '&#39;');
 }
 
-/* ====== SCROLL PROGRESS BAR ====== */
-const progressBar = document.createElement('div');
-progressBar.className = 'scroll-progress';
-document.body.prepend(progressBar);
-window.addEventListener('scroll', () => {
-  const total = document.documentElement.scrollHeight - window.innerHeight;
-  if (total > 0) progressBar.style.width = (window.scrollY / total * 100) + '%';
-}, { passive: true });
+/* ====== SCROLL PROGRESS & NAV BLUR ====== */
+(() => {
+  const progressBar = document.createElement('div');
+  progressBar.className = 'scroll-progress';
+  document.body.prepend(progressBar);
 
-/* ====== NAV GLASS BLUR ON SCROLL ====== */
-const navEl = document.querySelector('nav');
-if (navEl) {
-  window.addEventListener('scroll', () => {
-    navEl.classList.toggle('scrolled', window.scrollY > 50);
+  const navEl = document.querySelector('nav');
+
+  let ticking = false;
+  let scrollY = window.scrollY;
+  let scrollHeight = document.documentElement.scrollHeight;
+  let winInnerHeight = window.innerHeight;
+
+  window.addEventListener('resize', () => {
+    scrollHeight = document.documentElement.scrollHeight;
+    winInnerHeight = window.innerHeight;
   }, { passive: true });
-}
+
+  function updateScroll() {
+    const total = scrollHeight - winInnerHeight;
+    if (total > 0) progressBar.style.width = (scrollY / total * 100) + '%';
+    if (navEl) navEl.classList.toggle('scrolled', scrollY > 50);
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    scrollY = window.scrollY;
+    if (!ticking) {
+      window.requestAnimationFrame(updateScroll);
+      ticking = true;
+    }
+  }, { passive: true });
+})();
 
 /* ====== FADE-UP SCROLL ANIMATION ====== */
 const fadeEls = document.querySelectorAll('.fade-up');
@@ -87,7 +104,6 @@ let PRODUCTS_DB = [
 ];
 
 let PRODUCT_MAP = {};
-
 fetch('/data/index.json')
   .then(r => r.json())
   .then(data => {
@@ -101,17 +117,15 @@ fetch('/data/index.json')
         img: p.type === 'analyzer' ? '/hero.webp' : '/placeholder.svg',
         href: `/products/${p.slug}/`
       }));
-      // Call renderCart again to update categorizations/badges asynchronously
       renderCart();
     }
   })
   .catch(e => console.warn('Could not load products search database dynamically. Using static fallback.', e));
 
-
 if (searchBtn && searchBox) {
   // Upgrade to Global Search Modal (Phase 2)
   document.body.appendChild(searchBox);
-  
+
   searchBox.innerHTML = `
     <div class="search-modal-content" onclick="event.stopPropagation()">
       <div class="search-modal-header">
@@ -122,7 +136,7 @@ if (searchBtn && searchBox) {
       <div class="search-results-dropdown" id="search-results-dropdown"></div>
     </div>
   `;
-  
+
   searchInput = document.getElementById('nav-search-input');
   searchResults = document.getElementById('search-results-dropdown');
   const searchCloseBtn = document.getElementById('search-close-btn');
@@ -983,7 +997,7 @@ if (tabButtons.length > 0 && tabPanels.length > 0) {
 /* ====== AUTOMATED JSON-LD GENERATION (Phase 2) ====== */
 (function generateJSONLD() {
   if (document.querySelector('script[type="application/ld+json"]')) return; // Already exists
-  
+
   const isProductPage = window.location.pathname.includes('/products/');
   const title = document.title || 'DX BIOCODE';
   const desc = document.querySelector('meta[name="description"]')?.content || '';
