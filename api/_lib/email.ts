@@ -3,19 +3,19 @@ import { Resend } from 'resend';
 import { render } from '@react-email/render';
 import type { QuoteEmailData, CareerEmailData, ContactEmailData, TrainingEmailData } from './types';
 
-import QuoteInternalEmail from '@emails/QuoteInternal';
-import QuoteConfirmationEmail from '@emails/QuoteConfirmation';
-import CareerInternalEmail from '@emails/CareerInternal';
-import CareerConfirmationEmail from '@emails/CareerConfirmation';
-import ContactInternalEmail from '@emails/ContactInternal';
-import ContactConfirmationEmail from '@emails/ContactConfirmation';
-import TrainingInternalEmail from '@emails/TrainingInternal';
-import TrainingConfirmationEmail from '@emails/TrainingConfirmation';
+import QuoteInternalEmail from '../../emails/QuoteInternal';
+import QuoteConfirmationEmail from '../../emails/QuoteConfirmation';
+import CareerInternalEmail from '../../emails/CareerInternal';
+import CareerConfirmationEmail from '../../emails/CareerConfirmation';
+import ContactInternalEmail from '../../emails/ContactInternal';
+import ContactConfirmationEmail from '../../emails/ContactConfirmation';
+import TrainingInternalEmail from '../../emails/TrainingInternal';
+import TrainingConfirmationEmail from '../../emails/TrainingConfirmation';
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 const FROM = process.env.RESEND_FROM_EMAIL ?? 'DX BIOCODE <info@dxbiocode.com>';
-const TO_INTERNAL = process.env.RESEND_TO_EMAIL ?? 'crimsonabhishek@gmail.com';
+const TO_INTERNAL = process.env.RESEND_TO_EMAIL ?? 'info@dxbiocode.com';
 
 // Re-export types so callers can import from either location
 export type { QuoteEmailData, CareerEmailData, ContactEmailData, TrainingEmailData } from './types';
@@ -30,6 +30,7 @@ async function send(args: {
   to: string;
   subject: string;
   html: string;
+  replyTo?: string;
 }): Promise<void> {
   if (!resend) {
     console.warn(`[email] RESEND_API_KEY is not set. Bypassing email to ${maskEmail(args.to)}: "${args.subject}"`);
@@ -40,6 +41,7 @@ async function send(args: {
     to: args.to,
     subject: args.subject,
     html: args.html,
+    ...(args.replyTo ? { reply_to: args.replyTo } : {}),
   });
   if (error) throw new Error(error.message);
 }
@@ -52,8 +54,9 @@ export async function sendQuoteEmails(data: QuoteEmailData): Promise<void> {
   await Promise.allSettled([
     send({
       to: TO_INTERNAL,
-      subject: `🔬 New Quote Request — ${data.facilityType || 'General'} | ${data.organization}`,
+      subject: `New DX BIOCODE Quote Request — ${data.name}`,
       html: internalHtml,
+      replyTo: data.email,
     }),
     send({
       to: data.email,
@@ -73,8 +76,9 @@ export async function sendCareerEmails(data: CareerEmailData): Promise<void> {
   await Promise.allSettled([
     send({
       to: TO_INTERNAL,
-      subject: `📋 New Application — ${data.position} | ${data.firstName} ${data.lastName}`,
+      subject: `New DX BIOCODE Career Application — ${data.firstName} ${data.lastName}`,
       html: internalHtml,
+      replyTo: data.email,
     }),
     send({
       to: data.email,
@@ -94,8 +98,9 @@ export async function sendContactEmails(data: ContactEmailData): Promise<void> {
   await Promise.allSettled([
     send({
       to: TO_INTERNAL,
-      subject: `📨 New Enquiry — ${data.enquiryType || 'General'} | ${data.name}`,
+      subject: `New DX BIOCODE Contact Enquiry — ${data.name}`,
       html: internalHtml,
+      replyTo: data.email,
     }),
     send({
       to: data.email,
@@ -115,8 +120,9 @@ export async function sendTrainingEmails(data: TrainingEmailData): Promise<void>
   await Promise.allSettled([
     send({
       to: TO_INTERNAL,
-      subject: `🎓 Training Booking — ${data.trainingCategory || 'General'} | ${data.organization}`,
+      subject: `New DX BIOCODE Training Request — ${data.name}`,
       html: internalHtml,
+      replyTo: data.email,
     }),
     send({
       to: data.email,
